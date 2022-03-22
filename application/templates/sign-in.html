@@ -7,10 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'index.css' %}" />
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
-    <title>Document</title>
+    <title>Sign In</title>
   </head>
-  <body>
-    {% comment %} start {% endcomment %}
-    <p>Hello World</p>
+  <body class="signInBody">
+    <div class="user_card_login">
+      <div class="title-login">
+        <img src="{% static 'bcca.png' %}" class="bcn_img2" />
+        <h1 class="sign_in_title">SIGN IN</h1>
+      </div>
+      <div class="form_container">
+        <form method="POST" action="">
+          {% csrf_token %}
+          <div class="input-group">
+            <p class="signInText">Username</p>
+            <p></p>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username..."
+              class="form-control"
+            />
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+            <p class="signInText">Password</p>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password..."
+              class="form-control"
+            />
+            <p>
+              No Account?
+              <a href="{% url 'signup' %}" class="register_btn">Sign Up</a>
+            </p>
+          </div>
+
+          <div class="login_container">
+            <p class="login_btn">Login</p>
+          </div>
+        </form>
+      </div>
+
+      {% for message in messages %}
+      <p id="messages">{{message}}</p>
+      {% endfor %}
+    </div>
   </body>
 </html>

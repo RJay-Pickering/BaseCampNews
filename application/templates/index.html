@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
+    <title>BCN | Base Camp News</title>
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div class="margin_in_nav">
+        <img src="{% static 'bcca.png' %}" class="bcn_img" />
+        <p>hank hill</p>
+        <p>bobby</p>
+        <p>REdman</p>
+        <input type="text" />
+        <button>
+          <img src="{% static 'magnifying.png' %}" class="bcn_img" />
+        </button>
+        <a href="">sign-in</a>
+      </div>
+    </nav>
+  </body>
+  <script src="{% static 'main.js' %}"></script>
+</html>

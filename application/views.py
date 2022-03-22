@@ -5,3 +5,7 @@ from django.shortcuts import render, redirect
 def test_page(request):
     
     return render(request, "index.html")
+
+def sign_in(request):
+
+    return render(request, 'sign-in.html')

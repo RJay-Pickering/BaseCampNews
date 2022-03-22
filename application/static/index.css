@@ -29,3 +29,34 @@ html {
 .column {
   flex: 33.3%;
 }
+
+.button-search {
+  background-color: darkturquoise;
+  color: darkturquoise;
+  border-radius: 0.4em;
+  margin-left: -20px;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.4em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0.4em;
+  height: 44px;
+  margin-top: 3px;
+}
+
+.search_bar {
+  width: 500px;
+  margin-left: 75px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: 38px;
+  margin-top: 3px;
+}
+
+.search_img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

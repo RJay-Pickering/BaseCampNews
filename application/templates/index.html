@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,16 +14,14 @@
     <nav class="nav_bar">
       <div class="margin_in_nav">
         <img src="{% static 'bcca.png' %}" class="bcn_img" />
-        <p>hank hill</p>
-        <p>bobby</p>
-        <p>REdman</p>
-        <input type="text" />
-        <button>
-          <img src="{% static 'magnifying.png' %}" class="bcn_img" />
+        <p>BSN | Base Camp News</p>
+        <input type="text" class="search_bar" />
+        <button class="button-search" id="b">
+          <img src="{% static 'magnifying.png' %}" class="search_img" />
         </button>
-        <a href="">sign-in</a>
+        <a href="{% url 'signin' %}">sign-in</a>
       </div>
     </nav>
+    <script src="{% static 'main.js' %}" defer></script>
   </body>
-  <script src="{% static 'main.js' %}"></script>
 </html>

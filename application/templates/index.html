@@ -19,10 +19,17 @@
         <button class="button-search" id="b">
           <img src="{% static 'magnifying.png' %}" class="search_img" />
         </button>
-        <a href="{% url 'signin' %}">sign-in</a>
-        <a href="{% url 'signup' %}">sign-up</a>
+        <div class="login_and_register">
+          <a href="{% url 'signin' %}" class="login">Login</a>
+          <a href="{% url 'signup' %}" class="register">Register</a>
+        </div>
+        <p>USERNAME: {{request.user}}</p>
+        <a href="{% url 'logout' %}">Logout</a>
       </div>
     </nav>
+
+    <div class="news" id="news"></div>
+
     <script src="{% static 'main.js' %}" defer></script>
   </body>
 </html>

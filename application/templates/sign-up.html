@@ -11,11 +11,10 @@
   </head>
   <body>
     <div class="user_card_login">
-        <div class="title-login">
-          <div class="bcn_img_box">
-            <h1 class="sign_in_title"><img src="{% static 'bcca.png' %}" class="bcn_img2">SIGN UP</h1>
-          </div>
-        </div>
+      <div class="title-login">
+        <img src="{% static 'bcca.png' %}" class="bcn_img2" />
+        <h1 class="sign_in_title">SIGN IN</h1>
+      </div>
         <div class="">
         <div class="form_container">
             <form method="POST" action="">
@@ -37,13 +36,15 @@
                   <p>{{form.password2.label}}</p>
                   {{form.password2}}
                   <p></p>
-                  <p>Already Have An Account? <a href="{% url 'signin' %}" class="register_btn">Sign In</a></p>
                 </div>
+                <p class="signup_btn">Already Have An Account? <a href="{% url 'signin' %}" class="register_btn">Sign In</a></p>
                 <div class="login_container">
                   <input class="login_btn" type="submit" value="Register" />
                 </div>
               </form>
         </div>
+
+        {{form.errors}}
   
         {% for message in messages %}
         <p id="messages">{{message}}</p>

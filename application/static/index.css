@@ -9,6 +9,8 @@ body {
   border: black 2px solid;
   width: 1440px;
   overflow: hidden;
+  z-index: 1;
+  background-color: white;
 }
 
 .margin_in_nav {

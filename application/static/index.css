@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  align-items: center;
 }
 
 html {
@@ -52,8 +53,8 @@ html {
   border-top-right-radius: 0.4em;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0.4em;
-  height: 44px;
-  margin-top: 3px;
+  height: fit-content;
+  padding-bottom: 2px;
 }
 
 .search_bar {
@@ -63,8 +64,11 @@ html {
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
   outline: none;
-  height: 38px;
-  margin-top: 3px;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 14.25px;
 }
 
 .search_img {
@@ -158,13 +162,15 @@ html {
   background-color: white;
   border: 1px solid black;
   border-radius: 25px;
-  height: 32em;
+  height: 10em;
   width: fit-content;
-  box-shadow: 10px 10px 5px black;
   transform: scale(0.8, 0.8);
+  padding: 50px;
+  /* block-size: 10em; */
 }
 .card:hover {
-  box-shadow: 10px 10px 5px #66fcf1;
+  box-shadow: 10px 10px 5px gray;
+  text-decoration: underline;
 }
 
 .aLink {
@@ -183,7 +189,7 @@ html {
 .login_and_register {
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: 50px;
   gap: 20px;
   text-decoration: none;
@@ -231,4 +237,11 @@ html {
 
 .signup_btn {
   margin-left: 50px;
+}
+
+.news {
+  inline-size: 425px;
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
 }

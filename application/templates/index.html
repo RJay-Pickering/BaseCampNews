@@ -14,11 +14,20 @@
     <nav class="nav_bar">
       <div class="margin_in_nav">
         <img src="{% static 'bcca.png' %}" class="bcn_img" />
-        <p>BSN | Base Camp News</p>
-        <input type="text" class="search_bar" />
-        <button class="button-search" id="b">
-          <img src="{% static 'magnifying.png' %}" class="search_img" />
-        </button>
+        <p>BCN | Base Camp News</p>
+        <form
+          action="https://www.google.com/search?google"
+          method="POST"
+          id="srchfrm"
+          target="_blank"
+          data-form-code="PRUSEN"
+        >
+          <input type="search" class="search_bar" />
+          <button class="button-search">
+            <img src="{% static 'magnifying.png' %}" class="search_img" />
+          </button>
+        </form>
+
         <div class="login_and_register">
           <a href="{% url 'signin' %}" class="login">Login</a>
           <a href="{% url 'signup' %}" class="register">Register</a>

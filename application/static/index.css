@@ -7,6 +7,9 @@ body {
   position: sticky;
   top: 0;
   border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   width: 1440px;
   overflow: hidden;
   z-index: 1;
@@ -55,6 +58,7 @@ html {
   border-bottom-right-radius: 0.4em;
   height: fit-content;
   padding-bottom: 2px;
+  width: 60px;
 }
 
 .search_bar {
@@ -162,7 +166,7 @@ html {
   background-color: white;
   border: 1px solid black;
   border-radius: 25px;
-  height: 10em;
+  height: fit-content;
   width: fit-content;
   transform: scale(0.8, 0.8);
   padding: 50px;
@@ -240,8 +244,28 @@ html {
 }
 
 .news {
-  inline-size: 425px;
   overflow: hidden;
   padding: 0px;
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  inline-size: 500px;
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
+}
+
+.apiImage {
+  height: 10%;
+  width: 10%;
+}
+
+.news_category {
+  text-align: center;
+}
+
+.all_news {
 }

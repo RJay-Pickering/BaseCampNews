@@ -39,4 +39,4 @@ def sign_up(request):
 
 def logoutUser(request):
 	logout(request)
-	return redirect('signin')
+	return redirect('home')

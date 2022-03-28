@@ -15,30 +15,47 @@
       <div class="margin_in_nav">
         <img src="{% static 'bcca.png' %}" class="bcn_img" />
         <p>BCN | Base Camp News</p>
-        <form
-          action="https://www.google.com/search?google"
-          method="POST"
-          id="srchfrm"
-          target="_blank"
-          data-form-code="PRUSEN"
-        >
-          <input type="search" class="search_bar" />
+        <form action="https://google.com/search" target="_blank">
+          <input type="text" class="search_bar" name="q" />
           <button class="button-search">
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
         </form>
-
+        {% if request.user.is_authenticated %}
+        <p>Hello, {{request.user}}</p>
+        <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
         <div class="login_and_register">
           <a href="{% url 'signin' %}" class="login">Login</a>
           <a href="{% url 'signup' %}" class="register">Register</a>
         </div>
-        <p>USERNAME: {{request.user}}</p>
-        <a href="{% url 'logout' %}">Logout</a>
+        {% endif %}
       </div>
     </nav>
 
-    <div class="news" id="news"></div>
+    <div class="news" id="news">
+      <div class="column" id="one" style="border-bottom: 5px solid black">
+        <h3 class="news_category">Stocks</h3>
+      </div>
 
+      <div
+        class="column"
+        id="two"
+        style="border-left: 5px solid black; border-bottom: 5px solid black"
+      >
+        <h3 class="news_category">Movies</h3>
+      </div>
+      <div
+        class="column"
+        id="three"
+        style="border-left: 5px solid black; border-bottom: 5px solid black"
+      >
+        <h3 class="news_category">India</h3>
+      </div>
+    </div>
+    <section class="all_news">
+      <p>Spot for all news</p>
+    </section>
     <script src="{% static 'main.js' %}" defer></script>
   </body>
 </html>

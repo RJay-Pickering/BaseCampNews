@@ -63,12 +63,23 @@ fetch(
 //       aLink.target = "_blank";
 //       const article = document.createElement("div");
 //       const desc = document.createElement("p");
+//       const image = document.createElement("img");
+//       if (a.image_url == null) {
+//         image.src =
+//           "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+//       } else {
+//         image.src = a.image_url;
+//       }
+//       image.classList.add("apiImage");
+//       image.style.width = "350px";
+//       image.style.height = "auto";
 //       desc.innerText = a.description;
 //       desc.style.fontSize = "14px";
 //       const date = document.createElement("p");
 //       date.innerText = `Published: ${a.pubDate}`;
 //       article.classList.add("card");
 //       article.innerHTML = a.title;
+//       article.appendChild(image);
 //       article.appendChild(desc);
 //       article.appendChild(date);
 //       aLink.classList.add("aLink");
@@ -94,6 +105,18 @@ fetch(
 //       aLink.href = `${a.link}`;
 //       aLink.target = "_blank";
 //       const article = document.createElement("div");
+//       const image = document.createElement("img");
+//       if (a.image_url == null) {
+//         image.src =
+//           "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+//       } else {
+//         image.src = a.image_url;
+//       }
+//       image.classList.add("apiImage");
+//       image.style.width = "350px";
+//       image.style.height = "auto";
+//       desc.innerText = a.description;
+//       desc.style.fontSize = "14px";
 //       const desc = document.createElement("p");
 //       desc.innerText = a.description;
 //       desc.style.fontSize = "14px";
@@ -101,6 +124,7 @@ fetch(
 //       date.innerText = `Published: ${a.pubDate}`;
 //       article.classList.add("card");
 //       article.innerHTML = a.title;
+//       article.appendChild(image);
 //       article.appendChild(desc);
 //       article.appendChild(date);
 //       aLink.classList.add("aLink");
@@ -109,4 +133,4 @@ fetch(
 //       three.classList.add("column");
 //       three.appendChild(aLink);
 //     });
-//   });
+//  });

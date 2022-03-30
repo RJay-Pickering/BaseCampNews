@@ -4,7 +4,7 @@ var news = document.getElementById("news");
 
 // first column
 fetch(
-  "https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=News"
+  "https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=Naruto"
 )
   .then((response) => {
     return response.json();
@@ -12,7 +12,6 @@ fetch(
   .then((data) => {
     console.log(data.results);
     Array.from(data.results).forEach(function (a) {
-      console.log(a);
       const aLink = document.createElement("a");
       aLink.href = `${a.link}`;
       aLink.target = "_blank";
@@ -26,7 +25,7 @@ fetch(
       const image = document.createElement("img");
       if (a.image_url == null) {
         image.src =
-          "https://pbs.twimg.com/media/EEXmrNUXsAAqO2s?format=jpg&name=small";
+          "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
       } else {
         image.src = a.image_url;
       }

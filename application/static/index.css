@@ -63,7 +63,7 @@ html {
 
 .search_bar {
   width: 500px;
-  margin-left: 75px;
+  margin-left: 120px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -267,5 +267,75 @@ html {
   text-align: center;
 }
 
-.all_news {
+/* .all_news {
+} */
+
+.entertainment_link:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+.covid_link:hover {
+  color: #ec3a04;
+  text-decoration: underline;
+}
+
+.lifestyle_link:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+.stocks_link:hover {
+  color: rgb(34, 224, 34);
+  text-decoration: underline;
+}
+
+.health_link:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.food_link:hover {
+  color: #01a7e4;
+  text-decoration: underline;
+}
+
+.drink_link:hover {
+  color: mediumaquamarine;
+  text-decoration: underline;
+}
+
+.travel_link:hover {
+  color: rgb(219, 219, 4);
+  text-decoration: underline;
+}
+
+.ForYouNav {
+  position: sticky;
+  top: 4.7vw;
+  border: black 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: white;
+  font-stretch: expanded;
+}
+
+.ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 1.37vw;
+  align-content: center;
+}
+
+.ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.UserLocation {
+  cursor: default;
 }

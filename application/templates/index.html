@@ -30,49 +30,30 @@
           <a href="{% url 'signup' %}" class="register">Register</a>
         </div>
         {% endif %}
+        <p id="city"></p>
+        <p id="temp"></p>
       </div>
     </nav>
 
     <div class="ForYouNav">
-      <a href="" class="UserLocation">News</a>
-      <a href="" class="covid_link">Covid-19</a>
-      <a href="">Weather</a>
-      <a href="">Trending</a>
-      <a href="" class="entertainment_link">Entertainment</a>
-      <a href="" class="lifestyle_link">Lifestyle</a>
-      <a href="">Shopping</a>
-      <a href="" class="health_link">Health</a>
-      <a href="" class="food_link">Food</a>
-      <a href="" class="drink_link">Drink</a>
-      <a href="" class="travel_link">Travel</a>
-      <a href="" class="stocks_link">Stocks</a>
-      <a href="">Kids</a>
+      <a href="{% url 'covid' %}" class="covid_link">Covid-19</a>
+      <a href="{% url 'weather' %}">Weather</a>
+      <a href="{% url 'trending' %}">Trending</a>
+      <a href="{% url 'entertain' %}" class="entertainment_link"
+        >Entertainment</a
+      >
+      <a href="{% url 'livestyle' %}" class="lifestyle_link">Lifestyle</a>
+      <a href="{% url 'shopping' %}">Shopping</a>
+      <a href="{% url 'health' %}" class="health_link">Health</a>
+      <a href="{% url 'food' %}" class="food_link">Food</a>
+      <a href="{% url 'drink' %}" class="drink_link">Drink</a>
+      <a href="{% url 'travel' %}" class="travel_link">Travel</a>
+      <a href="{% url 'stocks' %}" class="stocks_link">Stocks</a>
     </div>
 
     <div class="news" id="news">
-      <div class="column" id="one" style="border-bottom: 5px solid black">
-        <h3 class="news_category">Stocks</h3>
-      </div>
-
-      <div
-        class="column"
-        id="two"
-        style="border-left: 5px solid black; border-bottom: 5px solid black"
-      >
-        <h3 class="news_category">Movies</h3>
-      </div>
-      <div
-        class="column"
-        id="three"
-        style="border-left: 5px solid black; border-bottom: 5px solid black"
-      >
-        <h3 class="news_category">India</h3>
-      </div>
+      <div class="column" id="one"></div>
     </div>
-    <section class="all_news">
-      <p>Spot for all news</p>
-      65
-    </section>
     <script src="{% static 'main.js' %}" defer></script>
   </body>
 </html>

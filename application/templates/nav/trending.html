@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
+    <title>Trending</title>
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div class="margin_in_nav">
+        <img src="{% static 'bcca.png' %}" class="bcn_img" />
+        <p>BCN | Trending</p>
+        <form action="https://google.com/search" target="_blank">
+          <input type="text" class="search_bar" name="q" />
+          <button class="button-search">
+            <img src="{% static 'magnifying.png' %}" class="search_img" />
+          </button>
+        </form>
+        {% if request.user.is_authenticated %}
+        <p>Hello, {{request.user}}</p>
+        <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+        <div class="login_and_register">
+          <a href="{% url 'signin' %}" class="login">Login</a>
+          <a href="{% url 'signup' %}" class="register">Register</a>
+        </div>
+        {% endif %}
+      </div>
+    </nav>
+
+    <div class="ForYouNav">
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'covid' %}" class="covid_link">Covid-19</a>
+      <a href="{% url 'weather' %}">Weather</a>
+      <a href="{% url 'entertain' %}" class="entertainment_link"
+        >Entertainment</a
+      >
+      <a href="{% url 'livestyle' %}" class="lifestyle_link">Lifestyle</a>
+      <a href="{% url 'shopping' %}">Shopping</a>
+      <a href="{% url 'health' %}" class="health_link">Health</a>
+      <a href="{% url 'food' %}" class="food_link">Food</a>
+      <a href="{% url 'drink' %}" class="drink_link">Drink</a>
+      <a href="{% url 'travel' %}" class="travel_link">Travel</a>
+      <a href="{% url 'stocks' %}" class="stocks_link">Stocks</a>
+    </div>
+    <div class="news" id="news">
+      <div class="column" id="one" style="border-bottom: 5px solid black">
+        <h3 id="head">Trending</h3>
+      </div>
+    </div>
+    <script src="{% static 'nav.js' %}" defer></script>
+  </body>
+</html>

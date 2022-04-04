@@ -32,7 +32,6 @@ urlpatterns = [
     path('entertainment/', navEntertain, name="entertain"),
     path('food/', navFood, name="food"),
     path('health/', navHealth, name="health"),
-    path('kids/', navKids, name="kids"),
     path('livestyle/', navLivestyle, name="livestyle"),
     path('shopping/', navShopping, name="shopping"),
     path('stocks/', navStocks, name="stocks"),

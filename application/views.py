@@ -40,3 +40,36 @@ def sign_up(request):
 def logoutUser(request):
 	logout(request)
 	return redirect('home')
+
+def navCovid(request):
+    return render(request, 'nav/covid.html')
+
+def navDrink(request):
+    return render(request, 'nav/drink.html')
+
+def navEntertain(request):
+    return render(request, 'nav/entertainment.html')
+
+def navFood(request):
+    return render(request, 'nav/food.html')
+
+def navHealth(request):
+    return render(request, 'nav/health.html')
+
+def navLivestyle(request):
+    return render(request, 'nav/livestyle.html')
+
+def navShopping(request):
+    return render(request, 'nav/shopping.html')
+
+def navStocks(request):
+    return render(request, 'nav/stocks.html')
+
+def navTravel(request):
+    return render(request, 'nav/travel.html')
+
+def navTrending(request):
+    return render(request, 'nav/trending.html')
+
+def navWeather(request):
+    return render(request, 'nav/weather.html')

@@ -43,3 +43,26 @@ fetch(
       console.log(article);
     });
   });
+
+// const fore = document.getElementById("weather").innerText;
+navigator.geolocation.getCurrentPosition(showPosition);
+function showPosition(position) {
+  console.log(position);
+  fetch(
+    `https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      data.daily.forEach((value, index) => {
+        if (index > 0) {
+          var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
+            weekday: "long",
+          });
+          console.log(dayname);
+        }
+      });
+    });
+}

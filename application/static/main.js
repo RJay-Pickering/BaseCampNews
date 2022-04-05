@@ -5,7 +5,24 @@ var news = document.getElementById("news");
 navigator.geolocation.getCurrentPosition(showPosition);
 
 function showPosition(position) {
-  console.log(position.coords.latitude, position.coords.longitude);
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
+    // "https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5"
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      var city = document.getElementById("city");
+      var temp = document.getElementById("temp");
+      // var humidity = document.getElementById("humid");
+      // var windSpeed = document.getElementById("windSpeed");
+      city.innerText = `City: ${data.name}`;
+      temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
+      // humidity.innerText = `Humidity: \n${data.main.humidity}%`;
+      // windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`;
+    });
 }
 
 // first column
@@ -53,23 +70,24 @@ fetch(
     });
   });
 
-fetch(
-  "https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5"
-)
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-    var city = document.getElementById("city");
-    var temp = document.getElementById("temp");
-    // var humidity = document.getElementById("humid");
-    // var windSpeed = document.getElementById("windSpeed");
-    city.innerText = `City: ${data.name}`;
-    temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
-    // humidity.innerText = `Humidity: \n${data.main.humidity}%`;
-    // windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`;
-  });
+// fetch(
+//   ` https://api.openweathermap.org/data/2.5/weather?lat={}&lon={lon}&appid={7478d475030acf9b38bb829cba45b7b5}`
+//   // "https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5"
+// )
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//     var city = document.getElementById("city");
+//     var temp = document.getElementById("temp");
+//     // var humidity = document.getElementById("humid");
+//     // var windSpeed = document.getElementById("windSpeed");
+//     city.innerText = `City: ${data.name}`;
+//     temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
+//     // humidity.innerText = `Humidity: \n${data.main.humidity}%`;
+//     // windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`;
+//   });
 
 // second column
 // fetch(

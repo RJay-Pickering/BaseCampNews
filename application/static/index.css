@@ -63,7 +63,7 @@ html {
 
 .search_bar {
   width: 500px;
-  margin-left: 120px;
+  margin-left: 20px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -167,8 +167,8 @@ html {
   border: 1px solid black;
   border-radius: 25px;
   height: fit-content;
-  width: fit-content;
-  transform: scale(0.8, 0.8);
+  width: 35%;
+  margin: 15px;
   padding: 50px;
   /* block-size: 10em; */
 }
@@ -249,6 +249,8 @@ html {
   font-size: 20px;
   display: flex;
   flex-direction: row;
+  height: 100%;
+  width: auto;
 }
 
 .column {
@@ -256,6 +258,8 @@ html {
   overflow: hidden;
   padding: 0px;
   font-size: 20px;
+  height: 100%;
+  width: auto;
 }
 
 .apiImage {
@@ -338,4 +342,106 @@ html {
 
 .UserLocation {
   cursor: default;
+}
+
+.covid_background {
+  background-color: #212121;
+  padding: 0;
+  margin: 0;
+}
+
+.covid_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+}
+
+.covid_login {
+  color: white;
+  text-decoration: none;
+}
+
+.covid_register {
+  color: white;
+  text-decoration: none;
+}
+
+.covid_register:active {
+  color: white;
+}
+
+.covid_login:active {
+  color: white;
+}
+
+.covid_register:link {
+  color: white;
+}
+
+.covid_login:link {
+  color: white;
+}
+
+.covid_register:visited {
+  color: white;
+}
+
+.covid_login:visited {
+  color: white;
+}
+
+.covid_register:hover {
+  color: #01a7e4;
+}
+
+.covid_login:hover {
+  color: #01a7e4;
+}
+
+.covid_search_bar {
+  width: 500px;
+  margin-left: 220px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 14.25px;
+}
+
+.covid_ForYouNav {
+  position: sticky;
+  top: 4.7vw;
+  border: black 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+}
+
+.covid_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+}
+
+.covid_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.covid_title {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
 }

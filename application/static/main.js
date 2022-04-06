@@ -27,7 +27,7 @@ function showPosition(position) {
 
 // first column
 fetch(
-  "https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=America"
+  "https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=America&language=en"
 )
   .then((response) => {
     return response.json();

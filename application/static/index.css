@@ -170,6 +170,7 @@ html {
   width: 35%;
   margin: 15px;
   padding: 50px;
+  margin-top: 200px;
   /* block-size: 10em; */
 }
 .card:hover {
@@ -253,6 +254,14 @@ html {
   width: auto;
 }
 
+.newsForecast {
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
+  height: 100%;
+  width: auto;
+}
+
 .column {
   inline-size: 500px;
   overflow: hidden;
@@ -260,6 +269,16 @@ html {
   font-size: 20px;
   height: 100%;
   width: auto;
+}
+
+.columnForecast {
+  inline-size: 500px;
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
+  display: inline;
+  height: 100%;
+  width: 100%;
 }
 
 .apiImage {
@@ -351,10 +370,10 @@ html {
 }
 
 .covid_nav_bar {
-  position: fixed;
   background-color: #3a3b3c;
   color: white;
   width: 1440px;
+  border: 2px solid black;
 }
 
 .covid_login {
@@ -414,8 +433,8 @@ html {
 }
 
 .covid_ForYouNav {
-  position: sticky;
-  top: 4.7vw;
+  position: fixed;
+  top: 4.75vw;
   border: black 1px solid;
   border-top: none;
   border-left: none;
@@ -426,6 +445,7 @@ html {
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
+  border: 1px solid black;
 }
 
 .covid_ForYouNav a {
@@ -441,7 +461,137 @@ html {
 }
 
 .covid_title {
+  margin-top: 30px;
+  text-align: left;
+  color: white;
+  border: 1px solid red;
+  background: red;
+  padding: 5px;
+  position: fixed;
+  width: 1440px;
+  padding-left: 100px;
+}
+
+.forecastDays {
+  font-size: 2vw;
+  height: 75px;
+  width: 200px;
+}
+
+.forecastCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5%;
+  border: black 1px solid;
+  color: white;
+  /* border-radius: 20px; */
+}
+
+.trend_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.trend_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+}
+
+.trend_login {
+  color: white;
+  text-decoration: none;
+}
+
+.trend_register {
+  color: white;
+  text-decoration: none;
+}
+
+.trend_register:active {
+  color: white;
+}
+
+.trend_login:active {
+  color: white;
+}
+
+.trend_register:link {
+  color: white;
+}
+
+.trend_login:link {
+  color: white;
+}
+
+.trend_register:visited {
+  color: white;
+}
+
+.trend_login:visited {
+  color: white;
+}
+
+.trend_register:hover {
+  color: #01a7e4;
+}
+
+.trend_login:hover {
+  color: #01a7e4;
+}
+
+.trend_search_bar {
+  width: 500px;
+  margin-left: 220px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 14.25px;
+}
+
+.trend_ForYouNav {
+  position: sticky;
+  top: 4.75vw;
+  border: black 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+}
+
+.trend_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+}
+
+.trend_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.trend_title {
   margin-top: 100px;
   text-align: center;
   color: white;
+}
+
+#weather {
+  display: flex;
+  justify-content: center;
 }

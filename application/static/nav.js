@@ -44,24 +44,48 @@ fetch(
     });
   });
 
-// const fore = document.getElementById("weather").innerText;
+const fore = document.getElementById("weather");
 navigator.geolocation.getCurrentPosition(showPosition);
 function showPosition(position) {
   console.log(position);
   fetch(
-    `https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
+    `https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&xclude=hourly,minutely,alerts&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
   )
     .then((response) => {
       return response.json();
     })
     .then((data) => {
       console.log(data);
+
       data.daily.forEach((value, index) => {
-        if (index > 0) {
+        if (index >= 0) {
           var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
             weekday: "long",
           });
           console.log(dayname);
+          const wcard = document.createElement("div");
+          Array.from(value.weather).forEach(function (x) {
+            if (x.main == "Rain") {
+              wcard.style.backgroundImage =
+                "url('https://s7d2.scene7.com/is/image/TWCNews/0622_n13_light_rain?wid=1250&hei=703&$wide-bg$')";
+            }
+          });
+          console.log(wcard.style.backgroundImage);
+          const temp = document.createElement("p");
+          temp.innerHTML = value.temp.day;
+          console.log(temp);
+          const weekly = document.createElement("p");
+          weekly.innerText = dayname;
+          weekly.classList.add("forecastDays");
+          wcard.classList.add("forecastCard");
+          wcard.appendChild(weekly);
+          wcard.appendChild(temp);
+          const forecast = document.getElementById("weather");
+          forecast.appendChild(wcard);
+          // fore.appendChild(wcard);
+          const daysOfWeek = document.querySelector(".forecastDays");
+          // daysOfWeek.style.display = "flex";
+          // daysOfWeek.style.flexDirection = "row";
         }
       });
     });

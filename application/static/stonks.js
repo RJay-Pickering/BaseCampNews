@@ -44,18 +44,25 @@ fetch(
     });
   });
 
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com",
-    "X-RapidAPI-Key": "3d557f3c89msha15812108eb0539p17694djsne49d9d9ca5a5",
-  },
-};
-
+const stonks = document.getElementById("stocks");
 fetch(
-  "https://twelve-data1.p.rapidapi.com/stocks?exchange=NASDAQ&format=json",
-  options
+  "http://api.marketstack.com/v1/eod?access_key=f56d05b70cf74f4dd2d61d525cbe567e&symbols=AAPL,AMZN,JPM,TSLA,DOW&limit=4"
 )
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((err) => console.error(err));
+  .then((response) => {
+    return response.json();
+  })
+  .then((d) => {
+    console.log(d);
+    d.data.forEach(function (s) {
+      const stock = document.createElement("div");
+      const price = document.createElement("p");
+      price.innerHTML = s.adj_close;
+      const symbol = document.createElement("p");
+      symbol.innerText = s.symbol;
+      symbol.classList.add("forecastDays");
+      stock.classList.add("forecastCard");
+      stock.appendChild(symbol);
+      stock.appendChild(price);
+      stonks.appendChild(stock);
+    });
+  });

@@ -167,7 +167,7 @@ html {
   border: 1px solid black;
   border-radius: 25px;
   height: fit-content;
-  width: 35%;
+  width: fit-content;
   margin: 15px;
   padding: 50px;
   margin-top: 200px;
@@ -249,7 +249,6 @@ html {
   padding: 0px;
   font-size: 20px;
   display: flex;
-  flex-direction: row;
   height: 100%;
   width: auto;
 }

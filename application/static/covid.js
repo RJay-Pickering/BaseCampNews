@@ -44,16 +44,6 @@ fetch(
     });
   });
 
-fetch("https://api.covidtracking.com/v1/us/current.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    Array.from(data).forEach(function (d) {
-      console.log(d);
-    });
-  });
-
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -71,3 +61,17 @@ window.onclick = function (event) {
     }
   }
 };
+
+var today = new Date();
+var time =
+  today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+console.log(time);
+fetch(
+  `https://webhooks.mongodb-stitch.com/api/client/v2.0/app/covid-19-qppza/service/REST-API/incoming_webhook/us_only?&hide_fields=_id,date,country,combined_name,fips,uid`
+)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });

@@ -600,6 +600,7 @@ html {
   background-color: #81d2ef;
   text-shadow: 1px 1px black;
   padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #weather {
@@ -1518,11 +1519,11 @@ html {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
+  background-color: greenyellow;
+  width: 50vw;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  overflow: scroll;
 }
 
 .dropdown-content a {
@@ -1538,4 +1539,71 @@ html {
 
 .show {
   display: block;
+}
+
+.lightmode_button {
+  border: 1px solid white;
+  border-radius: 0.9em;
+  padding: 5px;
+  background-color: white;
+  width: 125px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lightmode_button:hover {
+  text-decoration: underline;
+}
+
+.light_ForYouNav {
+  position: sticky;
+  top: 4.7vw;
+  border: black 1px solid;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: white;
+  font-stretch: expanded;
+  padding: 5px;
+}
+
+.light_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 1.94vw;
+  align-content: center;
+}
+
+.light_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.light_nav_bar {
+  position: fixed;
+  background-color: white;
+  color: black;
+  width: 1440px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 2px;
+}
+
+.light_trend_title {
+  font-family: Helvetica;
+  margin-top: 65px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+  font-size: 20px;
+  font-style: bold;
+  font-stretch: ultra-expanded;
 }

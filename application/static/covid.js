@@ -1,7 +1,5 @@
-const query = document.getElementById("head").innerText;
-
 fetch(
-  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${query}`
+  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=covid`
 )
   .then((response) => {
     return response.json();
@@ -48,7 +46,6 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -62,16 +59,37 @@ window.onclick = function (event) {
   }
 };
 
-var today = new Date();
-var time =
-  today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-console.log(time);
-fetch(
-  `https://webhooks.mongodb-stitch.com/api/client/v2.0/app/covid-19-qppza/service/REST-API/incoming_webhook/us_only?&hide_fields=_id,date,country,combined_name,fips,uid`
-)
+// var today = new Date();
+// var date =
+//   today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+// console.log(date);
+const covidDropdown = document.getElementById("myDropdown");
+var counter = 0;
+fetch(`https://disease.sh/v3/covid-19/nyt/states/Mississippi?lastdays=30`)
   .then((response) => {
     return response.json();
   })
   .then((data) => {
     console.log(data);
+    console.log(
+      `For More Info Dev: https://disease.sh/docs/#/COVID-19%3A%20NYT/get_v3_covid_19_nyt_states__state_`
+    );
+    var newData = data.reverse();
+    Array.from(newData).forEach(function (res) {
+      if (counter === 0) {
+        counter++;
+        var StatesHead = document.createElement("h1");
+        StatesHead.innerText = res.state;
+        covidDropdown.appendChild(StatesHead);
+      }
+      var Cases = document.createElement("p");
+      Cases.innerText = `Total Cases: ${res.cases}`;
+      covidDropdown.appendChild(Cases);
+      var Deaths = document.createElement("p");
+      Deaths.innerText = `Total Deaths: ${res.deaths}`;
+      covidDropdown.appendChild(Deaths);
+      var dates = document.createElement("p");
+      dates.innerText = `Date: ${res.date}`;
+      covidDropdown.appendChild(dates);
+    });
   });

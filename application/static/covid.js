@@ -1,5 +1,5 @@
 fetch(
-  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=covid`
+  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=covid&language=en`
 )
   .then((response) => {
     return response.json();
@@ -13,7 +13,7 @@ fetch(
       const article = document.createElement("div");
       const desc = document.createElement("p");
       desc.innerText = a.description;
-      desc.style.fontSize = "14px";
+      desc.style.fontSize = "10px";
       const date = document.createElement("p");
       date.innerText = `Published: ${a.pubDate}`;
       article.classList.add("card");
@@ -21,12 +21,14 @@ fetch(
       if (a.image_url == null) {
         image.src =
           "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+        image.style.width = "250px";
+        image.style.height = "200px";
       } else {
         image.src = a.image_url;
+        image.style.width = "250px";
+        image.style.height = "200px";
       }
       //   image.classList.add("apiImage");
-      image.style.width = "350px";
-      image.style.height = "auto";
       const title = document.createElement("p");
       title.innerText = a.title;
       article.appendChild(title);
@@ -79,17 +81,32 @@ fetch(`https://disease.sh/v3/covid-19/nyt/states/Mississippi?lastdays=30`)
       if (counter === 0) {
         counter++;
         var StatesHead = document.createElement("h1");
+        StatesHead.classList.add("statesHead");
         StatesHead.innerText = res.state;
         covidDropdown.appendChild(StatesHead);
       }
+      const casesBox = document.createElement("div");
+      casesBox.classList.add("casesBox");
       var Cases = document.createElement("p");
       Cases.innerText = `Total Cases: ${res.cases}`;
-      covidDropdown.appendChild(Cases);
+      casesBox.appendChild(Cases);
       var Deaths = document.createElement("p");
       Deaths.innerText = `Total Deaths: ${res.deaths}`;
-      covidDropdown.appendChild(Deaths);
+      casesBox.appendChild(Deaths);
       var dates = document.createElement("p");
       dates.innerText = `Date: ${res.date}`;
-      covidDropdown.appendChild(dates);
+      casesBox.appendChild(dates);
+      covidDropdown.appendChild(casesBox);
     });
   });
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "500px";
+  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("mySidebar").style.border = "1px solid black";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+}

@@ -1,8 +1,9 @@
 const query = document.getElementById("head").innerText;
 var sectionNews = 0;
 
-const trend_theme_button = document.querySelector(".lightmode_button");
-trend_theme_button.addEventListener("click", () => {
+const theme_button = document.querySelector(".lightmode_button");
+theme_button.addEventListener("click", () => {
+  //Trending Page
   const trend_background = document.querySelector(".trend_background");
   const trend_nav_bar = document.querySelector(".trend_nav_bar");
   const trend_ForYouNav = document.querySelector(".trend_ForYouNav");
@@ -13,13 +14,16 @@ trend_theme_button.addEventListener("click", () => {
   trend_background.style.backgroundColor = "white";
   trend_ForYouNav.style.backgroundColor = "white";
   trend_ForYouNav.style.color = "black";
-  trend_theme_button.style.border = "1px solid black";
-  trend_theme_button.style.borderRadius = "0.90em";
+  theme_button.style.border = "1px solid black";
+  theme_button.style.borderRadius = "0.90em";
   trend_login.style.color = "black";
   trend_register.style.color = "black";
-  trend_theme_button.innerHTML = "Dark Mode";
+  theme_button.innerHTML = "Dark Mode";
   trend_ForYouNav_link.style.color = "black";
-  console.log(trend_title.classList.toggle("light_trend_title"));
+  trend_login.classList.toggle("light_trend_login");
+  trend_login.classList.remove("trend_login");
+  trend_register.classList.toggle("light_trend_register");
+  trend_register.classList.remove("trend_register");
   trend_title.classList.toggle("light_trend_title");
   trend_title.classList.remove("trend_title");
   trend_nav_bar.classList.toggle("light_nav_bar");
@@ -28,12 +32,42 @@ trend_theme_button.addEventListener("click", () => {
   trend_ForYouNav.classList.remove("trend_ForYouNav");
   console.log("hello");
   const title_box = document.querySelector(".column");
-  const title = document.createElement("p");
+  const title = document.createElement("h3");
   title.innerHTML = "Trending";
   title_box.appendChild(title);
   title.classList.add("light_trend_title");
-});
 
+  //Entertainment Page
+  const entertainment_background = document.querySelector(
+    ".entertainment_background"
+  );
+  const entertainment_ForYouNav = document.querySelector(
+    ".entertainment_ForYouNav"
+  );
+  const entertainment_nav_bar = document.querySelector(
+    ".entertainment_nav_bar"
+  );
+
+  const entertainment_login = document.querySelector(".entertainment_login");
+
+  const entertainment_register = document.querySelector(
+    ".entertainment_register"
+  );
+
+  const entertainment_title = document.querySelector(".entertainment_title");
+
+  entertainment_background.style.backgroundColor = "white";
+  entertainment_ForYouNav.classList.toggle("light_entertainment_ForYouNav");
+  entertainment_ForYouNav.classList.remove("entertainment_ForYouNav");
+  entertainment_nav_bar.classList.toggle("light_entertainment_nav_bar");
+  entertainment_nav_bar.classList.remove("entertainment_nav_bar");
+  entertainment_login.classList.toggle("light_entertainment_login");
+  entertainment_login.classList.remove("entertainment_login");
+  entertainment_register.classList.toggle("light_entertainment_register");
+  entertainment_register.classList.remove("entertainment_register");
+  entertainment_title.classList.toggle("light_entertainment_title");
+  entertainment_title.classList.remove("entertainment_title");
+});
 fetch(
   `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${query}`
 )
@@ -59,12 +93,15 @@ fetch(
         if (a.image_url == null) {
           image.src =
             "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
         } else {
           image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
         }
-        //   image.classList.add("apiImage");
-        image.style.width = "350px";
-        image.style.height = "auto";
+        // image.classList.add("apiImage");
+
         const title = document.createElement("p");
         title.innerText = a.title;
         article.appendChild(title);
@@ -96,12 +133,15 @@ fetch(
         if (a.image_url == null) {
           image.src =
             "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
         } else {
           image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
         }
         //   image.classList.add("apiImage");
-        image.style.width = "350px";
-        image.style.height = "auto";
+
         const title = document.createElement("p");
         title.innerText = a.title;
         article.appendChild(title);
@@ -125,7 +165,7 @@ fetch(
         const article = document.createElement("div");
         const desc = document.createElement("p");
         desc.innerText = a.description;
-        desc.style.fontSize = "14px";
+        desc.style.fontSize = "10px";
         const date = document.createElement("p");
         date.innerText = `Published: ${a.pubDate}`;
         article.classList.add("card");
@@ -133,12 +173,15 @@ fetch(
         if (a.image_url == null) {
           image.src =
             "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
         } else {
           image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
         }
         //   image.classList.add("apiImage");
-        image.style.width = "350px";
-        image.style.height = "auto";
+
         const title = document.createElement("p");
         title.innerText = a.title;
         article.appendChild(title);
@@ -170,12 +213,15 @@ fetch(
         if (a.image_url == null) {
           image.src =
             "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
         } else {
           image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
         }
         //   image.classList.add("apiImage");
-        image.style.width = "350px";
-        image.style.height = "auto";
+
         const title = document.createElement("p");
         title.innerText = a.title;
         article.appendChild(title);
@@ -194,3 +240,15 @@ fetch(
       }
     });
   });
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "500px";
+  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("mySidebar").style.border = "1px solid black";
+  document.getElementById("mySidebar").style.zIndex = "10";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+}

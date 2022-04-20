@@ -37,5 +37,6 @@ urlpatterns = [
     path('stocks/', navStocks, name="stocks"),
     path('travel/', navTravel, name="travel"),
     path('trending/', navTrending, name="trending"),
-    path('weather/', navWeather, name="weather")
+    path('weather/', navWeather, name="weather"),
+    path('setting/', settingStyle, name="settings")
 ]

@@ -20,17 +20,24 @@
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
         </form>
-        {% if request.user.is_authenticated %}
-        <p>Hello, {{request.user}}</p>
-        <a href="{% url 'logout' %}">Logout</a>
-        {% else %}
-        <div class="login_and_register">
-          <a href="{% url 'signin' %}" class="entertainment_login">Login</a>
-          <a href="{% url 'signup' %}" class="entertainment_register"
-            >Register</a
+        <p id="city"></p>
+        <p id="temp"></p>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
           >
+          {% if request.user.is_authenticated %}
+          <p>Hello, {{request.user.username}}</p>
+          <a href="{% url 'logout' %}">Logout</a>
+          <a href="{% url 'settings' %}">Settings</a>
+          {% else %}
+          <div class="login_and_register">
+            <a href="{% url 'signin' %}" class="login">Login</a>
+            <a href="{% url 'signup' %}" class="register">Register</a>
+          </div>
+          {% endif %}
         </div>
-        {% endif %}
+        <button class="openbtn" onclick="openNav()">☰</button>
       </div>
     </nav>
 
@@ -49,10 +56,15 @@
     </div>
 
     <div class="news" id="news">
-      <div class="column" id="one">
-        <h3 id="head" class="entertainment_title">Entertainment</h3>
+      <div class="flexbox">
+        <div class="column" id="one">
+          <h3 id="head" class="entertainment_title">Entertainment</h3>
+        </div>
       </div>
     </div>
+    <footer>
+      <p class="lightmode_button">Light Mode</p>
+    </footer>
     <script src="{% static 'nav.js' %}" defer></script>
   </body>
 </html>

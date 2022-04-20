@@ -83,58 +83,184 @@ function showPosition(position) {
     });
 }
 
-const query = document.getElementById("head").innerText;
-
+var sectionNews = 0;
 fetch(
-  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${query}%20US`
+  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=Weather&language=en`
 )
   .then((response) => {
+    console.log(response);
     return response.json();
   })
   .then((data) => {
     console.log(data.results);
     Array.from(data.results).forEach(function (a) {
-      const aLink = document.createElement("a");
-      aLink.href = `${a.link}`;
-      aLink.target = "_blank";
-      const article = document.createElement("div");
-      const desc = document.createElement("p");
-      desc.innerText = a.description;
-      desc.style.fontSize = "14px";
-      const date = document.createElement("p");
-      date.innerText = `Published: ${a.pubDate}`;
-      article.classList.add("card");
-      const image = document.createElement("img");
-      if (a.image_url == null) {
-        image.src =
-          "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+      if (sectionNews < 3) {
+        sectionNews++;
+        const aLink = document.createElement("a");
+        aLink.href = `${a.link}`;
+        aLink.target = "_blank";
+        const article = document.createElement("div");
+        const desc = document.createElement("p");
+        desc.innerText = a.description;
+        desc.style.fontSize = "10px";
+        const date = document.createElement("p");
+        date.innerText = `Published: ${a.pubDate}`;
+        article.classList.add("card");
+        const image = document.createElement("img");
+        if (a.image_url == null) {
+          image.src =
+            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
+        } else {
+          image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
+        }
+        //   image.classList.add("apiImage");
+        const title = document.createElement("p");
+        title.innerText = a.title;
+        article.appendChild(title);
+        article.appendChild(image);
+        article.appendChild(desc);
+        article.appendChild(date);
+        aLink.classList.add("aLink");
+        aLink.appendChild(article);
+        const sectionA = document.createElement("section");
+        sectionA.classList.add("flexbox");
+        sectionA.appendChild(aLink);
+        const one = document.getElementById("one");
+        one.classList.add("column");
+        one.appendChild(sectionA);
+        console.log(article);
+      } else if (sectionNews < 6) {
+        sectionNews++;
+        const aLink = document.createElement("a");
+        aLink.href = `${a.link}`;
+        aLink.target = "_blank";
+        const article = document.createElement("div");
+        const desc = document.createElement("p");
+        desc.innerText = a.description;
+        desc.style.fontSize = "14px";
+        const date = document.createElement("p");
+        date.innerText = `Published: ${a.pubDate}`;
+        article.classList.add("card");
+        const image = document.createElement("img");
+        if (a.image_url == null) {
+          image.src =
+            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
+        } else {
+          image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
+        }
+        //   image.classList.add("apiImage");
+        const title = document.createElement("p");
+        title.innerText = a.title;
+        article.appendChild(title);
+        article.appendChild(image);
+        article.appendChild(desc);
+        article.appendChild(date);
+        aLink.classList.add("aLink");
+        aLink.appendChild(article);
+        const sectionB = document.createElement("section");
+        sectionB.classList.add("flexbox");
+        sectionB.appendChild(aLink);
+        const one = document.getElementById("one");
+        one.classList.add("column");
+        one.appendChild(sectionB);
+        console.log(article);
+      } else if (sectionNews < 9) {
+        sectionNews++;
+        const aLink = document.createElement("a");
+        aLink.href = `${a.link}`;
+        aLink.target = "_blank";
+        const article = document.createElement("div");
+        const desc = document.createElement("p");
+        desc.innerText = a.description;
+        desc.style.fontSize = "14px";
+        const date = document.createElement("p");
+        date.innerText = `Published: ${a.pubDate}`;
+        article.classList.add("card");
+        const image = document.createElement("img");
+        if (a.image_url == null) {
+          image.src =
+            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
+        } else {
+          image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
+        }
+        //   image.classList.add("apiImage")
+        const title = document.createElement("p");
+        title.innerText = a.title;
+        article.appendChild(title);
+        article.appendChild(image);
+        article.appendChild(desc);
+        article.appendChild(date);
+        aLink.classList.add("aLink");
+        aLink.appendChild(article);
+        const sectionC = document.createElement("section");
+        sectionC.classList.add("flexbox");
+        sectionC.appendChild(aLink);
+        const one = document.getElementById("one");
+        one.classList.add("column");
+        one.appendChild(sectionC);
+        console.log(article);
       } else {
-        image.src = a.image_url;
+        sectionNews++;
+        const aLink = document.createElement("a");
+        aLink.href = `${a.link}`;
+        aLink.target = "_blank";
+        const article = document.createElement("div");
+        const desc = document.createElement("p");
+        desc.innerText = a.description;
+        desc.style.fontSize = "14px";
+        const date = document.createElement("p");
+        date.innerText = `Published: ${a.pubDate}`;
+        article.classList.add("card");
+        const image = document.createElement("img");
+        if (a.image_url == null) {
+          image.src =
+            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+          image.style.width = "250px";
+          image.style.height = "200px";
+        } else {
+          image.src = a.image_url;
+          image.style.width = "250px";
+          image.style.height = "200px";
+        }
+        //   image.classList.add("apiImage");
+        const title = document.createElement("p");
+        title.innerText = a.title;
+        article.appendChild(title);
+        article.appendChild(image);
+        article.appendChild(desc);
+        article.appendChild(date);
+        aLink.classList.add("aLink");
+        aLink.appendChild(article);
+        const sectionD = document.createElement("section");
+        sectionD.classList.add("flexbox");
+        sectionD.appendChild(aLink);
+        const one = document.getElementById("one");
+        one.classList.add("column");
+        one.appendChild(sectionD);
+        console.log(article);
       }
-      //   image.classList.add("apiImage");
-      image.style.width = "350px";
-      image.style.height = "auto";
-      const title = document.createElement("p");
-      title.innerText = a.title;
-      article.appendChild(title);
-      article.appendChild(image);
-      article.appendChild(desc);
-      article.appendChild(date);
-      aLink.classList.add("aLink");
-      aLink.appendChild(article);
-      const one = document.getElementById("one");
-      one.classList.add("column");
-      one.appendChild(aLink);
-      console.log(article);
     });
   });
 
-// fetch(
-//   "http://api.marketstack.com/v1/exchanges?access_key=f56d05b70cf74f4dd2d61d525cbe567e"
-// )
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log(data.results);
-//   });
+function openNav() {
+  document.getElementById("mySidebar").style.width = "500px";
+  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("mySidebar").style.border = "1px solid black";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+}

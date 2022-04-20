@@ -1,10 +1,14 @@
+.flexbox {
+  display: flex;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
 .nav_bar {
-  position: sticky;
+  position: fixed;
   top: 0;
   border: black 2px solid;
   border-top: none;
@@ -12,8 +16,9 @@ body {
   border-right: none;
   width: 1440px;
   overflow: hidden;
-  z-index: 1;
-  background-color: white;
+  z-index: 10;
+  background-color: #3a3b3c;
+  color: white;
 }
 
 .margin_in_nav {
@@ -40,10 +45,6 @@ html {
   padding: 0;
   margin-left: 35px;
   /* border: 2px solid black; */
-}
-
-.column {
-  flex: 33.3%;
 }
 
 .button-search {
@@ -161,28 +162,27 @@ html {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background-color: white;
   border: 1px solid black;
   border-radius: 25px;
-  height: fit-content;
-  width: fit-content;
+  height: 500px;
+  width: 300px;
   margin: 15px;
   padding: 50px;
   margin-top: 200px;
-  /* block-size: 10em; */
+  margin-left: 50px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1em;
+  overflow: hidden;
 }
 .card:hover {
-  box-shadow: 10px 10px 5px gray;
   text-decoration: underline;
 }
 
 .aLink {
   color: black;
   text-decoration: none;
-  height: fit-content;
-  width: fit-content;
 }
 
 .input-group {
@@ -193,7 +193,7 @@ html {
 
 .login_and_register {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 5px;
   margin-left: 50px;
   gap: 20px;
@@ -268,6 +268,7 @@ html {
   font-size: 20px;
   height: 100%;
   width: auto;
+  flex: 33.3%;
 }
 
 .columnForecast {
@@ -333,16 +334,15 @@ html {
 }
 
 .ForYouNav {
-  position: sticky;
+  position: fixed;
   top: 4.7vw;
   border: black 1px solid;
   border-top: none;
   border-left: none;
   border-right: none;
   width: 1440px;
-  overflow: hidden;
-  z-index: 1;
-  background-color: white;
+  /* overflow: hidden; */
+  background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
 }
@@ -350,7 +350,7 @@ html {
 .ForYouNav a {
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 1.94vw;
   align-content: center;
 }
@@ -375,6 +375,7 @@ html {
   width: 1440px;
   border: 2px solid black;
   position: fixed;
+  z-index: 1;
 }
 
 .covid_login {
@@ -434,15 +435,14 @@ html {
 }
 
 .covid_ForYouNav {
-  position: fixed;
+  position: relative;
   top: 4.75vw;
   border: black 1px solid;
   border-top: none;
   border-left: none;
   border-right: none;
   width: 1440px;
-  overflow: hidden;
-  z-index: 1;
+  /* overflow: hidden; */
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
@@ -462,13 +462,13 @@ html {
 }
 
 .covid_title {
-  margin-top: 100px;
+  margin-top: 65px;
   text-align: left;
   color: white;
   border: 1px solid red;
   background: red;
   padding: 5px;
-  position: fixed;
+  position: relative;
   width: 1440px;
   padding-left: 100px;
   text-shadow: 1px 1px black;
@@ -482,6 +482,7 @@ html {
 }
 
 .forecastCard {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -504,6 +505,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .trend_login {
@@ -571,7 +573,6 @@ html {
   border-right: none;
   width: 1440px;
   overflow: hidden;
-  z-index: 1;
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
@@ -613,9 +614,14 @@ html {
   justify-content: center;
 }
 
+.flexbox {
+  flex-wrap: wrap;
+}
+
 #one {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .entertainment_background {
@@ -630,6 +636,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .entertainment_login {
@@ -697,7 +704,6 @@ html {
   border-right: none;
   width: 1440px;
   overflow: hidden;
-  z-index: 1;
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
@@ -739,6 +745,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .lifestyle_login {
@@ -849,6 +856,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .shopping_login {
@@ -959,6 +967,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .health_login {
@@ -1069,6 +1078,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .food_login {
@@ -1136,7 +1146,6 @@ html {
   border-right: none;
   width: 1440px;
   overflow: hidden;
-  z-index: 1;
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
@@ -1179,6 +1188,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .drink_login {
@@ -1246,7 +1256,6 @@ html {
   border-right: none;
   width: 1440px;
   overflow: hidden;
-  z-index: 1;
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
@@ -1289,6 +1298,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .travel_login {
@@ -1356,7 +1366,6 @@ html {
   border-right: none;
   width: 1440px;
   overflow: hidden;
-  z-index: 1;
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
@@ -1399,6 +1408,7 @@ html {
   color: white;
   width: 1440px;
   border: 2px solid black;
+  z-index: 1;
 }
 
 .stocks_login {
@@ -1466,7 +1476,6 @@ html {
   border-right: none;
   width: 1440px;
   overflow: hidden;
-  z-index: 1;
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
@@ -1498,32 +1507,38 @@ html {
 }
 
 .dropbtn {
-  background-color: #3498db;
   color: white;
-  padding: 16px;
   font-size: 16px;
-  border: none;
+  padding: 3px;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  border-top: none;
   cursor: pointer;
+  background-color: red;
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #2980b9;
+  background-color: none;
 }
 
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
+  margin-left: 900px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: greenyellow;
-  width: 50vw;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  background-color: #242526;
+  width: 17vw;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   overflow: scroll;
+  font-size: 20px;
+  max-height: 500px;
+  margin-right: 500px;
 }
 
 .dropdown-content a {
@@ -1533,13 +1548,77 @@ html {
   display: block;
 }
 
-.dropdown a:hover {
+/* .dropdown a:hover {
   background-color: #ddd;
-}
+} */
 
 .show {
   display: block;
 }
+
+/* ///////////// */
+/* ///////////// */
+/* ///////////// */
+
+.sidebar {
+  display: flex;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: gray;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #3a3b3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: right;
+}
+
+/* ///////////// */
+/* ///////////// */
+/* ///////////// */
 
 .lightmode_button {
   border: 1px solid white;
@@ -1590,6 +1669,7 @@ html {
   border-left: none;
   border-right: none;
   margin-bottom: 2px;
+  z-index: 1;
 }
 
 .light_trend_title {
@@ -1606,4 +1686,146 @@ html {
   font-size: 20px;
   font-style: bold;
   font-stretch: ultra-expanded;
+}
+
+.light_trend_login {
+  color: black;
+  text-decoration: none;
+}
+
+.light_trend_login:hover {
+  color: #01a7e4;
+}
+
+.light_trend_register {
+  color: black;
+  text-decoration: none;
+}
+
+.light_trend_register:hover {
+  color: #01a7e4;
+}
+
+.light_entertainment_ForYouNav {
+  position: sticky;
+  top: 4.7vw;
+  border: black 1px solid;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: white;
+  font-stretch: expanded;
+  padding: 5px;
+}
+
+.light_entertainment_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 1.94vw;
+  align-content: center;
+}
+
+.light_entertainment_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.light_entertainment_nav_bar {
+  position: fixed;
+  background-color: white;
+  color: black;
+  width: 1440px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 2px;
+  z-index: 1;
+}
+
+.light_entertainment_title {
+  font-family: Helvetica;
+  margin-top: 65px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+  font-size: 20px;
+  font-style: bold;
+  font-stretch: ultra-expanded;
+}
+
+.light_entertainment_login {
+  color: black;
+  text-decoration: none;
+}
+
+.light_entertainment_login:hover {
+  color: #01a7e4;
+}
+
+.light_entertainment_register {
+  color: black;
+  text-decoration: none;
+}
+
+.light_entertainment_register:hover {
+  color: #01a7e4;
+}
+
+.casesBox {
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.statesHead {
+  text-align: center;
+}
+
+.weather_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+
+#wave {
+  position: relative;
+  height: 70px;
+  width: 600px;
+  background: #e0efe3;
+}
+#wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 340px;
+  height: 80px;
+  background-color: white;
+  right: -5px;
+  top: 40px;
+}
+#wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 300px;
+  height: 70px;
+  background-color: #e0efe3;
+  left: 0;
+  top: 27px;
 }

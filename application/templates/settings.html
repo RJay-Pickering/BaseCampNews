@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <h1>Base Camp News Settings</h1>
+    {% for message in messages %}
+    <p id="messages">{{message}}</p>
+    {% endfor %}
+    <h2>view info</h2>
+    <p>Username: {{request.user.username}}</p>
+    <p>Email: {{request.user.email}}</p>
+    <p>Date Joined: {{request.user.date_joined}}</p>
+
+    <form action="" method="POST">
+      {% csrf_token %}
+      <h2>change username</h2>
+      <div><input
+        type="text"
+        name="new_username"
+      />
+      <input type="submit" value="enter" name="username_change" />
+    </form>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h2>change email</h2>
+        <div><input
+          type="text"
+          name="new_email"
+        />
+        <input type="submit" value="enter" name="email_change" />
+    </form>
+
+    <form action="" method="POST">
+      {% csrf_token %}
+      <h2>change password</h2>
+      <p>Old Password</p>
+      <div><input
+        type="text"
+        name="old_password"
+      />
+      <p>New Password</p>
+      <div><input
+        type="text"
+        name="new_password"
+      />
+      <input type="submit" value="enter" name="password_change" />
+    </form>
+
+    {% comment %}
+    <p>change image</p>
+    <p>theme</p>
+    <p>intrests</p>
+    {% endcomment %}
+  </body>
+</html>

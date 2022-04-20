@@ -9,30 +9,39 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
     <title>Weather</title>
   </head>
-  <body>
-    <nav class="nav_bar">
+  <body class="trend_background">
+    <nav class="trend_nav_bar">
       <div class="margin_in_nav">
         <img src="{% static 'bcca.png' %}" class="bcn_img" />
         <p>BCN | Weather</p>
         <form action="https://google.com/search" target="_blank">
-          <input type="text" class="search_bar" name="q" />
+          <input type="text" class="trend_search_bar" name="q" />
           <button class="button-search">
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
         </form>
-        {% if request.user.is_authenticated %}
-        <p>Hello, {{request.user}}</p>
-        <a href="{% url 'logout' %}">Logout</a>
-        {% else %}
-        <div class="login_and_register">
-          <a href="{% url 'signin' %}" class="login">Login</a>
-          <a href="{% url 'signup' %}" class="register">Register</a>
+        <p id="city"></p>
+        <p id="temp"></p>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          {% if request.user.is_authenticated %}
+          <p>Hello, {{request.user.username}}</p>
+          <a href="{% url 'logout' %}">Logout</a>
+          <a href="{% url 'settings' %}">Settings</a>
+          {% else %}
+          <div class="login_and_register">
+            <a href="{% url 'signin' %}" class="login">Login</a>
+            <a href="{% url 'signup' %}" class="register">Register</a>
+          </div>
+          {% endif %}
         </div>
-        {% endif %}
+        <button class="openbtn" onclick="openNav()">☰</button>
       </div>
     </nav>
 
-    <div class="ForYouNav">
+    <div class="trend_ForYouNav">
       <a href="{% url 'home' %}">Home</a>
       <a href="{% url 'covid' %}" class="covid_link">Covid-19</a>
       <a href="{% url 'trending' %}">Trending</a>
@@ -47,14 +56,13 @@
       <a href="{% url 'travel' %}" class="travel_link">Travel</a>
       <a href="{% url 'stocks' %}" class="stocks_link">Stocks</a>
     </div>
+    <div class="weather_box"><h3 class="weather_title">Weather</h3></div>
 
     <div class="newsForecast" id="news">
       <div id="weather"></div>
     </div>
     <div class="news" id="news">
-      <div class="column" id="one" style="border-bottom: 5px solid black">
-        <h3 id="head">Weather</h3>
-      </div>
+      <div class="column" id="one" style="border-bottom: 5px solid black"></div>
     </div>
     <script src="{% static 'weather.js' %}" defer></script>
   </body>

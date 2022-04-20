@@ -20,15 +20,21 @@
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
         </form>
-        {% if request.user.is_authenticated %}
-        <p>Hello, {{request.user}}</p>
-        <a href="{% url 'logout' %}">Logout</a>
-        {% else %}
-        <div class="login_and_register">
-          <a href="{% url 'signin' %}" class="trend_login">Login</a>
-          <a href="{% url 'signup' %}" class="trend_register">Register</a>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          {% if request.user.is_authenticated %}
+          <p>Hello, {{request.user}}</p>
+          <a href="{% url 'logout' %}">Logout</a>
+          {% else %}
+          <div class="login_and_register">
+            <a href="{% url 'signin' %}" class="login">Login</a>
+            <a href="{% url 'signup' %}" class="register">Register</a>
+          </div>
+          {% endif %}
         </div>
-        {% endif %}
+        <button class="openbtn" onclick="openNav()">☰</button>
       </div>
     </nav>
 
@@ -52,9 +58,9 @@
         <h3 id="head" class="trend_title">Trending</h3>
       </div>
     </div>
-    <section>
+    <footer>
       <p class="lightmode_button">Light Mode</p>
-    </section>
+    </footer>
     <script src="{% static 'nav.js' %}" defer></script>
   </body>
 </html>

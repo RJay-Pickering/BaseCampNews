@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
     <title>BCN | Base Camp News</title>
   </head>
-  <body>
+  <body id="main" class="trend_background">
     <nav class="nav_bar">
       <div class="margin_in_nav">
         <img src="{% static 'bcca.png' %}" class="bcn_img" />
@@ -21,17 +21,24 @@
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
         </form>
-        {% if request.user.is_authenticated %}
-        <p>Hello, {{request.user}}</p>
-        <a href="{% url 'logout' %}">Logout</a>
-        {% else %}
-        <div class="login_and_register">
-          <a href="{% url 'signin' %}" class="login">Login</a>
-          <a href="{% url 'signup' %}" class="register">Register</a>
-        </div>
-        {% endif %}
         <p id="city"></p>
         <p id="temp"></p>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          {% if request.user.is_authenticated %}
+          <p>Hello, {{request.user.username}}</p>
+          <a href="{% url 'logout' %}">Logout</a>
+          <a href="{% url 'settings' %}">Settings</a>
+          {% else %}
+          <div class="login_and_register">
+            <a href="{% url 'signin' %}" class="login">Login</a>
+            <a href="{% url 'signup' %}" class="register">Register</a>
+          </div>
+          {% endif %}
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button>
       </div>
     </nav>
 
@@ -56,4 +63,5 @@
     </div>
     <script src="{% static 'main.js' %}" defer></script>
   </body>
+  <footer></footer>
 </html>

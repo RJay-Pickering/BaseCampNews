@@ -83,6 +83,18 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginRight = "0";
 }
+
+function openHelp() {
+  document.getElementById("helpSidebar").style.width = "500px";
+  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("helpSidebar").style.border = "1px solid black";
+  document.getElementById("helpSidebar").style.zIndex = "10";
+}
+
+function closeHelp() {
+  document.getElementById("helpSidebar").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+}
 // fetch(
 //   ` https://api.openweathermap.org/data/2.5/weather?lat={}&lon={lon}&appid={7478d475030acf9b38bb829cba45b7b5}`
 //   // "https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5"

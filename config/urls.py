@@ -38,5 +38,6 @@ urlpatterns = [
     path('travel/', navTravel, name="travel"),
     path('trending/', navTrending, name="trending"),
     path('weather/', navWeather, name="weather"),
-    path('setting/', settingStyle, name="settings")
+    path('setting/', settingStyle, name="settings"),
+    path('fyp/', foryou, name="foryou")
 ]

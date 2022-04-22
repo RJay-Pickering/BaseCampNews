@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,15 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
   </head>
-  <body>
+  <body id="main">
+    <div id="helpSidebar" class="sidebarHelp">
+        <a href="javascript:void(0)" class="closeHelp" onclick="closeHelp()">BACK</a>
+        <div class="login_and_register">
+          <h2>"Why is it not changing anything I requested to change?"</h2>
+          <p>Please check under the header! If the message has sent saying that its okay, then refresh the page, it should update then. If not, this means that our servers are busy and you should check back later.</p>
+          <h2>Change Help</h2>
+          <p>This will change your specific part of your account. Just input a new value in the right text box and press the enter button provided to update your desired part.</p>
+          <h2>Website Error</h2>
+          <p>If the website is shut down or not working/loading at all, check your internet. If internet connection is fine, we may be working on this website to update it, check back later!</p>
+        </div>
+      </div>
+      <button class="openHelp" onclick="openHelp()">HELP</button>
     <h1>Base Camp News Settings</h1>
+    <a href="{% url 'home' %}">Home</a>
     {% for message in messages %}
     <p id="messages">{{message}}</p>
     {% endfor %}
     <h2>view info</h2>
     <p>Username: {{request.user.username}}</p>
     <p>Email: {{request.user.email}}</p>
+    <p>First Intrest: {{request.user.interest1}}</p>
+    <p>Second Intrest: {{request.user.interest2}}</p>
+    <p>Third Intrest: {{request.user.interest3}}</p>
     <p>Date Joined: {{request.user.date_joined}}</p>
 
     <form action="" method="POST">
@@ -39,23 +57,41 @@
     <form action="" method="POST">
       {% csrf_token %}
       <h2>change password</h2>
-      <p>Old Password</p>
-      <div><input
-        type="text"
-        name="old_password"
-      />
-      <p>New Password</p>
-      <div><input
-        type="text"
-        name="new_password"
-      />
+      <p>{{form.old_password.label}}</p>
+      <p>{{form.old_password}}</p>
+      <p>{{form.new_password1.label}}</p>
+      <p>{{form.new_password1}}</p>
+      <p>{{form.new_password2.label}}</p>
+      <p>{{form.new_password2}}</p>
       <input type="submit" value="enter" name="password_change" />
     </form>
 
-    {% comment %}
-    <p>change image</p>
-    <p>theme</p>
-    <p>intrests</p>
-    {% endcomment %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h2>change interests</h2>
+        <p>First Interest</p>
+        <div><input
+          type="text"
+          name="new_first"
+        />
+        <input type="submit" value="enter" name="first_change" />
+
+        <p>Second Interest</p>
+        <div><input
+          type="text"
+          name="new_second"
+        />
+        <input type="submit" value="enter" name="second_change" />
+
+        <p>Third Interest</p>
+        <div><input
+          type="text"
+          name="new_third"
+        />
+        <input type="submit" value="enter" name="third_change" />
+    </form>
+
+    <script src="{% static 'main.js' %}" defer></script>
   </body>
 </html>

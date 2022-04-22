@@ -2,21 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% load static %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'index.css' %}" />
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
-    <title>BCN | Base Camp News</title>
+    <title>For You</title>
   </head>
-  <body id="main" class="trend_background">
-    <nav class="nav_bar">
+  <body class="shopping_background">
+    <nav class="shopping_nav_bar">
       <div class="margin_in_nav">
         <img src="{% static 'bcca.png' %}" class="bcn_img" />
-        <p>BCN | Base Camp News</p>
+        <p>BCN | For You</p>
         <form action="https://google.com/search" target="_blank">
-          <input type="text" class="search_bar" name="q" />
+          <input type="text" class="shopping_search_bar" name="q" />
           <button class="button-search">
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
@@ -28,7 +27,7 @@
             >×</a
           >
           {% if request.user.is_authenticated %}
-          <p>Hello, {{request.user.username}}</p>
+          <p>Hello, {{request.user}}</p>
           <a href="{% url 'logout' %}">Logout</a>
           <a href="{% url 'settings' %}">Settings</a>
           {% else %}
@@ -42,7 +41,8 @@
       </div>
     </nav>
 
-    <div class="ForYouNav">
+    <div class="shopping_ForYouNav">
+      <a href="{% url 'home' %}">Home</a>
       <a href="{% url 'covid' %}" class="covid_link">Covid-19</a>
       <a href="{% url 'weather' %}">Weather</a>
       <a href="{% url 'trending' %}">Trending</a>
@@ -50,77 +50,17 @@
         >Entertainment</a
       >
       <a href="{% url 'livestyle' %}" class="lifestyle_link">Lifestyle</a>
-      <a href="{% url 'shopping' %}">Shopping</a>
       <a href="{% url 'health' %}" class="health_link">Health</a>
       <a href="{% url 'food' %}" class="food_link">Food</a>
       <a href="{% url 'drink' %}" class="drink_link">Drink</a>
       <a href="{% url 'travel' %}" class="travel_link">Travel</a>
       <a href="{% url 'stocks' %}" class="stocks_link">Stocks</a>
     </div>
-
     <div class="news" id="news">
       <div class="column" id="one"></div>
     </div>
-    <script src="{% static 'main.js' %}" defer></script>
+
+    <footer></footer>
+    <script src="{% static 'fyp.js' %}" defer></script>
   </body>
-  <footer class="footer">
-    <div class="flexbox">
-      <img src="{% static 'bcca.png' %}" class="bcn_img_footer" />
-      <p class="bcn_title_footer">Base Camp News</p>
-    </div>
-    <div class="flexbox">
-      <div class="column">
-        <div class="contact_button_border">
-          <p class="contact_button">Contact Us</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="footer_list">
-          <ul>
-            <li><a href="#news">News</a></li>
-            <li>
-              <a href="https://basecampcodingacademy.org/about/">About Us</a>
-            </li>
-            <li><a href="">Quinton Was Here</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="column">
-        <div>
-          <ul class="social_list">
-            <li>
-              <a href="">
-                <img
-                  src="{% static 'twitter_logo.png' %}"
-                  class="twitter_img"
-                />
-              </a>
-            </li>
-            <li>
-              <img
-                src="{% static 'linkedin_logo.png' %}"
-                class="linkedin_img"
-              />
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="{% static 'instagram_logo.png' %}"
-                  class="instagram_img"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="{% static 'facebook_logo.png' %}"
-                  class="facebook_img"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
 </html>

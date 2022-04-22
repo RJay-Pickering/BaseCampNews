@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.contrib.auth import logout, login, authenticate, update_session_auth_hash
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django.contrib.auth.models import User, Group
+import json
 
 
 # Create your views here.
@@ -85,30 +86,69 @@ def navWeather(request):
 def settingStyle(request):
     if request.method == 'POST':
         if 'password_change' in request.POST:
-            usernamed = request.user.username
-            usr = Customer.objects.get(username=usernamed)
-            pas = request.POST.get('old_password')
-            au = authenticate(request, password=pas)
-            messages.info(request, au)
-            if au is not None:
-                messages.info(request, 'Password Saved!')
-                usr.set_password(request.POST.get('new_password'))
-                usr.save()
-            else:
-                messages.info(request, 'Wrong Password!')
+            if request.method == 'POST':
+                form = PasswordChangeForm(request.user, request.POST)
+                context = {'form':form}
+                if form.is_valid():
+                    user = form.save()
+                    update_session_auth_hash(request, user)  # Important!
+                    messages.success(request, 'Your password was successfully updated!')
+                else:
+                    messages.error(request, 'Please correct the error below.')
         elif 'username_change' in request.POST:
             username = request.user.username
             newusername = request.POST.get('new_username')
             user = Customer.objects.get(username = username)
             user.username = newusername
             user.save()
+            form = PasswordChangeForm(request.user, request.POST)
+            context = {'form':form}
         elif 'email_change' in request.POST:
             username = request.user.username
             newemail = request.POST.get('new_email')
             emails = Customer.objects.get(username = username)
             emails.email = newemail
             emails.save()
-    return render(request, 'settings.html')
+            form = PasswordChangeForm(request.user, request.POST)
+            context = {'form':form}
+        elif 'first_change' in request.POST:
+            username = request.user.username
+            newInterest = request.POST.get('new_first')
+            Interest = Customer.objects.get(username = username)
+            Interest.interest1 = newInterest
+            Interest.save()
+            form = PasswordChangeForm(request.user, request.POST)
+            context = {'form':form}
+        elif 'second_change' in request.POST:
+            username = request.user.username
+            newInterest = request.POST.get('new_second')
+            Interest = Customer.objects.get(username = username)
+            Interest.interest2 = newInterest
+            Interest.save()
+            form = PasswordChangeForm(request.user, request.POST)
+            context = {'form':form}
+        elif 'third_change' in request.POST:
+            username = request.user.username
+            newInterest = request.POST.get('new_third')
+            Interest = Customer.objects.get(username = username)
+            Interest.interest3 = newInterest
+            Interest.save()
+            form = PasswordChangeForm(request.user, request.POST)
+            context = {'form':form}
+    else:
+        form = PasswordChangeForm(request.user, request.POST)
+        context = {'form':form}
+    return render(request, 'settings.html', context)
 
-# def fyp(request):
+def foryou(request):
+    with open('application/static/udata.json', 'w') as f:
+        f.write("")
+        f.close()
+
+    with open('application/static/udata.json', 'a') as f:
+        f.write('{"user" : "' + request.user.username + '", "interest1": "' + request.user.interest1 + '", "interest2": "' 
+        + request.user.interest2 + '", "interest3" : "' + request.user.interest3 + '" }')
+        f.close()
+
+    return render(request, 'nav/fyp.html')
     

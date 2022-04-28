@@ -4,16 +4,21 @@ from .models import Customer
 from django.contrib import messages
 from django.contrib.auth import logout, login, authenticate, update_session_auth_hash
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
-from django.contrib.auth.models import User, Group
-import json
+from .decorators import unauthenticated_user
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import Group
 
 
 # Create your views here.
 
+def homeRedirect(request):
+    return redirect("home")
+
+@unauthenticated_user
 def test_page(request):
-    
     return render(request, "index.html")
 
+@unauthenticated_user
 def sign_in(request):
     if request.method == 'POST':
         email = request.POST.get('email')
@@ -25,11 +30,12 @@ def sign_in(request):
 
         if cus is not None:
             login(request, cus)
-            return redirect("home")
+            return redirect("foryou")
         messages.info(request, "Username or Password is incorrect")
 
     return render(request, 'sign-in.html')
 
+@unauthenticated_user
 def sign_up(request):
     form = CreateUserForm()
     if request.method == "POST":
@@ -38,8 +44,6 @@ def sign_up(request):
             user = form.save()
             username = form.cleaned_data.get('username')
             messages.success(request, "Created " + username)
-            # group = Group.objects.get(name="Customers")
-			# user.group.add(group)
             messages.success(request, "User: " + username + " has been created")
             return redirect('signin')
     context = {'form':form}
@@ -83,6 +87,7 @@ def navTrending(request):
 def navWeather(request):
     return render(request, 'nav/weather.html')
 
+@login_required(login_url='signin')
 def settingStyle(request):
     if request.method == 'POST':
         if 'password_change' in request.POST:
@@ -140,6 +145,7 @@ def settingStyle(request):
         context = {'form':form}
     return render(request, 'settings.html', context)
 
+@login_required(login_url='signin')
 def foryou(request):
     with open('application/static/udata.json', 'w') as f:
         f.write("")
@@ -151,4 +157,6 @@ def foryou(request):
         f.close()
 
     return render(request, 'nav/fyp.html')
-    
+
+def local(request):
+    return render(request, 'nav/local.html')

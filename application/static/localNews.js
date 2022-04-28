@@ -1,7 +1,7 @@
-const query = document.getElementById("head").innerText;
+var sectionNews = 0;
 
 fetch(
-  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${query}&country=us,gb,jp&language=en,jp`
+  `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&country=us`
 )
   .then((response) => {
     return response.json();
@@ -89,33 +89,11 @@ function randomAdFunction(i) {
     });
 }
 
-// const stonks = document.getElementById("stocks");
-// fetch(
-//   "http://api.marketstack.com/v1/eod?access_key=2caa094e7327974b7113f9ed3e49a1c7&symbols=AAPL,AMZN,JPM,TSLA,DOW&limit=5"
-// )
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((d) => {
-//     console.log(d);
-//     d.data.forEach(function (s) {
-//       const stock = document.createElement("div");
-//       const price = document.createElement("p");
-//       price.innerHTML = s.adj_close;
-//       const symbol = document.createElement("p");
-//       symbol.innerText = s.symbol;
-//       symbol.classList.add("forecastDays");
-//       stock.classList.add("forecastCard");
-//       stock.appendChild(symbol);
-//       stock.appendChild(price);
-//       stocks.appendChild(stock);
-//     });
-//   });
-
 function openNav() {
   document.getElementById("mySidebar").style.width = "500px";
   document.getElementById("main").style.marginRight = "250px";
   document.getElementById("mySidebar").style.border = "1px solid black";
+  document.getElementById("mySidebar").style.zIndex = "10";
 }
 
 function closeNav() {

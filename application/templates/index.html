@@ -52,9 +52,6 @@
       <a href="{% url 'livestyle' %}" class="lifestyle_link">Lifestyle</a>
       <a href="{% url 'shopping' %}">Shopping</a>
       <a href="{% url 'health' %}" class="health_link">Health</a>
-      <a href="{% url 'food' %}" class="food_link">Food</a>
-      <a href="{% url 'drink' %}" class="drink_link">Drink</a>
-      <a href="{% url 'travel' %}" class="travel_link">Travel</a>
       <a href="{% url 'stocks' %}" class="stocks_link">Stocks</a>
     </div>
 
@@ -64,10 +61,6 @@
     <script src="{% static 'main.js' %}" defer></script>
   </body>
   <footer class="footer">
-    <div class="flexbox">
-      <img src="{% static 'bcca.png' %}" class="bcn_img_footer" />
-      <p class="bcn_title_footer">Base Camp News</p>
-    </div>
     <div class="flexbox">
       <div class="column">
         <div class="contact_button_border">
@@ -79,9 +72,15 @@
           <ul>
             <li><a href="#news">News</a></li>
             <li>
-              <a href="https://basecampcodingacademy.org/about/">About Us</a>
+              <a href="https://basecampcodingacademy.org/about/" target="_blank"
+                >About Us</a
+              >
             </li>
-            <li><a href="">Quinton Was Here</a></li>
+            {% if request.user.is_authenticated %}
+            <li><a href="{% url 'foryou' %}">Home</a></li>
+            {% else %}
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -89,7 +88,7 @@
         <div>
           <ul class="social_list">
             <li>
-              <a href="">
+              <a href="https://twitter.com/basecampcoding" target="_blank">
                 <img
                   src="{% static 'twitter_logo.png' %}"
                   class="twitter_img"
@@ -97,13 +96,21 @@
               </a>
             </li>
             <li>
-              <img
-                src="{% static 'linkedin_logo.png' %}"
-                class="linkedin_img"
-              />
+              <a
+                href="https://www.linkedin.com/company/basecampcodingacademy/"
+                target="_blank"
+              >
+                <img
+                  src="{% static 'linkedin_logo.png' %}"
+                  class="linkedin_img"
+                />
+              </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://www.instagram.com/basecampcoding/"
+                target="_blank"
+              >
                 <img
                   src="{% static 'instagram_logo.png' %}"
                   class="instagram_img"
@@ -111,7 +118,10 @@
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://www.facebook.com/basecampcodingacademy"
+                target="_blank"
+              >
                 <img
                   src="{% static 'facebook_logo.png' %}"
                   class="facebook_img"

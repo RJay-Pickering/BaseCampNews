@@ -23,6 +23,7 @@ from application.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', homeRedirect),
     path('home/', test_page, name='home'),
     path('signin/', sign_in, name='signin'),
     path('signup/', sign_up, name='signup'),
@@ -39,5 +40,6 @@ urlpatterns = [
     path('trending/', navTrending, name="trending"),
     path('weather/', navWeather, name="weather"),
     path('setting/', settingStyle, name="settings"),
-    path('fyp/', foryou, name="foryou")
+    path('fyp/', foryou, name="foryou"),
+    path('local_news/', local, name="local")
 ]

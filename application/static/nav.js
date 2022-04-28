@@ -1,73 +1,6 @@
 const query = document.getElementById("head").innerText;
 var sectionNews = 0;
 
-const theme_button = document.querySelector(".lightmode_button");
-theme_button.addEventListener("click", () => {
-  //Trending Page
-  const trend_background = document.querySelector(".trend_background");
-  const trend_nav_bar = document.querySelector(".trend_nav_bar");
-  const trend_ForYouNav = document.querySelector(".trend_ForYouNav");
-  const trend_ForYouNav_link = document.querySelector(".trend_ForYouNav a");
-  const trend_login = document.querySelector(".trend_login");
-  const trend_register = document.querySelector(".trend_register");
-  const trend_title = document.querySelector(".trend_title");
-  trend_background.style.backgroundColor = "white";
-  trend_ForYouNav.style.backgroundColor = "white";
-  trend_ForYouNav.style.color = "black";
-  theme_button.style.border = "1px solid black";
-  theme_button.style.borderRadius = "0.90em";
-  trend_login.style.color = "black";
-  trend_register.style.color = "black";
-  theme_button.innerHTML = "Dark Mode";
-  trend_ForYouNav_link.style.color = "black";
-  trend_login.classList.toggle("light_trend_login");
-  trend_login.classList.remove("trend_login");
-  trend_register.classList.toggle("light_trend_register");
-  trend_register.classList.remove("trend_register");
-  trend_title.classList.toggle("light_trend_title");
-  trend_title.classList.remove("trend_title");
-  trend_nav_bar.classList.toggle("light_nav_bar");
-  trend_nav_bar.classList.remove("trend_nav_bar");
-  trend_ForYouNav.classList.toggle("light_ForYouNav");
-  trend_ForYouNav.classList.remove("trend_ForYouNav");
-  console.log("hello");
-  const title_box = document.querySelector(".column");
-  const title = document.createElement("h3");
-  title.innerHTML = "Trending";
-  title_box.appendChild(title);
-  title.classList.add("light_trend_title");
-
-  //Entertainment Page
-  const entertainment_background = document.querySelector(
-    ".entertainment_background"
-  );
-  const entertainment_ForYouNav = document.querySelector(
-    ".entertainment_ForYouNav"
-  );
-  const entertainment_nav_bar = document.querySelector(
-    ".entertainment_nav_bar"
-  );
-
-  const entertainment_login = document.querySelector(".entertainment_login");
-
-  const entertainment_register = document.querySelector(
-    ".entertainment_register"
-  );
-
-  const entertainment_title = document.querySelector(".entertainment_title");
-
-  entertainment_background.style.backgroundColor = "white";
-  entertainment_ForYouNav.classList.toggle("light_entertainment_ForYouNav");
-  entertainment_ForYouNav.classList.remove("entertainment_ForYouNav");
-  entertainment_nav_bar.classList.toggle("light_entertainment_nav_bar");
-  entertainment_nav_bar.classList.remove("entertainment_nav_bar");
-  entertainment_login.classList.toggle("light_entertainment_login");
-  entertainment_login.classList.remove("entertainment_login");
-  entertainment_register.classList.toggle("light_entertainment_register");
-  entertainment_register.classList.remove("entertainment_register");
-  entertainment_title.classList.toggle("light_entertainment_title");
-  entertainment_title.classList.remove("entertainment_title");
-});
 fetch(
   `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${query}`
 )
@@ -75,90 +8,15 @@ fetch(
     return response.json();
   })
   .then((data) => {
-    console.log(data.results);
+    apples = 0;
     Array.from(data.results).forEach(function (a) {
-      if (sectionNews < 3) {
-        sectionNews++;
-        const aLink = document.createElement("a");
-        aLink.href = `${a.link}`;
-        aLink.target = "_blank";
-        const article = document.createElement("div");
-        const desc = document.createElement("p");
-        desc.innerText = a.description;
-        desc.style.fontSize = "14px";
-        const date = document.createElement("p");
-        date.innerText = `Published: ${a.pubDate}`;
-        article.classList.add("card");
-        const image = document.createElement("img");
-        if (a.image_url == null) {
-          image.src =
-            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-          image.style.width = "250px";
-          image.style.height = "200px";
-        } else {
-          image.src = a.image_url;
-          image.style.width = "250px";
-          image.style.height = "200px";
-        }
-        // image.classList.add("apiImage");
-
-        const title = document.createElement("p");
-        title.innerText = a.title;
-        article.appendChild(title);
-        article.appendChild(image);
-        article.appendChild(desc);
-        article.appendChild(date);
-        aLink.classList.add("aLink");
-        aLink.appendChild(article);
-        const sectionA = document.createElement("section");
-        sectionA.classList.add("flexbox");
-        sectionA.appendChild(aLink);
-        const one = document.getElementById("one");
-        one.classList.add("column");
-        one.appendChild(sectionA);
-        console.log(article);
-      } else if (sectionNews < 6) {
-        sectionNews++;
-        const aLink = document.createElement("a");
-        aLink.href = `${a.link}`;
-        aLink.target = "_blank";
-        const article = document.createElement("div");
-        const desc = document.createElement("p");
-        desc.innerText = a.description;
-        desc.style.fontSize = "14px";
-        const date = document.createElement("p");
-        date.innerText = `Published: ${a.pubDate}`;
-        article.classList.add("card");
-        const image = document.createElement("img");
-        if (a.image_url == null) {
-          image.src =
-            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-          image.style.width = "250px";
-          image.style.height = "200px";
-        } else {
-          image.src = a.image_url;
-          image.style.width = "250px";
-          image.style.height = "200px";
-        }
-        //   image.classList.add("apiImage");
-
-        const title = document.createElement("p");
-        title.innerText = a.title;
-        article.appendChild(title);
-        article.appendChild(image);
-        article.appendChild(desc);
-        article.appendChild(date);
-        aLink.classList.add("aLink");
-        aLink.appendChild(article);
-        const sectionB = document.createElement("section");
-        sectionB.classList.add("flexbox");
-        sectionB.appendChild(aLink);
-        const one = document.getElementById("one");
-        one.classList.add("column");
-        one.appendChild(sectionB);
-        console.log(article);
-      } else if (sectionNews < 9) {
-        sectionNews++;
+      var randomAdPlace = Math.floor(Math.random() * 10) + 1;
+      console.log(randomAdPlace);
+      if (randomAdPlace === 5) {
+        randomAdFunction(apples);
+        apples++;
+      } else {
+        apples++;
         const aLink = document.createElement("a");
         aLink.href = `${a.link}`;
         aLink.target = "_blank";
@@ -180,8 +38,7 @@ fetch(
           image.style.width = "250px";
           image.style.height = "200px";
         }
-        //   image.classList.add("apiImage");
-
+        image.classList.add("apiImage");
         const title = document.createElement("p");
         title.innerText = a.title;
         article.appendChild(title);
@@ -190,56 +47,48 @@ fetch(
         article.appendChild(date);
         aLink.classList.add("aLink");
         aLink.appendChild(article);
-        const sectionC = document.createElement("section");
-        sectionC.classList.add("flexbox");
-        sectionC.appendChild(aLink);
         const one = document.getElementById("one");
         one.classList.add("column");
-        one.appendChild(sectionC);
-        console.log(article);
-      } else {
-        sectionNews++;
-        const aLink = document.createElement("a");
-        aLink.href = `${a.link}`;
-        aLink.target = "_blank";
-        const article = document.createElement("div");
-        const desc = document.createElement("p");
-        desc.innerText = a.description;
-        desc.style.fontSize = "14px";
-        const date = document.createElement("p");
-        date.innerText = `Published: ${a.pubDate}`;
-        article.classList.add("card");
-        const image = document.createElement("img");
-        if (a.image_url == null) {
-          image.src =
-            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-          image.style.width = "250px";
-          image.style.height = "200px";
-        } else {
-          image.src = a.image_url;
-          image.style.width = "250px";
-          image.style.height = "200px";
-        }
-        //   image.classList.add("apiImage");
-
-        const title = document.createElement("p");
-        title.innerText = a.title;
-        article.appendChild(title);
-        article.appendChild(image);
-        article.appendChild(desc);
-        article.appendChild(date);
-        aLink.classList.add("aLink");
-        aLink.appendChild(article);
-        const sectionD = document.createElement("section");
-        sectionD.classList.add("flexbox");
-        sectionD.appendChild(aLink);
-        const one = document.getElementById("one");
-        one.classList.add("column");
-        one.appendChild(sectionD);
+        one.appendChild(aLink);
         console.log(article);
       }
     });
   });
+
+function randomAdFunction(i) {
+  fetch("/static/ads.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      var randoad = Math.floor(Math.random() * 7);
+      const a = data[randoad];
+
+      const aLink = document.createElement("a");
+      aLink.href = `${a.link}`;
+      aLink.target = "_blank";
+      const article = document.createElement("div");
+      const desc = document.createElement("p");
+      desc.innerText = a.creator;
+      desc.style.fontSize = "10px";
+      article.classList.add("card");
+      const image = document.createElement("img");
+      image.src = a.image_url;
+      image.classList.add("apiImage");
+      const title = document.createElement("p");
+      title.innerText = a.title;
+      article.appendChild(title);
+      article.appendChild(image);
+      article.appendChild(desc);
+      aLink.classList.add("aLink");
+      aLink.appendChild(article);
+      const one = document.getElementById("one");
+      one.classList.add("column");
+      // one.appendChild(aLink);
+      one.insertBefore(aLink, one.children[i]);
+      console.log(article);
+    });
+}
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "500px";

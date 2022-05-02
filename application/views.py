@@ -158,5 +158,5 @@ def foryou(request):
 
     return render(request, 'nav/fyp.html')
 
-def local(request):
-    return render(request, 'nav/local.html')
+def sport(request):
+    return render(request, 'nav/sports.html')

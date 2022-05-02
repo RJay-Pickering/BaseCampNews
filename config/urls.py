@@ -41,5 +41,5 @@ urlpatterns = [
     path('weather/', navWeather, name="weather"),
     path('setting/', settingStyle, name="settings"),
     path('fyp/', foryou, name="foryou"),
-    path('local_news/', local, name="local")
+    path('sports/', sport, name="sport")
 ]

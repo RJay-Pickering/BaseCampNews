@@ -49,16 +49,14 @@ html {
 
 .button-search {
   background-color: darkturquoise;
-  color: darkturquoise;
   border-radius: 0.4em;
-  margin-left: -20px;
+  margin-left: -10px;
   border-left: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0.4em;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0.4em;
-  height: fit-content;
-  padding-bottom: 2px;
+  height: 42px;
   width: 60px;
 }
 
@@ -73,13 +71,16 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .search_img {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
 .user_card_login {
@@ -957,6 +958,35 @@ html {
   background-color: #81d2ef;
   text-shadow: 1px 1px black;
   padding-left: 50px;
+}
+
+.sports_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 2px;
+}
+
+.sports_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+  align-content: center;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.sports_ForYouNav a:hover {
+  text-decoration: underline;
 }
 
 .health_background {
@@ -2125,6 +2155,11 @@ html {
   margin-top: 12px;
 }
 
+.nbaLogo {
+  height: 150px;
+  width: 150px;
+}
+
 /* @media screen and (max-width: 2560px) and (min-width: 1440px) {
 } */
 
@@ -2255,19 +2290,19 @@ html {
     position: fixed;
     background-color: #3a3b3c;
     color: white;
-    width: 1440px;
+    width: 100%;
     border: 2px solid black;
     z-index: 1;
   }
 
   .entertainment_ForYouNav {
     position: fixed;
-    top: 4.75vw;
+    top: 3.58vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 1440px;
+    width: 100%;
     overflow: hidden;
     background-color: #3a3b3c;
     font-stretch: expanded;
@@ -2292,19 +2327,19 @@ html {
     position: fixed;
     background-color: #3a3b3c;
     color: white;
-    width: 1440px;
+    width: 100%;
     border: 2px solid black;
     z-index: 1;
   }
 
   .lifestyle_ForYouNav {
     position: fixed;
-    top: 4.75vw;
+    top: 3.58vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 1440px;
+    width: 100%;
     overflow: hidden;
     background-color: #3a3b3c;
     font-stretch: expanded;
@@ -2329,19 +2364,19 @@ html {
     position: fixed;
     background-color: #3a3b3c;
     color: white;
-    width: 1440px;
+    width: 100%;
     border: 2px solid black;
     z-index: 1;
   }
 
   .shopping_ForYouNav {
     position: fixed;
-    top: 4.75vw;
+    top: 3.58vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 1440px;
+    width: 100%;
     overflow: hidden;
     background-color: #3a3b3c;
     font-stretch: expanded;
@@ -2366,19 +2401,19 @@ html {
     position: fixed;
     background-color: #3a3b3c;
     color: white;
-    width: 1440px;
+    width: 100%;
     border: 2px solid black;
     z-index: 1;
   }
 
   .health_ForYouNav {
     position: fixed;
-    top: 4.75vw;
+    top: 3.58vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 1440px;
+    width: 100%;
     overflow: hidden;
     background-color: #3a3b3c;
     font-stretch: expanded;
@@ -2399,60 +2434,23 @@ html {
     text-decoration: underline;
   }
 
-  .travel_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .travel_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .travel_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.75vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .travel_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
   .stocks_nav_bar {
     position: fixed;
     background-color: #3a3b3c;
     color: white;
-    width: 1440px;
+    width: 100%;
     border: 2px solid black;
     z-index: 1;
   }
 
   .stocks_ForYouNav {
     position: fixed;
-    top: 4.75vw;
+    top: 3.58vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 1440px;
+    width: 100%;
     overflow: hidden;
     background-color: #3a3b3c;
     font-stretch: expanded;
@@ -2576,7 +2574,7 @@ html {
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (max-width: 1385px) and (min-width: 1034px) {
   .ForYouNav {
     position: fixed;
     top: 4.7vw;
@@ -2949,7 +2947,7 @@ html {
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 1440px;
+    width: 1024px;
     overflow: hidden;
     background-color: #3a3b3c;
     font-stretch: expanded;
@@ -2958,12 +2956,7 @@ html {
   }
 
   .entertainment_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 65px;
+    padding-left: 2px;
   }
 
   .entertainment_ForYouNav a:hover {
@@ -3053,18 +3046,7 @@ html {
   }
 
   .lifestyle_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
+    margin-top: 45px;
   }
 
   .lifestyle_ForYouNav a {
@@ -4054,32 +4036,11 @@ html {
   }
 
   .entertainment_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 14.25px;
+    width: 200px;
   }
 
   .entertainment_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .entertainment_ForYouNav a {
@@ -4117,7 +4078,7 @@ html {
   }
 
   .lifestyle_search_bar {
-    width: 500px;
+    width: 200px;
     margin-left: 220px;
     border-right: none;
     border-top-left-radius: 0.4em;
@@ -4131,18 +4092,7 @@ html {
   }
 
   .lifestyle_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
+    margin-top: 15px;
   }
 
   .lifestyle_ForYouNav a {
@@ -4151,7 +4101,7 @@ html {
     color: white;
     padding: 1.94vw;
     align-content: center;
-    padding-left: 65px;
+    padding-left: 23px;
   }
 
   .lifestyle_ForYouNav a:hover {
@@ -4159,7 +4109,7 @@ html {
   }
 
   .lifestyle_title {
-    margin-top: 103px;
+    margin-top: 97px;
     color: white;
     position: fixed;
     border: 1px solid rgb(161, 84, 161);
@@ -4180,7 +4130,7 @@ html {
   }
 
   .shopping_search_bar {
-    width: 500px;
+    width: 200px;
     margin-left: 220px;
     border-right: none;
     border-top-left-radius: 0.4em;
@@ -4205,7 +4155,7 @@ html {
     background-color: #3a3b3c;
     font-stretch: expanded;
     padding: 5px;
-    margin-top: 2px;
+    margin-top: 20px;
   }
 
   .shopping_ForYouNav a {
@@ -4214,7 +4164,7 @@ html {
     color: white;
     padding: 1.94vw;
     align-content: center;
-    padding-left: 65px;
+    padding-left: 25px;
   }
 
   .shopping_ForYouNav a:hover {
@@ -4243,7 +4193,7 @@ html {
   }
 
   .health_search_bar {
-    width: 500px;
+    width: 200px;
     margin-left: 220px;
     border-right: none;
     border-top-left-radius: 0.4em;
@@ -4268,7 +4218,7 @@ html {
     background-color: #3a3b3c;
     font-stretch: expanded;
     padding: 5px;
-    margin-top: 2px;
+    margin-top: 20px;
   }
 
   .health_ForYouNav a {
@@ -4277,7 +4227,7 @@ html {
     color: white;
     padding: 1.94vw;
     align-content: center;
-    padding-left: 65px;
+    padding-left: 25px;
   }
 
   .health_ForYouNav a:hover {
@@ -4305,7 +4255,7 @@ html {
     z-index: 1;
   }
   .stocks_search_bar {
-    width: 500px;
+    width: 200px;
     margin-left: 220px;
     border-right: none;
     border-top-left-radius: 0.4em;
@@ -4330,7 +4280,7 @@ html {
     background-color: #3a3b3c;
     font-stretch: expanded;
     padding: 5px;
-    margin-top: 2px;
+    margin-top: 20px;
   }
 
   .stocks_ForYouNav a {
@@ -4339,7 +4289,7 @@ html {
     color: white;
     padding: 1.75vw;
     align-content: center;
-    padding-left: 65px;
+    padding-left: 25px;
   }
 
   .stocks_ForYouNav a:hover {
@@ -4416,4 +4366,6 @@ html {
     text-shadow: 1px 1px black;
     /* border-radius: 20px; */
   }
+}
+@media screen and (max-width: 1024px) and (min-width: 756px) {
 }

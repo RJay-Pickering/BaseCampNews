@@ -1,6 +1,50 @@
 const query = document.getElementById("head").innerText;
 var sectionNews = 0;
 
+fetch(`http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard`)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+    Array.from(data.events).forEach(function (a) {
+      //console.log(a);
+      const article = document.createElement("div");
+      const desc = document.createElement("p");
+      desc.innerText = a.status.type.description;
+      const date = document.createElement("p");
+      date.innerText = `Starts: ${a.status.type.detail}`;
+      article.classList.add("card");
+      const title = document.createElement("p");
+      title.innerText = a.shortName;
+      //============================================================
+      const logos = document.createElement("img");
+      const logos2 = document.createElement("img");
+      var apple22 = 0;
+      Array.from(a.competitions[0].competitors).forEach(function (b) {
+        console.log(b.team.name);
+        if (apple22 === 0) {
+          apple22++;
+          logos.src = b.team.logo;
+        } else {
+          logos2.src = b.team.logo;
+        }
+        logos.classList.add("nbaLogo");
+        logos2.classList.add("nbaLogo");
+      });
+      //============================================================
+      article.appendChild(title);
+      article.appendChild(desc);
+      article.appendChild(date);
+      article.appendChild(logos2);
+      article.appendChild(logos);
+      const one = document.getElementById("one");
+      one.classList.add("column");
+      one.appendChild(article);
+      console.log(article);
+    });
+  });
+
 fetch(
   `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${query}&language=en`
 )

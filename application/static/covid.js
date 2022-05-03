@@ -1,3 +1,27 @@
+var news = document.getElementById("news");
+console.log(navigator.geolocation.getCurrentPosition(coordsWeather));
+
+function coordsWeather(position) {
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
+    // "https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5"
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      var city = document.getElementById("city");
+      var temp = document.getElementById("temp");
+      // var humidity = document.getElementById("humid");
+      // var windSpeed = document.getElementById("windSpeed");
+      city.innerText = `City: ${data.name}`;
+      temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
+      // humidity.innerText = `Humidity: \n${data.main.humidity}%`;
+      // windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`;
+    });
+}
+
 fetch(
   `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=covid&language=en`
 )

@@ -50,14 +50,15 @@ html {
 .button-search {
   background-color: darkturquoise;
   border-radius: 0.4em;
-  margin-left: -10px;
   border-left: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0.4em;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0.4em;
-  height: 42px;
-  width: 60px;
+  width: 65px;
+  padding-bottom: 1.5px;
+  float: right;
+  margin-top: 13px;
 }
 
 .search_bar {
@@ -79,11 +80,29 @@ html {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  padding: 0;
   margin: 0;
 }
 
 .user_card_login {
+  width: 350px;
+  margin-top: 180px;
+  margin-left: 525px;
+  margin-bottom: auto;
+  background: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.user_card_register {
   width: 350px;
   margin-top: 180px;
   margin-left: 525px;
@@ -354,7 +373,7 @@ html {
   color: white;
   padding: 1.94vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 48px;
 }
 
 .ForYouNav a:hover {
@@ -433,7 +452,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .covid_ForYouNav {
@@ -456,7 +476,7 @@ html {
   text-decoration: none;
   color: white;
   padding: 1.94vw;
-  justify-content: center;
+  align-content: center;
   padding-left: 65px;
 }
 
@@ -555,7 +575,7 @@ html {
 
 .trend_search_bar {
   width: 500px;
-  margin-left: 220px;
+  margin-left: 185px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -564,7 +584,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .trend_ForYouNav {
@@ -696,7 +717,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .entertainment_ForYouNav {
@@ -806,7 +828,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .lifestyle_ForYouNav {
@@ -917,7 +940,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .shopping_ForYouNav {
@@ -1057,7 +1081,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .health_ForYouNav {
@@ -1168,7 +1193,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .food_ForYouNav {
@@ -1279,7 +1305,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .drink_ForYouNav {
@@ -1390,7 +1417,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .travel_ForYouNav {
@@ -1501,7 +1529,8 @@ html {
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 13px;
-  padding-top: 14.25px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
 }
 
 .stocks_ForYouNav {
@@ -2188,7 +2217,7 @@ html {
   }
   .ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.53vw;
     border: black 1px solid;
     border-top: none;
     border-left: none;
@@ -2204,7 +2233,7 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.94vw;
+    padding: 3.4vw;
     justify-content: center;
   }
 
@@ -2240,9 +2269,8 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.94vw;
+    padding: 3.4vw;
     justify-content: center;
-    padding-left: 65px;
   }
 
   .covid_ForYouNav a:hover {
@@ -2277,9 +2305,8 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.94vw;
+    padding: 3.4vw;
     align-content: center;
-    padding-left: 65px;
   }
 
   .trend_ForYouNav a:hover {
@@ -2314,9 +2341,8 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.94vw;
+    padding: 3.6vw;
     align-content: center;
-    padding-left: 65px;
   }
 
   .entertainment_ForYouNav a:hover {
@@ -2351,9 +2377,8 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.94vw;
+    padding: 3.4vw;
     align-content: center;
-    padding-left: 65px;
   }
 
   .lifestyle_ForYouNav a:hover {
@@ -2388,12 +2413,38 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.94vw;
+    padding: 3.4vw;
     align-content: center;
-    padding-left: 65px;
   }
 
   .shopping_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .sports_ForYouNav {
+    position: fixed;
+    top: 3.58vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .sports_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    align-content: center;
+  }
+
+  .sports_ForYouNav a:hover {
     text-decoration: underline;
   }
 
@@ -2425,9 +2476,8 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.94vw;
+    padding: 3.4vw;
     align-content: center;
-    padding-left: 65px;
   }
 
   .health_ForYouNav a:hover {
@@ -2462,9 +2512,6 @@ html {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 1.75vw;
-    align-content: center;
-    padding-left: 65px;
   }
 
   .stocks_ForYouNav a:hover {
@@ -2570,6 +2617,65 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
   }
+
+  .user_card_login {
+    width: 350px;
+    margin-top: 11vw;
+    margin-left: 40vw;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  .user_card_register {
+    width: 350px;
+    margin-top: 3vw;
+    margin-left: 40vw;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  .newsForecast {
+    overflow: hidden;
+    padding: 0px;
+    font-size: 20px;
+    height: 100%;
+    width: auto;
+    padding-top: 7vw;
+  }
+
+  .forecastCard {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5%;
+    border: black 1px solid;
+    color: white;
+    text-shadow: 1px 1px black;
+    /* border-radius: 20px; */
+  }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -2674,7 +2780,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .covid_ForYouNav {
@@ -2805,7 +2912,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .trend_ForYouNav {
@@ -2829,7 +2937,7 @@ html {
     color: white;
     padding: 1.94vw;
     align-content: center;
-    padding-left: 65px;
+    padding-left: 15px;
   }
 
   .trend_ForYouNav a:hover {
@@ -2937,7 +3045,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .entertainment_ForYouNav {
@@ -3042,7 +3151,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .lifestyle_ForYouNav {
@@ -3142,7 +3252,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .shopping_ForYouNav {
@@ -3253,7 +3364,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .health_ForYouNav {
@@ -3364,7 +3476,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .food_ForYouNav {
@@ -3475,7 +3588,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .drink_ForYouNav {
@@ -3586,7 +3700,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .travel_ForYouNav {
@@ -3697,7 +3812,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .stocks_ForYouNav {
@@ -3765,7 +3881,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .footer {
@@ -3981,7 +4098,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .trend_ForYouNav {
@@ -4088,7 +4206,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .lifestyle_ForYouNav {
@@ -4140,7 +4259,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .shopping_ForYouNav {
@@ -4203,7 +4323,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .health_ForYouNav {
@@ -4265,7 +4386,8 @@ html {
     font-size: 18px;
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-top: 14.25px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 
   .stocks_ForYouNav {

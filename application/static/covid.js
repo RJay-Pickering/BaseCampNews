@@ -1,5 +1,5 @@
 var news = document.getElementById("news");
-console.log(navigator.geolocation.getCurrentPosition(coordsWeather));
+navigator.geolocation.getCurrentPosition(coordsWeather);
 
 function coordsWeather(position) {
   fetch(
@@ -82,7 +82,7 @@ function randomAdFunction(i) {
       return response.json();
     })
     .then((data) => {
-      var randoad = Math.floor(Math.random() * 7);
+      var randoad = Math.floor(Math.random() * 8);
       const a = data[randoad];
 
       const aLink = document.createElement("a");

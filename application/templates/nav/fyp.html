@@ -76,7 +76,7 @@
               >
             </li>
             {% if request.user.is_authenticated %}
-            <li><a href="{% url 'foryou' %}">home</a></li>
+            <li><a href="{% url 'foryou' %}">Home</a></li>
             {% else %}
             <li><a href="{% url 'signup' %}">Sign Up</a></li>
             {% endif %}

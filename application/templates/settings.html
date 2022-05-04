@@ -11,9 +11,9 @@
   <body id="main" class="settings_background">
     <div id="helpSidebar" class="sidebarHelp">
         <a href="javascript:void(0)" class="closeHelp" onclick="closeHelp()">BACK</a>
-        <div class="login_and_register">
+        <div class="helpSettings">
           <h2>"Why is it not changing anything I requested to change?"</h2>
-          <p>Please check under the header! If the message has sent saying that its okay, then refresh the page, it should update then. If not, this means that our servers are busy and you should check back later.</p>
+          <p>Please try refresh the page, it should update then. If not, this means that our servers are busy and you should check back later.</p>
           <h2>Change Help</h2>
           <p>This will change your specific part of your account. Just input a new value in the right text box and press the enter button provided to update your desired part.</p>
           <h2>Website Error</h2>
@@ -27,9 +27,9 @@
           <p class="openHelp" onclick="openHelp()">Help</p>
         </div>
       </div>
-    {% for message in messages %}
+    {% comment %} {% for message in messages %}
     <p id="messages">{{message}}</p>
-    {% endfor %}
+    {% endfor %} {% endcomment %}
     <div class="information_box">
       <h2>Account Information</h2>
       <p>Username: {{request.user.username}}</p>

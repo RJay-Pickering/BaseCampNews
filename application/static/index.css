@@ -220,6 +220,15 @@ html {
   text-decoration: none;
 }
 
+.helpSettings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 50px;
+  gap: 20px;
+  text-decoration: none;
+}
+
 .register {
   text-decoration: none;
 }
@@ -443,7 +452,7 @@ html {
 
 .covid_search_bar {
   width: 500px;
-  margin-left: 220px;
+  margin-left: 140px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -477,7 +486,7 @@ html {
   color: white;
   padding: 1.94vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .covid_ForYouNav a:hover {
@@ -575,7 +584,7 @@ html {
 
 .trend_search_bar {
   width: 500px;
-  margin-left: 185px;
+  margin-left: 100px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -600,7 +609,7 @@ html {
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 .trend_ForYouNav a {
@@ -609,7 +618,7 @@ html {
   color: white;
   padding: 1.94vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .trend_ForYouNav a:hover {
@@ -708,7 +717,7 @@ html {
 
 .entertainment_search_bar {
   width: 500px;
-  margin-left: 220px;
+  margin-left: 100px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -723,7 +732,7 @@ html {
 
 .entertainment_ForYouNav {
   position: fixed;
-  top: 4.75vw;
+  top: 4.7vw;
   border: black 2px solid;
   border-top: none;
   border-left: none;
@@ -742,7 +751,7 @@ html {
   color: white;
   padding: 1.94vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .entertainment_ForYouNav a:hover {
@@ -819,7 +828,7 @@ html {
 
 .lifestyle_search_bar {
   width: 500px;
-  margin-left: 220px;
+  margin-left: 100px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -844,7 +853,7 @@ html {
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 .lifestyle_ForYouNav a {
@@ -853,7 +862,7 @@ html {
   color: white;
   padding: 1.94vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .lifestyle_ForYouNav a:hover {
@@ -931,7 +940,7 @@ html {
 
 .shopping_search_bar {
   width: 500px;
-  margin-left: 220px;
+  margin-left: 100px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -965,7 +974,7 @@ html {
   color: white;
   padding: 1.94vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .shopping_ForYouNav a:hover {
@@ -996,7 +1005,7 @@ html {
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 .sports_ForYouNav a {
@@ -1072,7 +1081,7 @@ html {
 
 .health_search_bar {
   width: 500px;
-  margin-left: 220px;
+  margin-left: 100px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -1106,7 +1115,7 @@ html {
   color: white;
   padding: 1.94vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .health_ForYouNav a:hover {
@@ -1520,7 +1529,7 @@ html {
 
 .stocks_search_bar {
   width: 500px;
-  margin-left: 220px;
+  margin-left: 100px;
   border-right: none;
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
@@ -1554,7 +1563,7 @@ html {
   color: white;
   padding: 1.75vw;
   align-content: center;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .stocks_ForYouNav a:hover {
@@ -1900,7 +1909,7 @@ html {
   background-color: #3a3b3c;
   color: white;
   height: 400px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .contact_button {
@@ -2000,7 +2009,9 @@ html {
 }
 
 .contact_button_border {
+  margin-top: 110px;
   padding-bottom: 100px;
+  text-decoration: none;
 }
 
 .footer_list {
@@ -2213,11 +2224,10 @@ html {
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    justify-content: center;
   }
   .ForYouNav {
     position: fixed;
-    top: 3.53vw;
+    top: 3.51vw;
     border: black 1px solid;
     border-top: none;
     border-left: none;
@@ -2288,7 +2298,7 @@ html {
 
   .trend_ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.51vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
@@ -2324,7 +2334,7 @@ html {
 
   .entertainment_ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.51vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
@@ -2360,7 +2370,7 @@ html {
 
   .lifestyle_ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.51vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
@@ -2396,7 +2406,7 @@ html {
 
   .shopping_ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.51vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
@@ -2423,7 +2433,7 @@ html {
 
   .sports_ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.77vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
@@ -2433,7 +2443,7 @@ html {
     background-color: #3a3b3c;
     font-stretch: expanded;
     padding: 5px;
-    margin-top: 2px;
+    margin-top: -5px;
   }
 
   .sports_ForYouNav a {
@@ -2459,7 +2469,7 @@ html {
 
   .health_ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.51vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
@@ -2495,7 +2505,7 @@ html {
 
   .stocks_ForYouNav {
     position: fixed;
-    top: 3.58vw;
+    top: 3.51vw;
     border: black 2px solid;
     border-top: none;
     border-left: none;
@@ -2511,6 +2521,7 @@ html {
   .stocks_ForYouNav a {
     font-size: 20px;
     text-decoration: none;
+    padding: 3.46vw;
     color: white;
   }
 
@@ -2666,7 +2677,9 @@ html {
   }
 
   .forecastCard {
-    padding: 10px;
+    padding: 5px;
+    padding-bottom: 45px;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2674,7 +2687,129 @@ html {
     border: black 1px solid;
     color: white;
     text-shadow: 1px 1px black;
-    /* border-radius: 20px; */
+    border-radius: 20px;
+  }
+
+  .forecastDays {
+    font-size: 2vw;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .helpSettings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 50px;
+    gap: 20px;
+    text-decoration: none;
+    padding-bottom: 3vw;
+  }
+
+  .help_button {
+    padding-top: 15px;
+    margin-left: 25vw;
+  }
+
+  .information_box {
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    width: 500px;
+    margin-left: 35%;
+    background-color: rgb(48, 48, 48);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .change_username {
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    width: 750px;
+    margin-left: 28%;
+    background-color: rgb(48, 48, 48);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .search_bar {
+    width: 500px;
+    margin-left: 18vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .button-search {
+    background-color: darkturquoise;
+    border-radius: 0.4em;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.4em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.4em;
+    width: 65px;
+    padding-bottom: 1.5px;
+    float: right;
+    margin-top: 13px;
+    margin-right: 11vw;
+  }
+
+  .dropdown {
+    padding-left: 36vw;
+  }
+
+  .covid_search_bar {
+    width: 500px;
+    margin-left: 23vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .trend_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #242526;
+    width: 17vw;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    overflow: scroll;
+    font-size: 20px;
+    max-height: 500px;
+    margin-right: 501px;
   }
 }
 
@@ -3243,7 +3378,7 @@ html {
 
   .shopping_search_bar {
     width: 500px;
-    margin-left: 220px;
+    margin-left: 150px;
     border-right: none;
     border-top-left-radius: 0.4em;
     border-bottom-left-radius: 0.4em;
@@ -4007,14 +4142,16 @@ html {
 
   .contact_button {
     border: 1px solid white;
-    width: 125px;
+    /* width: 125px; */
     padding: 5px;
     padding-left: 35px;
     border-radius: 0.9em;
     transition: 1s all ease;
     cursor: pointer;
-    margin-top: 110px;
-    margin-left: 100px;
+    /* margin-top: 110px; */
+    margin-left: 175px;
+    padding-right: 35px;
+    text-decoration: none;
   }
 
   .contact_button:hover {

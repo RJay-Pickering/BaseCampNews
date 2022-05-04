@@ -167,7 +167,7 @@ function randomAdFunction(i) {
       return response.json();
     })
     .then((data) => {
-      var randoad = Math.floor(Math.random() * 7);
+      var randoad = Math.floor(Math.random() * 8);
       const a = data[randoad];
 
       const aLink = document.createElement("a");

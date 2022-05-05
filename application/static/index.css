@@ -965,7 +965,7 @@ html {
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 .shopping_ForYouNav a {
@@ -1106,7 +1106,7 @@ html {
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 .health_ForYouNav a {
@@ -1554,7 +1554,7 @@ html {
   background-color: #3a3b3c;
   font-stretch: expanded;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 .stocks_ForYouNav a {
@@ -1908,7 +1908,7 @@ html {
 .footer {
   background-color: #3a3b3c;
   color: white;
-  height: 400px;
+  height: 300px;
   padding-top: 50px;
 }
 
@@ -1917,10 +1917,13 @@ html {
   width: 125px;
   padding: 5px;
   padding-left: 35px;
+  padding-right: 35px;
+  text-decoration: none;
+  color: white;
   border-radius: 0.9em;
   transition: 1s all ease;
   cursor: pointer;
-  margin-top: 110px;
+  margin-top: 125px;
   margin-left: 175px;
 }
 
@@ -2046,6 +2049,7 @@ html {
 
 .social_list {
   list-style: none;
+  padding-bottom: 5px;
 }
 
 .social_list li {
@@ -2416,7 +2420,7 @@ html {
     background-color: #3a3b3c;
     font-stretch: expanded;
     padding: 5px;
-    margin-top: 2px;
+    margin-top: 0px;
   }
 
   .shopping_ForYouNav a {
@@ -2521,7 +2525,7 @@ html {
   .stocks_ForYouNav a {
     font-size: 20px;
     text-decoration: none;
-    padding: 3.46vw;
+    padding: 3.4vw;
     color: white;
   }
 
@@ -2580,7 +2584,7 @@ html {
   }
 
   .shopping_title {
-    margin-top: 103px;
+    margin-top: 100px;
     color: white;
     position: fixed;
     border: 1px solid #81d2ef;
@@ -2767,7 +2771,7 @@ html {
   }
 
   .dropdown {
-    padding-left: 36vw;
+    padding-left: 28vw;
   }
 
   .covid_search_bar {
@@ -2800,22 +2804,89 @@ html {
     padding-bottom: 7.125px;
   }
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #242526;
-    width: 17vw;
-    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
-    overflow: scroll;
-    font-size: 20px;
-    max-height: 500px;
-    margin-right: 501px;
+  .entertainment_search_bar {
+    width: 500px;
+    margin-left: 19vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .lifestyle_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .shopping_search_bar {
+    width: 500px;
+    margin-left: 20vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .health_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .stocks_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
   }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 1385px) and (min-width: 1034px) {
+  .nav_bar {
+    width: 1390px;
+  }
+
   .ForYouNav {
     position: fixed;
     top: 4.7vw;
@@ -4142,16 +4213,16 @@ html {
 
   .contact_button {
     border: 1px solid white;
-    /* width: 125px; */
     padding: 5px;
     padding-left: 35px;
     border-radius: 0.9em;
     transition: 1s all ease;
     cursor: pointer;
-    /* margin-top: 110px; */
+    margin-top: 110px;
     margin-left: 175px;
     padding-right: 35px;
     text-decoration: none;
+    color: white;
   }
 
   .contact_button:hover {

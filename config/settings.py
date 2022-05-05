@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-90&=zl6%xuh7o!%qro(yx(k_pjm+80cqi^v@v6#kyjymvx1gxk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['config.settings']
+ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'application.Customer'
 
@@ -135,5 +135,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+CSRF_TRUSTED_ORIGINS = ['https://cryptic-escarpment-38091.herokuapp.com/']
 
 django_heroku.settings(locals())

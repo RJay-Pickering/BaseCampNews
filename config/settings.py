@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,8 @@ SECRET_KEY = 'django-insecure-90&=zl6%xuh7o!%qro(yx(k_pjm+80cqi^v@v6#kyjymvx1gxk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://cryptic-escarpment-38091.herokuapp.com/']
+ALLOWED_HOSTS = ['https://cryptic-escarpment-38091.herokuapp.com',
+'127.0.0.1']
 
 AUTH_USER_MODEL = 'application.Customer'
 
@@ -124,7 +126,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 # Default primary key field type
@@ -134,5 +138,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-CSRF_TRUSTED_ORIGINS = ['https://cryptic-escarpment-38091.herokuapp.com/']
+# CSRF_TRUSTED_ORIGINS = ['https://cryptic-escarpment-38091.herokuapp.com/']
 

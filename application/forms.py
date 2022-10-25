@@ -4,7 +4,7 @@ from django.forms import ModelForm
 
 class CreateUserForm(UserCreationForm):
 
-    
+    new_name = "User123"
 
     class Meta:
         model = Customer

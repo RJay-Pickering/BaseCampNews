@@ -36,20 +36,21 @@
                   <p>{{form.password2.label}}</p>
                   {{form.password2}}
                 </div>
-
-                <div class="input-group1">
-                  <p>{{form.interest1.label}}</p>
-                  {{form.interest1}}
-                </div>
-                <div class="input-group1">
-                  <p>{{form.interest2.label}}</p>
-                  {{form.interest2}}
-                  <p></p>
-                </div>
-                <div class="input-group1">
-                  <p>{{form.interest3.label}}</p>
-                  {{form.interest3}}
-                  <p></p>
+                <div class="form_container-interest">
+                  <div class="input-group-interest">
+                    <p>{{form.interest1.label}}</p>
+                    {{form.interest1}}
+                  </div>
+                  <div class="input-group-interest">
+                    <p>{{form.interest2.label}}</p>
+                    {{form.interest2}}
+                    <p></p>
+                  </div>
+                  <div class="input-group-interest">
+                    <p>{{form.interest3.label}}</p>
+                    {{form.interest3}}
+                    <p></p>
+                  </div>
                 </div>
                 <p class="signup_btn">Already Have An Account? <a href="{% url 'signin' %}" class="register_btn">Sign In</a></p>
                 <div>

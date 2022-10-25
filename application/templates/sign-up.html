@@ -9,51 +9,51 @@
     <link rel="stylesheet" href="{% static 'index.css' %}" />
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
   </head>
-  <body>
+  <body class="signUpBody">
     <div class="user_card_register">
-      <div class="title-login">
-        <img src="{% static 'bcca.png' %}" class="bcn_img2" />
-        <h1 class="sign_in_title">SIGN UP</h1>
+      <div class="title-register">
+        <img src="{% static 'bcca.png' %}" class="bcn_img3" />
+        <h1 class="sign_in_title">Register</h1>
       </div>
         <div class="">
-        <div class="form_container">
+        <div class="form_container-register">
             <form method="POST" action="">
                 {% csrf_token %}
-                <div class="input-group">
+                <div class="input-group1">
                   {{form.username.label}}
                   <p></p>
                   {{form.username}}
                 </div>
-                <div class="input-group">
+                <div class="input-group1">
                   <p>{{form.email.label}}</p>
                   {{form.email}}
                 </div>
-                <div class="input-group">
+                <div class="input-group1">
                   <p>{{form.password1.label}}</p>
                   {{form.password1}}
                 </div>
-                <div class="input-group">
+                <div class="input-group1">
                   <p>{{form.password2.label}}</p>
                   {{form.password2}}
                 </div>
 
-                <div class="input-group">
+                <div class="input-group1">
                   <p>{{form.interest1.label}}</p>
                   {{form.interest1}}
                 </div>
-                <div class="input-group">
+                <div class="input-group1">
                   <p>{{form.interest2.label}}</p>
                   {{form.interest2}}
                   <p></p>
                 </div>
-                <div class="input-group">
+                <div class="input-group1">
                   <p>{{form.interest3.label}}</p>
                   {{form.interest3}}
                   <p></p>
                 </div>
                 <p class="signup_btn">Already Have An Account? <a href="{% url 'signin' %}" class="register_btn">Sign In</a></p>
-                <div class="login_container">
-                  <input class="login_btn" type="submit" value="Register" />
+                <div>
+                  <input class="login_new_btn" type="submit" value="Create Account" />
                 </div>
               </form>
         </div>
@@ -66,4 +66,3 @@
       </div>
   </body>
 </html>
-{% comment %} test {% endcomment %}

@@ -2248,12 +2248,12 @@ html, body  {
   color: black;
 }
 
-.register_btn {
+.login_to_register_btn {
   color: #01a7e4;
   text-decoration: none;
 }
 
-.register_btn:hover {
+.login_to_register_btn:hover {
   color: black;
   text-decoration: underline;
 }
@@ -2305,18 +2305,18 @@ html, body  {
 
 
 
-/* ////////////////////////////////////sign-out//////////////////////////////////// */
+/* ////////////////////////////////////sign-up//////////////////////////////////// */
 .user_card_register {
-  width: 350px;
-  margin-top: 180px;
-  margin-left: 525px;
+  width: fit-content;
   margin-bottom: auto;
   background: white;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 5vh;
+  padding-left: 9vh;
+  padding-right: 9vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -2326,6 +2326,85 @@ html, body  {
 }
 
 .signup_btn {
-  margin-left: 50px;
+  margin-top: 3vh;
 }
-/* /////////////////////////////////end of sign-out//////////////////////////////// */
+
+.signUpBody {
+  margin: 0;
+  background-color: white;
+}
+
+.title-register {
+  text-align: center;
+  align-items: center;
+  color: black;
+}
+
+.bcn_img3 {
+  height: 60px;
+  width: auto;
+  padding: 0;
+}
+
+.form_container-register {
+  margin-top: 2vh;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input-group1 {
+  border: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.register_btn {
+  color: #01a7e4;
+  text-decoration: none;
+}
+
+.register_btn:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.login_new_btn {
+  background: white;
+  color: black;
+  border: 1px solid #81d2ef;
+  border-radius: 1em;
+  padding: 1vh;
+}
+
+.login_new_btn:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+
+.login_new_btn:hover {
+  background-color: #81d2ef;
+  cursor: pointer;
+  color: white;
+}
+/* /////////////////////////////////end of sign-up//////////////////////////////// */
+
+/* @media screen and (max-width: 2559px) or (max-height: 1599px) {
+  .user_card_register {
+    width: fit-content;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+} */

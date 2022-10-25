@@ -1,12 +1,53 @@
-.flexbox {
-  display: flex;
-}
-
-body {
+/* ///////////////////////////////////body code/////////////////////////////////// */
+html, body  {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
+.food_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.drink_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.travel_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+/* ////////////////////////////////end of body code//////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////Navbar///////////////////////////////////// */
 .nav_bar {
   position: fixed;
   top: 0;
@@ -21,1125 +62,6 @@ body {
   color: white;
 }
 
-.margin_in_nav {
-  margin-left: 50px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-}
-
-html {
-  padding: 0;
-  margin: 0;
-}
-
-.bcn_img {
-  height: 50px;
-  width: auto;
-}
-
-.bcn_img2 {
-  height: 60px;
-  width: auto;
-  padding: 0;
-  margin-left: 35px;
-  /* border: 2px solid black; */
-}
-
-.button-search {
-  background-color: darkturquoise;
-  border-radius: 0.4em;
-  border-left: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0.4em;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0.4em;
-  width: 65px;
-  padding-bottom: 1.5px;
-  float: right;
-  margin-top: 13px;
-}
-
-.search_bar {
-  width: 500px;
-  margin-left: 20px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.search_img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  margin: 0;
-}
-
-.user_card_login {
-  width: 350px;
-  margin-top: 180px;
-  margin-left: 525px;
-  margin-bottom: auto;
-  background: white;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-}
-
-.user_card_register {
-  width: 350px;
-  margin-top: 180px;
-  margin-left: 525px;
-  margin-bottom: auto;
-  background: white;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-}
-
-.title-login {
-  margin-left: 105px;
-  color: black;
-}
-
-.input-group {
-  border: 0;
-  border-radius: 0.25rem 0 0 0.25rem;
-  margin-left: 100px;
-}
-
-.form_container {
-  margin-top: 0;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.login_btn {
-  background: white;
-  color: black;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  border: 1px solid #81d2ef;
-  border-radius: 1em;
-  width: 25%;
-  padding: 5px;
-  margin-left: 125px;
-}
-
-.login_btn:focus {
-  box-shadow: none;
-  outline: 0px;
-}
-
-.login_btn:hover {
-  background-color: #81d2ef;
-  cursor: pointer;
-  color: white;
-}
-
-.signInBody {
-  margin: 0;
-  background-color: white;
-}
-
-.signInText {
-  color: black;
-}
-
-.register_btn {
-  color: #01a7e4;
-  text-decoration: none;
-}
-
-.register_btn:hover {
-  color: black;
-  text-decoration: underline;
-}
-
-.card {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 25px;
-  height: 500px;
-  width: 300px;
-  margin: 15px;
-  padding: 50px;
-  margin-top: 200px;
-  margin-left: 50px;
-  text-align: center;
-  display: inline-block;
-  line-height: 1em;
-  overflow: hidden;
-}
-.card:hover {
-  text-decoration: underline;
-}
-
-.aLink {
-  color: black;
-  text-decoration: none;
-}
-
-.input-group {
-  border: 0;
-  border-radius: 0.25rem 0 0 0.25rem;
-  margin-left: 100px;
-}
-
-.login_and_register {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  margin-left: 50px;
-  gap: 20px;
-  text-decoration: none;
-}
-
-.helpSettings {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  margin-left: 50px;
-  gap: 20px;
-  text-decoration: none;
-}
-
-.register {
-  text-decoration: none;
-}
-
-.login {
-  text-decoration: none;
-}
-
-.register:active {
-  color: black;
-}
-
-.login:active {
-  color: black;
-}
-
-.register:link {
-  color: black;
-}
-
-.login:link {
-  color: black;
-}
-
-.register:visited {
-  color: black;
-}
-
-.login:visited {
-  color: black;
-}
-
-.register:hover {
-  color: #01a7e4;
-}
-
-.login:hover {
-  color: #01a7e4;
-}
-
-.signup_btn {
-  margin-left: 50px;
-}
-
-.news {
-  overflow: hidden;
-  padding: 0px;
-  font-size: 20px;
-  display: flex;
-  height: 100%;
-  width: auto;
-}
-
-.newsForecast {
-  overflow: hidden;
-  padding: 0px;
-  font-size: 20px;
-  height: 100%;
-  width: auto;
-}
-
-.column {
-  inline-size: 500px;
-  overflow: hidden;
-  padding: 0px;
-  font-size: 20px;
-  height: 100%;
-  width: auto;
-  flex: 33.3%;
-}
-
-.columnForecast {
-  inline-size: 500px;
-  overflow: hidden;
-  padding: 0px;
-  font-size: 20px;
-  display: inline;
-  height: 100%;
-  width: 100%;
-}
-
-.apiImage {
-  height: 200px;
-  width: 250px;
-}
-
-.news_category {
-  text-align: center;
-}
-
-/* .all_news {
-} */
-
-.entertainment_link:hover {
-  color: rgb(225, 163, 194);
-  text-decoration: underline;
-}
-
-.covid_link:hover {
-  color: #ec3a04;
-  text-decoration: underline;
-}
-
-.lifestyle_link:hover {
-  color: rgb(161, 84, 161);
-  text-decoration: underline;
-}
-
-.stocks_link:hover {
-  color: rgb(34, 224, 34);
-  text-decoration: underline;
-}
-
-.health_link:hover {
-  color: orange;
-  text-decoration: underline;
-}
-
-.food_link:hover {
-  color: #01a7e4;
-  text-decoration: underline;
-}
-
-.drink_link:hover {
-  color: mediumaquamarine;
-  text-decoration: underline;
-}
-
-.travel_link:hover {
-  color: rgb(219, 219, 4);
-  text-decoration: underline;
-}
-
-.ForYouNav {
-  position: fixed;
-  top: 4.7vw;
-  border: black 1px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  /* overflow: hidden; */
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-}
-
-.ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.94vw;
-  align-content: center;
-  padding-left: 48px;
-}
-
-.ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.UserLocation {
-  cursor: default;
-}
-
-.covid_background {
-  background-color: #212121;
-  padding: 0;
-  margin: 0;
-}
-
-.covid_nav_bar {
-  background-color: #3a3b3c;
-  color: white;
-  width: 1440px;
-  border: 2px solid black;
-  position: fixed;
-  z-index: 1;
-}
-
-.covid_login {
-  color: white;
-  text-decoration: none;
-}
-
-.covid_register {
-  color: white;
-  text-decoration: none;
-}
-
-.covid_register:active {
-  color: white;
-}
-
-.covid_login:active {
-  color: white;
-}
-
-.covid_register:link {
-  color: white;
-}
-
-.covid_login:link {
-  color: white;
-}
-
-.covid_register:visited {
-  color: white;
-}
-
-.covid_login:visited {
-  color: white;
-}
-
-.covid_register:hover {
-  color: #01a7e4;
-}
-
-.covid_login:hover {
-  color: #01a7e4;
-}
-
-.covid_search_bar {
-  width: 500px;
-  margin-left: 140px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.covid_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 1px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  padding: 5px;
-  border: 1px solid black;
-  justify-content: center;
-}
-
-.covid_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.94vw;
-  align-content: center;
-  padding-left: 50px;
-}
-
-.covid_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.covid_title {
-  margin-top: 103px;
-  text-align: left;
-  color: white;
-  border: 1px solid red;
-  background: red;
-  padding: 5px;
-  position: fixed;
-  width: 1440px;
-  padding-left: 100px;
-  text-shadow: 1px 1px black;
-}
-
-.forecastDays {
-  font-size: 2vw;
-  height: 75px;
-  width: 175px;
-  text-align: center;
-}
-
-.forecastCard {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1.5%;
-  border: black 1px solid;
-  color: white;
-  text-shadow: 1px 1px black;
-  /* border-radius: 20px; */
-}
-
-.trend_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
-.trend_nav_bar {
-  position: fixed;
-  background-color: #3a3b3c;
-  color: white;
-  width: 1440px;
-  border: 2px solid black;
-  z-index: 1;
-}
-
-.trend_login {
-  color: white;
-  text-decoration: none;
-}
-
-.trend_register {
-  color: white;
-  text-decoration: none;
-}
-
-.trend_register:active {
-  color: white;
-}
-
-.trend_login:active {
-  color: white;
-}
-
-.trend_register:link {
-  color: white;
-}
-
-.trend_login:link {
-  color: white;
-}
-
-.trend_register:visited {
-  color: white;
-}
-
-.trend_login:visited {
-  color: white;
-}
-
-.trend_register:hover {
-  color: #01a7e4;
-}
-
-.trend_login:hover {
-  color: #01a7e4;
-}
-
-.trend_search_bar {
-  width: 500px;
-  margin-left: 100px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.trend_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 0px;
-}
-
-.trend_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.94vw;
-  align-content: center;
-  padding-left: 50px;
-}
-
-.trend_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.trend_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid #81d2ef;
-  padding: 3px;
-  width: 1440px;
-  background-color: #81d2ef;
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#weather {
-  display: flex;
-  justify-content: center;
-}
-
-#stocks {
-  display: flex;
-  justify-content: center;
-}
-
-.flexbox {
-  flex-wrap: wrap;
-}
-
-#one {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.entertainment_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
-.entertainment_nav_bar {
-  position: fixed;
-  background-color: #3a3b3c;
-  color: white;
-  width: 1440px;
-  border: 2px solid black;
-  z-index: 1;
-}
-
-.entertainment_login {
-  color: white;
-  text-decoration: none;
-}
-
-.entertainment_register {
-  color: white;
-  text-decoration: none;
-}
-
-.entertainment_register:active {
-  color: white;
-}
-
-.entertainment_login:active {
-  color: white;
-}
-
-.entertainment_register:link {
-  color: white;
-}
-
-.entertainment_login:link {
-  color: white;
-}
-
-.entertainment_register:visited {
-  color: white;
-}
-
-.entertainment_login:visited {
-  color: white;
-}
-
-.entertainment_register:hover {
-  color: #01a7e4;
-}
-
-.entertainment_login:hover {
-  color: #01a7e4;
-}
-
-.entertainment_search_bar {
-  width: 500px;
-  margin-left: 100px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.entertainment_ForYouNav {
-  position: fixed;
-  top: 4.7vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 2px;
-}
-
-.entertainment_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.94vw;
-  align-content: center;
-  padding-left: 50px;
-}
-
-.entertainment_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.entertainment_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid rgb(225, 163, 194);
-  padding: 3px;
-  width: 1440px;
-  background-color: rgb(225, 163, 194);
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-.lifestyle_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
-.lifestyle_nav_bar {
-  position: fixed;
-  background-color: #3a3b3c;
-  color: white;
-  width: 1440px;
-  border: 2px solid black;
-  z-index: 1;
-}
-
-.lifestyle_login {
-  color: white;
-  text-decoration: none;
-}
-
-.lifestyle_register {
-  color: white;
-  text-decoration: none;
-}
-
-.lifestyle_register:active {
-  color: white;
-}
-
-.lifestyle_login:active {
-  color: white;
-}
-
-.lifestyle_register:link {
-  color: white;
-}
-
-.lifestyle_login:link {
-  color: white;
-}
-
-.lifestyle_register:visited {
-  color: white;
-}
-
-.lifestyle_login:visited {
-  color: white;
-}
-
-.lifestyle_register:hover {
-  color: #01a7e4;
-}
-
-.lifestyle_login:hover {
-  color: #01a7e4;
-}
-
-.lifestyle_search_bar {
-  width: 500px;
-  margin-left: 100px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.lifestyle_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 0px;
-}
-
-.lifestyle_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.94vw;
-  align-content: center;
-  padding-left: 50px;
-}
-
-.lifestyle_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.lifestyle_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid rgb(161, 84, 161);
-  padding: 3px;
-  width: 1440px;
-  background-color: rgb(161, 84, 161);
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-
-.shopping_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
-.shopping_nav_bar {
-  position: fixed;
-  background-color: #3a3b3c;
-  color: white;
-  width: 1440px;
-  border: 2px solid black;
-  z-index: 1;
-}
-
-.shopping_login {
-  color: white;
-  text-decoration: none;
-}
-
-.shopping_register {
-  color: white;
-  text-decoration: none;
-}
-
-.shopping_register:active {
-  color: white;
-}
-
-.shopping_login:active {
-  color: white;
-}
-
-.shopping_register:link {
-  color: white;
-}
-
-.shopping_login:link {
-  color: white;
-}
-
-.shopping_register:visited {
-  color: white;
-}
-
-.shopping_login:visited {
-  color: white;
-}
-
-.shopping_register:hover {
-  color: #01a7e4;
-}
-
-.shopping_login:hover {
-  color: #01a7e4;
-}
-
-.shopping_search_bar {
-  width: 500px;
-  margin-left: 100px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.shopping_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 0px;
-}
-
-.shopping_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.94vw;
-  align-content: center;
-  padding-left: 50px;
-}
-
-.shopping_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.shopping_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid #81d2ef;
-  padding: 3px;
-  width: 1440px;
-  background-color: #81d2ef;
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-
-.sports_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 0px;
-}
-
-.sports_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1vw;
-  align-content: center;
-  padding-left: 39px;
-  padding-right: 39px;
-}
-
-.sports_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.health_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
-.health_nav_bar {
-  position: fixed;
-  background-color: #3a3b3c;
-  color: white;
-  width: 1440px;
-  border: 2px solid black;
-  z-index: 1;
-}
-
-.health_login {
-  color: white;
-  text-decoration: none;
-}
-
-.health_register {
-  color: white;
-  text-decoration: none;
-}
-
-.health_register:active {
-  color: white;
-}
-
-.health_login:active {
-  color: white;
-}
-
-.health_register:link {
-  color: white;
-}
-
-.health_login:link {
-  color: white;
-}
-
-.health_register:visited {
-  color: white;
-}
-
-.health_login:visited {
-  color: white;
-}
-
-.health_register:hover {
-  color: #01a7e4;
-}
-
-.health_login:hover {
-  color: #01a7e4;
-}
-
-.health_search_bar {
-  width: 500px;
-  margin-left: 100px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.health_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 0px;
-}
-
-.health_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.94vw;
-  align-content: center;
-  padding-left: 50px;
-}
-
-.health_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.health_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid orange;
-  padding: 3px;
-  width: 1440px;
-  background-color: orange;
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-
-.food_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
 .food_nav_bar {
   position: fixed;
   background-color: #3a3b3c;
@@ -1147,109 +69,6 @@ html {
   width: 1440px;
   border: 2px solid black;
   z-index: 1;
-}
-
-.food_login {
-  color: white;
-  text-decoration: none;
-}
-
-.food_register {
-  color: white;
-  text-decoration: none;
-}
-
-.food_register:active {
-  color: white;
-}
-
-.food_login:active {
-  color: white;
-}
-
-.food_register:link {
-  color: white;
-}
-
-.food_login:link {
-  color: white;
-}
-
-.food_register:visited {
-  color: white;
-}
-
-.food_login:visited {
-  color: white;
-}
-
-.food_register:hover {
-  color: #01a7e4;
-}
-
-.food_login:hover {
-  color: #01a7e4;
-}
-
-.food_search_bar {
-  width: 500px;
-  margin-left: 220px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.food_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 2px;
-}
-
-.food_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.75vw;
-  align-content: center;
-  padding-left: 65px;
-}
-
-.food_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.food_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid #01a7e4;
-  padding: 3px;
-  width: 1440px;
-  background-color: #01a7e4;
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-
-.drink_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
 }
 
 .drink_nav_bar {
@@ -1261,109 +80,6 @@ html {
   z-index: 1;
 }
 
-.drink_login {
-  color: white;
-  text-decoration: none;
-}
-
-.drink_register {
-  color: white;
-  text-decoration: none;
-}
-
-.drink_register:active {
-  color: white;
-}
-
-.drink_login:active {
-  color: white;
-}
-
-.drink_register:link {
-  color: white;
-}
-
-.drink_login:link {
-  color: white;
-}
-
-.drink_register:visited {
-  color: white;
-}
-
-.drink_login:visited {
-  color: white;
-}
-
-.drink_register:hover {
-  color: #01a7e4;
-}
-
-.drink_login:hover {
-  color: #01a7e4;
-}
-
-.drink_search_bar {
-  width: 500px;
-  margin-left: 220px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.drink_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 2px;
-}
-
-.drink_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.75vw;
-  align-content: center;
-  padding-left: 65px;
-}
-
-.drink_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.drink_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid mediumaquamarine;
-  padding: 3px;
-  width: 1440px;
-  background-color: mediumaquamarine;
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-
-.travel_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
 .travel_nav_bar {
   position: fixed;
   background-color: #3a3b3c;
@@ -1373,268 +89,30 @@ html {
   z-index: 1;
 }
 
-.travel_login {
-  color: white;
-  text-decoration: none;
-}
-
-.travel_register {
-  color: white;
-  text-decoration: none;
-}
-
-.travel_register:active {
-  color: white;
-}
-
-.travel_login:active {
-  color: white;
-}
-
-.travel_register:link {
-  color: white;
-}
-
-.travel_login:link {
-  color: white;
-}
-
-.travel_register:visited {
-  color: white;
-}
-
-.travel_login:visited {
-  color: white;
-}
-
-.travel_register:hover {
-  color: #01a7e4;
-}
-
-.travel_login:hover {
-  color: #01a7e4;
-}
-
-.travel_search_bar {
-  width: 500px;
-  margin-left: 220px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.travel_ForYouNav {
+.light_nav_bar {
   position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 2px;
-}
-
-.travel_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.75vw;
-  align-content: center;
-  padding-left: 65px;
-}
-
-.travel_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.travel_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid rgb(219, 219, 4);
-  padding: 3px;
-  width: 1440px;
-  background-color: rgb(219, 219, 4);
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-
-.stocks_background {
-  padding: 0;
-  margin: 0;
-  background-color: #212121;
-}
-
-.stocks_nav_bar {
-  position: fixed;
-  background-color: #3a3b3c;
-  color: white;
+  background-color: white;
+  color: black;
   width: 1440px;
   border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 2px;
   z-index: 1;
 }
 
-.stocks_login {
-  color: white;
-  text-decoration: none;
+.margin_in_nav {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
 }
 
-.stocks_register {
-  color: white;
-  text-decoration: none;
+.bcn_img {
+  height: 50px;
+  width: auto;
 }
-
-.stocks_register:active {
-  color: white;
-}
-
-.stocks_login:active {
-  color: white;
-}
-
-.stocks_register:link {
-  color: white;
-}
-
-.stocks_login:link {
-  color: white;
-}
-
-.stocks_register:visited {
-  color: white;
-}
-
-.stocks_login:visited {
-  color: white;
-}
-
-.stocks_register:hover {
-  color: #01a7e4;
-}
-
-.stocks_login:hover {
-  color: #01a7e4;
-}
-
-.stocks_search_bar {
-  width: 500px;
-  margin-left: 100px;
-  border-right: none;
-  border-top-left-radius: 0.4em;
-  border-bottom-left-radius: 0.4em;
-  outline: none;
-  height: fit-content;
-  font-size: 18px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  padding-top: 7.125px;
-  padding-bottom: 7.125px;
-}
-
-.stocks_ForYouNav {
-  position: fixed;
-  top: 4.75vw;
-  border: black 2px solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  background-color: #3a3b3c;
-  font-stretch: expanded;
-  padding: 5px;
-  margin-top: 0px;
-}
-
-.stocks_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  padding: 1.75vw;
-  align-content: center;
-  padding-left: 50px;
-}
-
-.stocks_ForYouNav a:hover {
-  text-decoration: underline;
-}
-
-.stocks_title {
-  margin-top: 103px;
-  color: white;
-  position: fixed;
-  border: 1px solid rgb(34, 224, 34);
-  padding: 3px;
-  width: 1440px;
-  background-color: rgb(34, 224, 34);
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-}
-
-.dropbtn {
-  color: white;
-  font-size: 16px;
-  padding: 3px;
-  border: 1px solid black;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  cursor: pointer;
-  background-color: red;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: none;
-}
-
-.dropdown {
-  position: absolute;
-  display: inline-block;
-  margin-left: 900px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #242526;
-  width: 17vw;
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
-  overflow: scroll;
-  font-size: 20px;
-  max-height: 500px;
-  margin-right: 500px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* .dropdown a:hover {
-  background-color: #ddd;
-} */
-
-.show {
-  display: block;
-}
-
-/* ///////////// */
-/* ///////////// */
-/* ///////////// */
 
 .sidebar {
   display: flex;
@@ -1691,20 +169,301 @@ html {
   border: none;
 }
 
-/* ///////////// */
-/* ///////////// */
-/* ///////////// */
-
-.lightmode_button {
-  border-radius: 0.9em;
-  padding: 5px;
-  background-color: white;
-  width: 125px;
-  text-align: center;
-  cursor: pointer;
+.login_and_register {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 50px;
+  gap: 20px;
+  text-decoration: none;
 }
 
-.lightmode_button:hover {
+.register {
+  text-decoration: none;
+}
+
+.login {
+  text-decoration: none;
+}
+
+.register:active {
+  color: black;
+}
+
+.login:active {
+  color: black;
+}
+
+.register:link {
+  color: black;
+}
+
+.login:link {
+  color: black;
+}
+
+.register:visited {
+  color: black;
+}
+
+.login:visited {
+  color: black;
+}
+
+.register:hover {
+  color: #01a7e4;
+}
+
+.login:hover {
+  color: #01a7e4;
+}
+
+.search_bar {
+  width: 500px;
+  margin-left: 20px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.food_search_bar {
+  width: 500px;
+  margin-left: 220px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.drink_search_bar {
+  width: 500px;
+  margin-left: 220px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.travel_search_bar {
+  width: 500px;
+  margin-left: 220px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.button-search {
+  background-color: darkturquoise;
+  border-radius: 0.4em;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.4em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0.4em;
+  width: 65px;
+  padding-bottom: 1.5px;
+  float: right;
+  margin-top: 13px;
+}
+
+.search_img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0;
+}
+/* /////////////////////////////////end of Navbar///////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////For You Nav////////////////////////////////// */
+.ForYouNav {
+  position: fixed;
+  top: 4.7vw;
+  border: black 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  /* overflow: hidden; */
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+}
+
+.ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+  padding-left: 48px;
+}
+
+.ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.sports_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.sports_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+  align-content: center;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.sports_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.food_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 2px;
+}
+
+.food_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.75vw;
+  align-content: center;
+  padding-left: 65px;
+}
+
+.food_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.drink_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 2px;
+}
+
+.drink_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.75vw;
+  align-content: center;
+  padding-left: 65px;
+}
+
+.drink_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.travel_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 2px;
+}
+
+.travel_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.75vw;
+  align-content: center;
+  padding-left: 65px;
+}
+
+.travel_ForYouNav a:hover {
   text-decoration: underline;
 }
 
@@ -1734,122 +493,161 @@ html {
   text-decoration: underline;
 }
 
-.light_nav_bar {
-  position: fixed;
-  background-color: white;
-  color: black;
-  width: 1440px;
-  border: 2px solid black;
-  border-left: none;
-  border-right: none;
-  margin-bottom: 2px;
-  z-index: 1;
-}
-
-.light_trend_title {
-  font-family: Helvetica;
-  margin-top: 65px;
-  color: white;
-  position: fixed;
-  border: 1px solid #81d2ef;
-  padding: 3px;
-  width: 1440px;
-  background-color: #81d2ef;
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
-  font-size: 20px;
-  font-style: bold;
-  font-stretch: ultra-expanded;
-}
-
-.light_trend_login {
-  color: black;
-  text-decoration: none;
-}
-
-.light_trend_login:hover {
+.food_link:hover {
   color: #01a7e4;
-}
-
-.light_trend_register {
-  color: black;
-  text-decoration: none;
-}
-
-.light_trend_register:hover {
-  color: #01a7e4;
-}
-
-.light_entertainment_ForYouNav {
-  position: sticky;
-  top: 4.7vw;
-  border: black 1px solid;
-  border-left: none;
-  border-right: none;
-  width: 1440px;
-  overflow: hidden;
-  z-index: 1;
-  background-color: white;
-  font-stretch: expanded;
-  padding: 5px;
-}
-
-.light_entertainment_ForYouNav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  padding: 1.94vw;
-  align-content: center;
-}
-
-.light_entertainment_ForYouNav a:hover {
   text-decoration: underline;
 }
 
-.light_entertainment_nav_bar {
-  position: fixed;
-  background-color: white;
-  color: black;
-  width: 1440px;
-  border: 2px solid black;
-  border-left: none;
-  border-right: none;
-  margin-bottom: 2px;
-  z-index: 1;
+.drink_link:hover {
+  color: mediumaquamarine;
+  text-decoration: underline;
 }
 
-.light_entertainment_title {
-  font-family: Helvetica;
-  margin-top: 65px;
-  color: white;
-  position: fixed;
-  border: 1px solid #81d2ef;
-  padding: 3px;
-  width: 1440px;
-  background-color: #81d2ef;
-  text-shadow: 1px 1px black;
-  padding-left: 50px;
+.travel_link:hover {
+  color: rgb(219, 219, 4);
+  text-decoration: underline;
+}
+/* ///////////////////////////////end of For You Nav/////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////News Section////////////////////////////////// */
+.news {
+  overflow: hidden;
+  padding: 0px;
   font-size: 20px;
-  font-style: bold;
-  font-stretch: ultra-expanded;
+  display: flex;
+  height: 100%;
+  width: auto;
 }
 
-.light_entertainment_login {
+.newsForecast {
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
+  height: 100%;
+  width: auto;
+}
+
+.news_category {
+  text-align: center;
+}
+
+.column {
+  inline-size: 500px;
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
+  height: 100%;
+  width: auto;
+  flex: 33.3%;
+}
+
+.columnForecast {
+  inline-size: 500px;
+  overflow: hidden;
+  padding: 0px;
+  font-size: 20px;
+  display: inline;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 500px;
+  width: 300px;
+  margin: 15px;
+  padding: 50px;
+  margin-top: 200px;
+  margin-left: 50px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1em;
+  overflow: hidden;
+}
+.card:hover {
+  text-decoration: underline;
+}
+
+.aLink {
   color: black;
   text-decoration: none;
 }
 
-.light_entertainment_login:hover {
-  color: #01a7e4;
+.apiImage {
+  height: 200px;
+  width: 250px;
 }
 
-.light_entertainment_register {
+.show {
+  display: block;
+}
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  padding: 3px;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  cursor: pointer;
+  background-color: red;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: none;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-left: 900px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #242526;
+  width: 17vw;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  overflow: scroll;
+  font-size: 20px;
+  max-height: 500px;
+  margin-right: 500px;
+}
+
+.dropdown-content a {
   color: black;
+  padding: 12px 16px;
   text-decoration: none;
-}
-
-.light_entertainment_register:hover {
-  color: #01a7e4;
+  display: block;
 }
 
 .casesBox {
@@ -1859,6 +657,22 @@ html {
 
 .statesHead {
   text-align: center;
+}
+
+.nbaLogo {
+  height: 150px;
+  width: 150px;
+}
+
+#weather {
+  display: flex;
+  justify-content: center;
+}
+
+#one {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .weather_title {
@@ -1874,35 +688,37 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 23px;
 }
+/* //////////////////////////////end of News Section////////////////////////////// */
 
-#wave {
-  position: sticky;
-  height: 70px;
-  width: 1440px;
-  background: #212121;
-  border-radius: 100% 0%;
-}
-#wave:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 35% 25%;
-  width: 1450px;
-  height: 80px;
-  background-color: #212121;
-  right: -5px;
-  top: 40px;
-}
-#wave:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 25% 50%;
-  width: 500px;
-  height: 70px;
-  background-color: #212121;
-  left: 0;
-  top: 27px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////Footer///////////////////////////////////// */
+.bcn_img_footer {
+  height: 75px;
+  width: auto;
+  margin-left: 100px;
+  margin-top: 5px;
 }
 
 .footer {
@@ -1912,109 +728,10 @@ html {
   padding-top: 50px;
 }
 
-.contact_button {
-  border: 1px solid white;
-  width: 125px;
-  padding: 5px;
-  padding-left: 35px;
-  padding-right: 35px;
-  text-decoration: none;
-  color: white;
-  border-radius: 0.9em;
-  transition: 1s all ease;
-  cursor: pointer;
-  margin-top: 125px;
-  margin-left: 175px;
-}
-
-.contact_button:hover {
-  transition: 1s all ease;
-  background-color: white;
-  color: #01a7e4;
-  border: 1px solid #01a7e4;
-}
-
-.bcn_img_footer {
-  height: 75px;
-  width: auto;
-  margin-left: 100px;
-  margin-top: 5px;
-}
-
 .bcn_title_footer {
   margin-top: 30px;
   font-size: 20px;
   margin-left: 10px;
-}
-
-.sidebarHelp {
-  display: flex;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 30px;
-  flex-direction: column;
-  z-index: 1;
-}
-
-.sidebarHelp p {
-  /* padding: 8px 8px 8px 8px; */
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebarHelp a {
-  /* padding: 8px 8px 8px 8px; */
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebarHelp h2 {
-  /* padding: 8px 8px 8px 8px; */
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebarHelp .closeHelp {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openHelp {
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-  float: right;
-  margin-left: 750px;
-  margin-top: 14px;
-}
-
-.openHelp:hover {
-  color: #01a7e4;
-}
-
-.contact_button_border {
-  margin-top: 110px;
-  padding-bottom: 100px;
-  text-decoration: none;
 }
 
 .footer_list {
@@ -2044,6 +761,39 @@ html {
 
 .footer_list li a:active {
   color: white;
+  text-decoration: none;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact_button {
+  border: 1px solid white;
+  width: 125px;
+  padding: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.9em;
+  transition: 1s all ease;
+  cursor: pointer;
+  margin-top: 125px;
+  margin-left: 175px;
+}
+
+.contact_button:hover {
+  transition: 1s all ease;
+  background-color: white;
+  color: #01a7e4;
+  border: 1px solid #01a7e4;
+}
+
+.contact_button_border {
+  margin-top: 110px;
+  padding-bottom: 100px;
   text-decoration: none;
 }
 
@@ -2129,10 +879,1253 @@ html {
   background-color: white;
   transition: all ease 1s;
 }
+/* /////////////////////////////////end of Footer///////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////covid-19//////////////////////////////////// */
+.covid_background {
+  background-color: #212121;
+  padding: 0;
+  margin: 0;
+}
+
+.covid_nav_bar {
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+  position: fixed;
+  z-index: 1;
+}
+
+.covid_search_bar {
+  width: 500px;
+  margin-left: 140px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.covid_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  padding: 5px;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+.covid_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.covid_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.covid_link:hover {
+  color: #ec3a04;
+  text-decoration: underline;
+}
+
+.covid_login {
+  color: white;
+  text-decoration: none;
+}
+
+.covid_register {
+  color: white;
+  text-decoration: none;
+}
+
+.covid_register:active {
+  color: white;
+}
+
+.covid_login:active {
+  color: white;
+}
+
+.covid_register:link {
+  color: white;
+}
+
+.covid_login:link {
+  color: white;
+}
+
+.covid_register:visited {
+  color: white;
+}
+
+.covid_login:visited {
+  color: white;
+}
+
+.covid_register:hover {
+  color: #01a7e4;
+}
+
+.covid_login:hover {
+  color: #01a7e4;
+}
+
+.covid_title {
+  margin-top: 103px;
+  text-align: left;
+  color: white;
+  border: 1px solid red;
+  background: red;
+  padding: 5px;
+  position: fixed;
+  width: 1440px;
+  padding-left: 100px;
+  text-shadow: 1px 1px black;
+}
+/* ////////////////////////////////end of covid-19//////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////trending///////////////////////////////////// */
+.trend_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.trend_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.trend_search_bar {
+  width: 500px;
+  margin-left: 100px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.trend_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.trend_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.trend_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.trend_login {
+  color: white;
+  text-decoration: none;
+}
+
+.trend_register {
+  color: white;
+  text-decoration: none;
+}
+
+.trend_register:active {
+  color: white;
+}
+
+.trend_login:active {
+  color: white;
+}
+
+.trend_register:link {
+  color: white;
+}
+
+.trend_login:link {
+  color: white;
+}
+
+.trend_register:visited {
+  color: white;
+}
+
+.trend_login:visited {
+  color: white;
+}
+
+.trend_register:hover {
+  color: #01a7e4;
+}
+
+.trend_login:hover {
+  color: #01a7e4;
+}
+
+.trend_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.light_trend_title {
+  font-family: Helvetica;
+  margin-top: 65px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+  font-size: 20px;
+  font-style: bold;
+  font-stretch: ultra-expanded;
+}
+
+.light_trend_login {
+  color: black;
+  text-decoration: none;
+}
+
+.light_trend_login:hover {
+  color: #01a7e4;
+}
+
+.light_trend_register {
+  color: black;
+  text-decoration: none;
+}
+
+.light_trend_register:hover {
+  color: #01a7e4;
+}
+/* ////////////////////////////////end of trending///////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////entertainment///////////////////////////////// */
+.entertainment_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.entertainment_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.light_entertainment_nav_bar {
+  position: fixed;
+  background-color: white;
+  color: black;
+  width: 1440px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 2px;
+  z-index: 1;
+}
+
+.entertainment_search_bar {
+  width: 500px;
+  margin-left: 100px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.entertainment_ForYouNav {
+  position: fixed;
+  top: 4.7vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 2px;
+}
+
+.entertainment_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.entertainment_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.light_entertainment_ForYouNav {
+  position: sticky;
+  top: 4.7vw;
+  border: black 1px solid;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: white;
+  font-stretch: expanded;
+  padding: 5px;
+}
+
+.light_entertainment_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 1.94vw;
+  align-content: center;
+}
+
+.light_entertainment_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.entertainment_link:hover {
+  color: rgb(225, 163, 194);
+  text-decoration: underline;
+}
+
+.entertainment_login {
+  color: white;
+  text-decoration: none;
+}
+
+.entertainment_register {
+  color: white;
+  text-decoration: none;
+}
+
+.entertainment_register:active {
+  color: white;
+}
+
+.entertainment_login:active {
+  color: white;
+}
+
+.entertainment_register:link {
+  color: white;
+}
+
+.entertainment_login:link {
+  color: white;
+}
+
+.entertainment_register:visited {
+  color: white;
+}
+
+.entertainment_login:visited {
+  color: white;
+}
+
+.entertainment_register:hover {
+  color: #01a7e4;
+}
+
+.entertainment_login:hover {
+  color: #01a7e4;
+}
+
+.entertainment_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid rgb(225, 163, 194);
+  padding: 3px;
+  width: 1440px;
+  background-color: rgb(225, 163, 194);
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+}
+
+.light_entertainment_title {
+  font-family: Helvetica;
+  margin-top: 65px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+  font-size: 20px;
+  font-style: bold;
+  font-stretch: ultra-expanded;
+}
+
+.light_entertainment_login {
+  color: black;
+  text-decoration: none;
+}
+
+.light_entertainment_login:hover {
+  color: #01a7e4;
+}
+
+.light_entertainment_register {
+  color: black;
+  text-decoration: none;
+}
+
+.light_entertainment_register:hover {
+  color: #01a7e4;
+}
+/* //////////////////////////////end of entertainment////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////lifestyle/////////////////////////////////// */
+.lifestyle_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.lifestyle_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.lifestyle_search_bar {
+  width: 500px;
+  margin-left: 100px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.lifestyle_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.lifestyle_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.lifestyle_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.lifestyle_link:hover {
+  color: rgb(161, 84, 161);
+  text-decoration: underline;
+}
+
+.lifestyle_login {
+  color: white;
+  text-decoration: none;
+}
+
+.lifestyle_register {
+  color: white;
+  text-decoration: none;
+}
+
+.lifestyle_register:active {
+  color: white;
+}
+
+.lifestyle_login:active {
+  color: white;
+}
+
+.lifestyle_register:link {
+  color: white;
+}
+
+.lifestyle_login:link {
+  color: white;
+}
+
+.lifestyle_register:visited {
+  color: white;
+}
+
+.lifestyle_login:visited {
+  color: white;
+}
+
+.lifestyle_register:hover {
+  color: #01a7e4;
+}
+
+.lifestyle_login:hover {
+  color: #01a7e4;
+}
+
+.lifestyle_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid rgb(161, 84, 161);
+  padding: 3px;
+  width: 1440px;
+  background-color: rgb(161, 84, 161);
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+}
+/* ////////////////////////////////end of lifestyle//////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////shopping//////////////////////////////////// */
+.shopping_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.shopping_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.shopping_search_bar {
+  width: 500px;
+  margin-left: 100px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.shopping_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.shopping_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.shopping_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.shopping_login {
+  color: white;
+  text-decoration: none;
+}
+
+.shopping_register {
+  color: white;
+  text-decoration: none;
+}
+
+.shopping_register:active {
+  color: white;
+}
+
+.shopping_login:active {
+  color: white;
+}
+
+.shopping_register:link {
+  color: white;
+}
+
+.shopping_login:link {
+  color: white;
+}
+
+.shopping_register:visited {
+  color: white;
+}
+
+.shopping_login:visited {
+  color: white;
+}
+
+.shopping_register:hover {
+  color: #01a7e4;
+}
+
+.shopping_login:hover {
+  color: #01a7e4;
+}
+
+.shopping_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+}
+/* /////////////////////////////////end of shopping//////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////health///////////////////////////////////// */
+.health_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.health_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.health_search_bar {
+  width: 500px;
+  margin-left: 100px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.health_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.health_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.94vw;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.health_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.health_link:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.health_login {
+  color: white;
+  text-decoration: none;
+}
+
+.health_register {
+  color: white;
+  text-decoration: none;
+}
+
+.health_register:active {
+  color: white;
+}
+
+.health_login:active {
+  color: white;
+}
+
+.health_register:link {
+  color: white;
+}
+
+.health_login:link {
+  color: white;
+}
+
+.health_register:visited {
+  color: white;
+}
+
+.health_login:visited {
+  color: white;
+}
+
+.health_register:hover {
+  color: #01a7e4;
+}
+
+.health_login:hover {
+  color: #01a7e4;
+}
+
+.health_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid orange;
+  padding: 3px;
+  width: 1440px;
+  background-color: orange;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+}
+/* //////////////////////////////////end of health///////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////stocks///////////////////////////////////// */
+.stocks_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.stocks_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 1440px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.stocks_search_bar {
+  width: 500px;
+  margin-left: 100px;
+  border-right: none;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  outline: none;
+  height: fit-content;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-top: 7.125px;
+  padding-bottom: 7.125px;
+}
+
+.stocks_ForYouNav {
+  position: fixed;
+  top: 4.75vw;
+  border: black 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 1440px;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.stocks_ForYouNav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1.75vw;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.stocks_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.stocks_link:hover {
+  color: rgb(34, 224, 34);
+  text-decoration: underline;
+}
+
+.stocks_login {
+  color: white;
+  text-decoration: none;
+}
+
+.stocks_register {
+  color: white;
+  text-decoration: none;
+}
+
+.stocks_register:active {
+  color: white;
+}
+
+.stocks_login:active {
+  color: white;
+}
+
+.stocks_register:link {
+  color: white;
+}
+
+.stocks_login:link {
+  color: white;
+}
+
+.stocks_register:visited {
+  color: white;
+}
+
+.stocks_login:visited {
+  color: white;
+}
+
+.stocks_register:hover {
+  color: #01a7e4;
+}
+
+.stocks_login:hover {
+  color: #01a7e4;
+}
+
+.stocks_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid rgb(34, 224, 34);
+  padding: 3px;
+  width: 1440px;
+  background-color: rgb(34, 224, 34);
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+}
+
+.forecastDays {
+  font-size: 2vw;
+  height: 75px;
+  width: 175px;
+  text-align: center;
+}
+
+.forecastCard {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5%;
+  border: black 1px solid;
+  color: white;
+  text-shadow: 1px 1px black;
+  /* border-radius: 20px; */
+}
+
+#stocks {
+  display: flex;
+  justify-content: center;
+}
+/* //////////////////////////////////end of stocks///////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////setting//////////////////////////////////// */
+.sidebarHelp {
+  display: flex;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.sidebarHelp p {
+  /* padding: 8px 8px 8px 8px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebarHelp a {
+  /* padding: 8px 8px 8px 8px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebarHelp h2 {
+  /* padding: 8px 8px 8px 8px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebarHelp .closeHelp {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 .settings_background {
   background-color: #212121;
   color: white;
+}
+
+.settings_flex {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #3a3b3c;
+  background-color: #3a3b3c;
+  text-shadow: 3px black;
+}
+
+.home_settings {
+  font-size: 60px;
+  text-decoration: none;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+}
+
+.home_settings:hover {
+  color: #01a7e4;
+}
+
+.help_button {
+  padding-top: 15px;
+}
+
+.helpSettings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 50px;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.openHelp {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  float: right;
+  margin-left: 750px;
+  margin-top: 14px;
+}
+
+.openHelp:hover {
+  color: #01a7e4;
 }
 
 .information_box {
@@ -2159,6 +2152,10 @@ html {
   margin-bottom: 20px;
 }
 
+.submit_button {
+  margin-top: 12px;
+}
+
 .change_email {
   text-align: center;
 }
@@ -2170,3253 +2167,165 @@ html {
 .interest_change {
   text-align: center;
 }
+/* /////////////////////////////////end of setting///////////////////////////////// */
 
-.home_settings {
-  font-size: 60px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////sign-in///////////////////////////////////// */
+.signInBody {
+  margin: 0;
+  background-color: white;
+}
+
+.user_card_login {
+  width: 350px;
+  margin-top: 180px;
+  margin-left: 525px;
+  margin-bottom: auto;
+  background: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.title-login {
+  margin-left: 105px;
+  color: black;
+}
+
+.bcn_img2 {
+  height: 60px;
+  width: auto;
+  padding: 0;
+  margin-left: 35px;
+  /* border: 2px solid black; */
+}
+
+.form_container {
+  margin-top: 0;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-group {
+  border: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+  margin-left: 100px;
+}
+
+.signInText {
+  color: black;
+}
+
+.register_btn {
+  color: #01a7e4;
   text-decoration: none;
-  padding-right: 50px;
-  padding-left: 50px;
+}
+
+.register_btn:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.login_btn {
+  background: white;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid #81d2ef;
+  border-radius: 1em;
+  width: 25%;
+  padding: 5px;
+  margin-left: 125px;
+}
+
+.login_btn:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+
+.login_btn:hover {
+  background-color: #81d2ef;
+  cursor: pointer;
   color: white;
 }
+/* /////////////////////////////////end of sign-in///////////////////////////////// */
 
-.home_settings:hover {
-  color: #01a7e4;
-}
 
-.settings_flex {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////sign-out//////////////////////////////////// */
+.user_card_register {
+  width: 350px;
+  margin-top: 180px;
+  margin-left: 525px;
+  margin-bottom: auto;
+  background: white;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  border: 1px solid #3a3b3c;
-  background-color: #3a3b3c;
-  text-shadow: 3px black;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
 }
 
-.help_button {
-  padding-top: 15px;
+.signup_btn {
+  margin-left: 50px;
 }
-
-.submit_button {
-  margin-top: 12px;
-}
-
-.nbaLogo {
-  height: 150px;
-  width: 150px;
-}
-
-/* @media screen and (max-width: 2560px) and (min-width: 1440px) {
-} */
-
-@media screen and (max-width: 2560px) and (min-width: 1445px) {
-  .nav_bar {
-    position: fixed;
-    top: 0;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    z-index: 10;
-    background-color: #3a3b3c;
-    color: white;
-  }
-
-  .margin_in_nav {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-  }
-  .ForYouNav {
-    position: fixed;
-    top: 3.51vw;
-    border: black 1px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    justify-content: center;
-  }
-
-  .ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.4vw;
-    justify-content: center;
-  }
-
-  .ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .covid_nav_bar {
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    position: fixed;
-    z-index: 1;
-  }
-
-  .covid_ForYouNav {
-    position: fixed;
-    top: 3.58vw;
-    border: black 1px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    padding: 5px;
-    border: 1px solid black;
-    justify-content: center;
-  }
-
-  .covid_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.4vw;
-    justify-content: center;
-  }
-
-  .covid_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .trend_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .trend_ForYouNav {
-    position: fixed;
-    top: 3.51vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .trend_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.4vw;
-    align-content: center;
-  }
-
-  .trend_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .entertainment_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .entertainment_ForYouNav {
-    position: fixed;
-    top: 3.51vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .entertainment_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.6vw;
-    align-content: center;
-  }
-
-  .entertainment_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .lifestyle_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .lifestyle_ForYouNav {
-    position: fixed;
-    top: 3.51vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .lifestyle_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.4vw;
-    align-content: center;
-  }
-
-  .lifestyle_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .shopping_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .shopping_ForYouNav {
-    position: fixed;
-    top: 3.51vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 0px;
-  }
-
-  .shopping_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.4vw;
-    align-content: center;
-  }
-
-  .shopping_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .sports_ForYouNav {
-    position: fixed;
-    top: 3.77vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: -5px;
-  }
-
-  .sports_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.4vw;
-    align-content: center;
-  }
-
-  .sports_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .health_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .health_ForYouNav {
-    position: fixed;
-    top: 3.51vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .health_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 3.4vw;
-    align-content: center;
-  }
-
-  .health_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .stocks_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .stocks_ForYouNav {
-    position: fixed;
-    top: 3.51vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .stocks_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    padding: 3.4vw;
-    color: white;
-  }
-
-  .stocks_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .covid_title {
-    margin-top: 100px;
-    text-align: left;
-    color: white;
-    border: 1px solid red;
-    background: red;
-    padding: 3px;
-    position: fixed;
-    width: 100%;
-    padding-left: 50px;
-    text-shadow: 1px 1px black;
-  }
-
-  .trend_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 100%;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .entertainment_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(225, 163, 194);
-    padding: 3px;
-    width: 100%;
-    background-color: rgb(225, 163, 194);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .lifestyle_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(161, 84, 161);
-    padding: 3px;
-    width: 100%;
-    background-color: rgb(161, 84, 161);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .shopping_title {
-    margin-top: 100px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 100%;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .health_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid orange;
-    padding: 3px;
-    width: 100%;
-    background-color: orange;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .stocks_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(34, 224, 34);
-    padding: 3px;
-    width: 100%;
-    background-color: rgb(34, 224, 34);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .weather_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 100%;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-  }
-
-  .user_card_login {
-    width: 350px;
-    margin-top: 11vw;
-    margin-left: 40vw;
-    margin-bottom: auto;
-    background: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-  }
-
-  .user_card_register {
-    width: 350px;
-    margin-top: 3vw;
-    margin-left: 40vw;
-    margin-bottom: auto;
-    background: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-  }
-
-  .newsForecast {
-    overflow: hidden;
-    padding: 0px;
-    font-size: 20px;
-    height: 100%;
-    width: auto;
-    padding-top: 7vw;
-  }
-
-  .forecastCard {
-    padding: 5px;
-    padding-bottom: 45px;
-    width: 15vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5%;
-    border: black 1px solid;
-    color: white;
-    text-shadow: 1px 1px black;
-    border-radius: 20px;
-  }
-
-  .forecastDays {
-    font-size: 2vw;
-    height: auto;
-    width: auto;
-    text-align: center;
-  }
-
-  .helpSettings {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-left: 50px;
-    gap: 20px;
-    text-decoration: none;
-    padding-bottom: 3vw;
-  }
-
-  .help_button {
-    padding-top: 15px;
-    margin-left: 25vw;
-  }
-
-  .information_box {
-    border: 1px solid black;
-    text-align: center;
-    padding: 25px;
-    font-size: 20px;
-    width: 500px;
-    margin-left: 35%;
-    background-color: rgb(48, 48, 48);
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .change_username {
-    border: 1px solid black;
-    text-align: center;
-    padding: 25px;
-    font-size: 20px;
-    width: 750px;
-    margin-left: 28%;
-    background-color: rgb(48, 48, 48);
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .search_bar {
-    width: 500px;
-    margin-left: 18vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .button-search {
-    background-color: darkturquoise;
-    border-radius: 0.4em;
-    border-left: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0.4em;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0.4em;
-    width: 65px;
-    padding-bottom: 1.5px;
-    float: right;
-    margin-top: 13px;
-    margin-right: 11vw;
-  }
-
-  .dropdown {
-    padding-left: 28vw;
-  }
-
-  .covid_search_bar {
-    width: 500px;
-    margin-left: 23vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .trend_search_bar {
-    width: 500px;
-    margin-left: 21vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .entertainment_search_bar {
-    width: 500px;
-    margin-left: 19vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .lifestyle_search_bar {
-    width: 500px;
-    margin-left: 21vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .shopping_search_bar {
-    width: 500px;
-    margin-left: 20vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .health_search_bar {
-    width: 500px;
-    margin-left: 21vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .stocks_search_bar {
-    width: 500px;
-    margin-left: 21vw;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-}
-
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 1385px) and (min-width: 1367px) {
-  .nav_bar {
-    width: 1390px;
-  }
-
-  .ForYouNav {
-    position: fixed;
-    top: 4.7vw;
-    border: black 1px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    /* overflow: hidden; */
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 18px;
-  }
-
-  .ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-  }
-
-  .ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .UserLocation {
-    cursor: default;
-  }
-
-  .covid_background {
-    background-color: #212121;
-    padding: 0;
-    margin: 0;
-  }
-
-  .covid_nav_bar {
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    position: fixed;
-    z-index: 1;
-  }
-
-  .covid_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .covid_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .covid_register:active {
-    color: white;
-  }
-
-  .covid_login:active {
-    color: white;
-  }
-
-  .covid_register:link {
-    color: white;
-  }
-
-  .covid_login:link {
-    color: white;
-  }
-
-  .covid_register:visited {
-    color: white;
-  }
-
-  .covid_login:visited {
-    color: white;
-  }
-
-  .covid_register:hover {
-    color: #01a7e4;
-  }
-
-  .covid_login:hover {
-    color: #01a7e4;
-  }
-
-  .covid_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .covid_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 1px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    padding: 5px;
-    border: 1px solid black;
-    justify-content: center;
-  }
-
-  .covid_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    justify-content: center;
-    padding-left: 65px;
-  }
-
-  .covid_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .covid_title {
-    margin-top: 103px;
-    text-align: left;
-    color: white;
-    border: 1px solid red;
-    background: red;
-    padding: 5px;
-    position: fixed;
-    width: 1440px;
-    padding-left: 100px;
-    text-shadow: 1px 1px black;
-  }
-
-  .forecastDays {
-    font-size: 2vw;
-    height: 75px;
-    width: 175px;
-    text-align: center;
-  }
-
-  .forecastCard {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5%;
-    border: black 1px solid;
-    color: white;
-    text-shadow: 1px 1px black;
-    /* border-radius: 20px; */
-  }
-
-  .trend_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .trend_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .trend_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .trend_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .trend_register:active {
-    color: white;
-  }
-
-  .trend_login:active {
-    color: white;
-  }
-
-  .trend_register:link {
-    color: white;
-  }
-
-  .trend_login:link {
-    color: white;
-  }
-
-  .trend_register:visited {
-    color: white;
-  }
-
-  .trend_login:visited {
-    color: white;
-  }
-
-  .trend_register:hover {
-    color: #01a7e4;
-  }
-
-  .trend_login:hover {
-    color: #01a7e4;
-  }
-
-  .trend_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .trend_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .trend_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 15px;
-  }
-
-  .trend_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .trend_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 1440px;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  #weather {
-    display: flex;
-    justify-content: center;
-  }
-
-  #stocks {
-    display: flex;
-    justify-content: center;
-  }
-
-  .flexbox {
-    flex-wrap: wrap;
-  }
-
-  #one {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .entertainment_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .entertainment_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .entertainment_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .entertainment_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .entertainment_register:active {
-    color: white;
-  }
-
-  .entertainment_login:active {
-    color: white;
-  }
-
-  .entertainment_register:link {
-    color: white;
-  }
-
-  .entertainment_login:link {
-    color: white;
-  }
-
-  .entertainment_register:visited {
-    color: white;
-  }
-
-  .entertainment_login:visited {
-    color: white;
-  }
-
-  .entertainment_register:hover {
-    color: #01a7e4;
-  }
-
-  .entertainment_login:hover {
-    color: #01a7e4;
-  }
-
-  .entertainment_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .entertainment_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1024px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .entertainment_ForYouNav a {
-    padding-left: 2px;
-  }
-
-  .entertainment_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .entertainment_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(225, 163, 194);
-    padding: 3px;
-    width: 1440px;
-    background-color: rgb(225, 163, 194);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-  .lifestyle_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .lifestyle_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .lifestyle_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .lifestyle_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .lifestyle_register:active {
-    color: white;
-  }
-
-  .lifestyle_login:active {
-    color: white;
-  }
-
-  .lifestyle_register:link {
-    color: white;
-  }
-
-  .lifestyle_login:link {
-    color: white;
-  }
-
-  .lifestyle_register:visited {
-    color: white;
-  }
-
-  .lifestyle_login:visited {
-    color: white;
-  }
-
-  .lifestyle_register:hover {
-    color: #01a7e4;
-  }
-
-  .lifestyle_login:hover {
-    color: #01a7e4;
-  }
-
-  .lifestyle_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .lifestyle_ForYouNav {
-    margin-top: 45px;
-  }
-
-  .lifestyle_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .lifestyle_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .lifestyle_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(161, 84, 161);
-    padding: 3px;
-    width: 1440px;
-    background-color: rgb(161, 84, 161);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .shopping_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .shopping_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .shopping_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .shopping_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .shopping_register:active {
-    color: white;
-  }
-
-  .shopping_login:active {
-    color: white;
-  }
-
-  .shopping_register:link {
-    color: white;
-  }
-
-  .shopping_login:link {
-    color: white;
-  }
-
-  .shopping_register:visited {
-    color: white;
-  }
-
-  .shopping_login:visited {
-    color: white;
-  }
-
-  .shopping_register:hover {
-    color: #01a7e4;
-  }
-
-  .shopping_login:hover {
-    color: #01a7e4;
-  }
-
-  .shopping_search_bar {
-    width: 500px;
-    margin-left: 150px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .shopping_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .shopping_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .shopping_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .shopping_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 1440px;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .health_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .health_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .health_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .health_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .health_register:active {
-    color: white;
-  }
-
-  .health_login:active {
-    color: white;
-  }
-
-  .health_register:link {
-    color: white;
-  }
-
-  .health_login:link {
-    color: white;
-  }
-
-  .health_register:visited {
-    color: white;
-  }
-
-  .health_login:visited {
-    color: white;
-  }
-
-  .health_register:hover {
-    color: #01a7e4;
-  }
-
-  .health_login:hover {
-    color: #01a7e4;
-  }
-
-  .health_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .health_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .health_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .health_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .health_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid orange;
-    padding: 3px;
-    width: 1440px;
-    background-color: orange;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .food_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .food_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .food_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .food_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .food_register:active {
-    color: white;
-  }
-
-  .food_login:active {
-    color: white;
-  }
-
-  .food_register:link {
-    color: white;
-  }
-
-  .food_login:link {
-    color: white;
-  }
-
-  .food_register:visited {
-    color: white;
-  }
-
-  .food_login:visited {
-    color: white;
-  }
-
-  .food_register:hover {
-    color: #01a7e4;
-  }
-
-  .food_login:hover {
-    color: #01a7e4;
-  }
-
-  .food_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .food_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .food_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.75vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .food_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .food_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #01a7e4;
-    padding: 3px;
-    width: 1440px;
-    background-color: #01a7e4;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .drink_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .drink_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .drink_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .drink_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .drink_register:active {
-    color: white;
-  }
-
-  .drink_login:active {
-    color: white;
-  }
-
-  .drink_register:link {
-    color: white;
-  }
-
-  .drink_login:link {
-    color: white;
-  }
-
-  .drink_register:visited {
-    color: white;
-  }
-
-  .drink_login:visited {
-    color: white;
-  }
-
-  .drink_register:hover {
-    color: #01a7e4;
-  }
-
-  .drink_login:hover {
-    color: #01a7e4;
-  }
-
-  .drink_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .drink_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .drink_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.75vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .drink_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .drink_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid mediumaquamarine;
-    padding: 3px;
-    width: 1440px;
-    background-color: mediumaquamarine;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .travel_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .travel_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .travel_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .travel_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .travel_register:active {
-    color: white;
-  }
-
-  .travel_login:active {
-    color: white;
-  }
-
-  .travel_register:link {
-    color: white;
-  }
-
-  .travel_login:link {
-    color: white;
-  }
-
-  .travel_register:visited {
-    color: white;
-  }
-
-  .travel_login:visited {
-    color: white;
-  }
-
-  .travel_register:hover {
-    color: #01a7e4;
-  }
-
-  .travel_login:hover {
-    color: #01a7e4;
-  }
-
-  .travel_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .travel_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .travel_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.75vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .travel_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .travel_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(219, 219, 4);
-    padding: 3px;
-    width: 1440px;
-    background-color: rgb(219, 219, 4);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .stocks_background {
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-  }
-
-  .stocks_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .stocks_login {
-    color: white;
-    text-decoration: none;
-  }
-
-  .stocks_register {
-    color: white;
-    text-decoration: none;
-  }
-
-  .stocks_register:active {
-    color: white;
-  }
-
-  .stocks_login:active {
-    color: white;
-  }
-
-  .stocks_register:link {
-    color: white;
-  }
-
-  .stocks_login:link {
-    color: white;
-  }
-
-  .stocks_register:visited {
-    color: white;
-  }
-
-  .stocks_login:visited {
-    color: white;
-  }
-
-  .stocks_register:hover {
-    color: #01a7e4;
-  }
-
-  .stocks_login:hover {
-    color: #01a7e4;
-  }
-
-  .stocks_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .stocks_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .stocks_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.75vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .stocks_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .stocks_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(34, 224, 34);
-    padding: 3px;
-    width: 1440px;
-    background-color: rgb(34, 224, 34);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .nav_bar {
-    position: fixed;
-    top: 0;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1024px;
-    overflow: hidden;
-    z-index: 10;
-    background-color: #3a3b3c;
-    color: white;
-  }
-
-  .search_bar {
-    width: 200px;
-    margin-left: 20px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .footer {
-    background-color: #3a3b3c;
-    color: white;
-    height: 300px;
-    padding-top: 25px;
-    padding-bottom: 0px;
-  }
-
-  .footer_list {
-    border-left: 1px solid #01a7e4;
-    border-right: 1px solid #01a7e4;
-    padding: 50px;
-    list-style: none;
-    float: right;
-    padding-right: 100px;
-  }
-
-  .footer_list li {
-    padding: 10px;
-    text-decoration: none;
-    list-style: none;
-  }
-
-  .footer_list li a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .footer_list li a:hover {
-    color: #01a7e4;
-    text-decoration: none;
-  }
-
-  .footer_list li a:active {
-    color: white;
-    text-decoration: none;
-  }
-
-  .social_list {
-    list-style: none;
-  }
-
-  .social_list li {
-    padding: 5px;
-  }
-
-  .twitter_img {
-    height: 30px;
-    width: 30px;
-    border: 1px solid white;
-    border-radius: 1em;
-    padding: 5px;
-    background-color: white;
-    transition: all ease 1s;
-  }
-
-  .twitter_img:hover {
-    height: 33px;
-    width: 33px;
-    transition: all ease 1s;
-    cursor: pointer;
-  }
-
-  .linkedin_img {
-    height: 30px;
-    width: 30px;
-    border: 1px solid white;
-    border-radius: 1em;
-    padding: 5px;
-    background-color: white;
-    transition: all ease 1s;
-  }
-
-  .linkedin_img:hover {
-    height: 33px;
-    width: 33px;
-    transition: all ease 1s;
-    cursor: pointer;
-  }
-
-  .instagram_img {
-    height: 30px;
-    width: 30px;
-    border: 1px solid white;
-    border-radius: 1em;
-    padding: 5px;
-    background-color: white;
-    transition: all ease 1s;
-  }
-
-  .instagram_img:hover {
-    height: 33px;
-    width: 33px;
-    border: 1px solid white;
-    border-radius: 1em;
-    padding: 5px;
-    background-color: white;
-    transition: all ease 1s;
-  }
-
-  .facebook_img {
-    height: 30px;
-    width: 30px;
-    border: 1px solid white;
-    border-radius: 1em;
-    padding: 5px;
-    background-color: white;
-    transition: all ease 1s;
-  }
-
-  .facebook_img:hover {
-    height: 33px;
-    width: 33px;
-    border: 1px solid white;
-    border-radius: 1em;
-    padding: 5px;
-    background-color: white;
-    transition: all ease 1s;
-  }
-
-  .contact_button {
-    border: 1px solid white;
-    padding: 5px;
-    padding-left: 35px;
-    border-radius: 0.9em;
-    transition: 1s all ease;
-    cursor: pointer;
-    margin-top: 110px;
-    margin-left: 175px;
-    padding-right: 35px;
-    text-decoration: none;
-    color: white;
-  }
-
-  .contact_button:hover {
-    transition: 1s all ease;
-    background-color: white;
-    color: #01a7e4;
-    border: 1px solid #01a7e4;
-  }
-
-  .covid_nav_bar {
-    width: 1024px;
-  }
-
-  .covid_search_bar {
-    width: 300px;
-  }
-
-  .search_img {
-    margin-right: 200px;
-  }
-
-  .covid_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 1px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    padding: 5px;
-    border: 1px solid black;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .covid_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    justify-content: center;
-    padding-left: 25px;
-  }
-
-  .covid_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .covid_title {
-    margin-top: 100px;
-    text-align: left;
-    color: white;
-    border: 1px solid red;
-    background: red;
-    padding: 2px;
-    position: fixed;
-    width: 1024px;
-    padding-left: 50px;
-    text-shadow: 1px 1px black;
-  }
-
-  .trend_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .trend_search_bar {
-    width: 500px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .trend_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-    margin-top: 23px;
-  }
-
-  .trend_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 22px;
-  }
-
-  .trend_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .trend_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 1440px;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .entertainment_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1024px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .entertainment_search_bar {
-    width: 200px;
-  }
-
-  .entertainment_ForYouNav {
-    margin-top: 20px;
-  }
-
-  .entertainment_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 65px;
-  }
-
-  .entertainment_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .entertainment_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(225, 163, 194);
-    padding: 3px;
-    width: 1440px;
-    background-color: rgb(225, 163, 194);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .lifestyle_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .lifestyle_search_bar {
-    width: 200px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .lifestyle_ForYouNav {
-    margin-top: 15px;
-  }
-
-  .lifestyle_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 23px;
-  }
-
-  .lifestyle_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .lifestyle_title {
-    margin-top: 97px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(161, 84, 161);
-    padding: 3px;
-    width: 1440px;
-    background-color: rgb(161, 84, 161);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .shopping_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .shopping_search_bar {
-    width: 200px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .shopping_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 20px;
-  }
-
-  .shopping_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 25px;
-  }
-
-  .shopping_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .shopping_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 1440px;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .health_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .health_search_bar {
-    width: 200px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .health_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 20px;
-  }
-
-  .health_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.94vw;
-    align-content: center;
-    padding-left: 25px;
-  }
-
-  .health_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .health_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid orange;
-    padding: 3px;
-    width: 1440px;
-    background-color: orange;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .stocks_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 1440px;
-    border: 2px solid black;
-    z-index: 1;
-  }
-  .stocks_search_bar {
-    width: 200px;
-    margin-left: 220px;
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .stocks_ForYouNav {
-    position: fixed;
-    top: 4.75vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 1440px;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 20px;
-  }
-
-  .stocks_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 1.75vw;
-    align-content: center;
-    padding-left: 25px;
-  }
-
-  .stocks_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .stocks_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(34, 224, 34);
-    padding: 3px;
-    width: 1440px;
-    background-color: rgb(34, 224, 34);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .dropdown {
-    margin-right: 900px;
-  }
-
-  .margin_in_nav {
-    gap: 0px;
-  }
-
-  .newsForecast {
-    overflow: hidden;
-    padding: 0px;
-    font-size: 20px;
-    height: 100%;
-    width: auto;
-  }
-
-  .column {
-    inline-size: 500px;
-    overflow: hidden;
-    padding: 0px;
-    font-size: 20px;
-    height: 100%;
-    width: auto;
-    flex: 10%;
-  }
-
-  .columnForecast {
-    inline-size: 300px;
-    overflow: hidden;
-    padding: 0px;
-    font-size: 20px;
-    display: inline;
-    height: 100%;
-    width: 100%;
-  }
-
-  .trend_search_bar {
-    width: 300px;
-  }
-
-  .forecastDays {
-    font-size: 20px;
-    height: 50px;
-    width: 65px;
-    text-align: center;
-  }
-
-  .forecastCard {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5%;
-    border: black 1px solid;
-    color: white;
-    text-shadow: 1px 1px black;
-    /* border-radius: 20px; */
-  }
-}
-
-@media screen and (max-width: 1366px) and (min-width: 1034px){
-  .nav_bar {
-    position: fixed;
-    top: 0;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    z-index: 10;
-    background-color: #3a3b3c;
-    color: white;
-  }
-
-  .margin_in_nav {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-  }
-  .ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 1px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    justify-content: center;
-  }
-
-  .ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.5vw;
-    justify-content: center;
-  }
-
-  .ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .covid_nav_bar {
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    position: fixed;
-    z-index: 1;
-  }
-
-  .covid_ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 1px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    padding: 5px;
-    border: 1px solid black;
-    justify-content: center;
-  }
-
-  .covid_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.5vw;
-    justify-content: center;
-  }
-
-  .covid_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .trend_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .trend_ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .trend_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.5vw;
-    align-content: center;
-  }
-
-  .trend_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .entertainment_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .entertainment_ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .entertainment_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.7vw;
-    align-content: center;
-  }
-
-  .entertainment_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .lifestyle_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .lifestyle_ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .lifestyle_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.5vw;
-    align-content: center;
-  }
-
-  .lifestyle_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .shopping_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .shopping_ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 0px;
-  }
-
-  .shopping_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.5vw;
-    align-content: center;
-  }
-
-  .shopping_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .sports_ForYouNav {
-    position: fixed;
-    top: 5.3vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: -5px;
-  }
-
-  .sports_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.5vw;
-    align-content: center;
-  }
-
-  .sports_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .health_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .health_ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .health_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    padding: 2.5vw;
-    align-content: center;
-  }
-
-  .health_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .stocks_nav_bar {
-    position: fixed;
-    background-color: #3a3b3c;
-    color: white;
-    width: 100%;
-    border: 2px solid black;
-    z-index: 1;
-  }
-
-  .stocks_ForYouNav {
-    position: fixed;
-    top: 4.94vw;
-    border: black 2px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    overflow: hidden;
-    background-color: #3a3b3c;
-    font-stretch: expanded;
-    padding: 5px;
-    margin-top: 2px;
-  }
-
-  .stocks_ForYouNav a {
-    font-size: 20px;
-    text-decoration: none;
-    padding: 2.5vw;
-    color: white;
-  }
-
-  .stocks_ForYouNav a:hover {
-    text-decoration: underline;
-  }
-
-  .covid_title {
-    margin-top: 100px;
-    text-align: left;
-    color: white;
-    border: 1px solid red;
-    background: red;
-    padding: 3px;
-    position: fixed;
-    width: 100%;
-    padding-left: 50px;
-    text-shadow: 1px 1px black;
-  }
-
-  .trend_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 100%;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .entertainment_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(225, 163, 194);
-    padding: 3px;
-    width: 100%;
-    background-color: rgb(225, 163, 194);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .lifestyle_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(161, 84, 161);
-    padding: 3px;
-    width: 100%;
-    background-color: rgb(161, 84, 161);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .shopping_title {
-    margin-top: 100px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 100%;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .health_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid orange;
-    padding: 3px;
-    width: 100%;
-    background-color: orange;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .stocks_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid rgb(34, 224, 34);
-    padding: 3px;
-    width: 100%;
-    background-color: rgb(34, 224, 34);
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-  }
-
-  .weather_title {
-    margin-top: 103px;
-    color: white;
-    position: fixed;
-    border: 1px solid #81d2ef;
-    padding: 3px;
-    width: 100%;
-    background-color: #81d2ef;
-    text-shadow: 1px 1px black;
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-  }
-
-  .user_card_login {
-    width: 350px;
-    margin-top: 8vw;
-    margin-left: 36vw;
-    margin-bottom: auto;
-    background: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-  }
-
-  .user_card_register {
-    width: 350px;
-    margin-top: 3vw;
-    margin-left: 40vw;
-    margin-bottom: auto;
-    background: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-  }
-
-  .newsForecast {
-    overflow: hidden;
-    padding: 0px;
-    font-size: 20px;
-    height: 100%;
-    width: auto;
-    padding-top: 11vw;
-  }
-
-  .forecastCard {
-    padding: 5px;
-    padding-bottom: 45px;
-    width: 15vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5%;
-    border: black 1px solid;
-    color: white;
-    text-shadow: 1px 1px black;
-    border-radius: 20px;
-  }
-
-  .forecastDays {
-    font-size: 2vw;
-    height: auto;
-    width: auto;
-    text-align: center;
-  }
-
-  .helpSettings {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-left: 50px;
-    gap: 20px;
-    text-decoration: none;
-    padding-bottom: 3vw;
-  }
-
-  .help_button {
-    padding-top: 15px;
-    margin-left: 25vw;
-  }
-
-  .information_box {
-    border: 1px solid black;
-    text-align: center;
-    padding: 25px;
-    font-size: 20px;
-    width: 500px;
-    margin-left: 30%;
-    background-color: rgb(48, 48, 48);
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .change_username {
-    border: 1px solid black;
-    text-align: center;
-    padding: 25px;
-    font-size: 20px;
-    width: 750px;
-    margin-left: 21%;
-    background-color: rgb(48, 48, 48);
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .search_bar {
-    width: 500px;
-    /* margin-left: 5vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .button-search {
-    background-color: darkturquoise;
-    border-radius: 0.4em;
-    border-left: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0.4em;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0.4em;
-    width: 65px;
-    padding-bottom: 1.5px;
-    float: right;
-    margin-top: 13px;
-    /* margin-right: 5vw; */
-  }
-
-  .dropdown {
-    padding-left: 4.8vw;
-  }
-
-  .covid_search_bar {
-    width: 500px;
-    /* margin-left: 23vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .trend_search_bar {
-    width: 500px;
-    /* margin-left: 21vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .entertainment_search_bar {
-    width: 450px;
-    /* margin-left: 19vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .lifestyle_search_bar {
-    width: 500px;
-    /* margin-left: 21vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .shopping_search_bar {
-    width: 500px;
-    /* margin-left: 20vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .health_search_bar {
-    width: 500px;
-    /* margin-left: 21vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .stocks_search_bar {
-    width: 500px;
-    /* margin-left: 21vw; */
-    border-right: none;
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
-    outline: none;
-    height: fit-content;
-    font-size: 18px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    padding-top: 7.125px;
-    padding-bottom: 7.125px;
-  }
-
-  .title-login {
-    margin-left: 9vw;
-    color: black;
-  }
-
-  .form_container {
-    margin-top: 0;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .input-group {
-    border: 0;
-    border-radius: 0.25rem 0 0 0.25rem;
-    margin-left: 7vw;
-  }
-
-  .signup_btn {
-    margin-left: 5vw;
-  }
-  
-  .openHelp {
-    font-size: 20px;
-    cursor: pointer;
-    color: white;
-    float: right;
-    margin-left: 25vw;
-    margin-top: 14px;
-  }
-
-  .card {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 25px;
-    height: 500px;
-    width: 300px;
-    margin: 15px;
-    padding: 50px;
-    margin-top: 11vw;
-    margin-left: 2vw;
-    text-align: center;
-    display: inline-block;
-    line-height: 1em;
-    overflow: hidden;
-  }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 756px) {
-}
+/* /////////////////////////////////end of sign-out//////////////////////////////// */

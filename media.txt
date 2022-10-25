@@ -1,0 +1,3216 @@
+/* @media screen and (max-width: 2560px) and (min-width: 1440px) {
+} */
+
+@media screen and (max-width: 2560px) and (min-width: 1445px) {
+  .nav_bar {
+    position: fixed;
+    top: 0;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #3a3b3c;
+    color: white;
+  }
+
+  .margin_in_nav {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  .ForYouNav {
+    position: fixed;
+    top: 3.51vw;
+    border: black 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    justify-content: center;
+  }
+
+  .ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .covid_nav_bar {
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .covid_ForYouNav {
+    position: fixed;
+    top: 3.58vw;
+    border: black 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    padding: 5px;
+    border: 1px solid black;
+    justify-content: center;
+  }
+
+  .covid_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    justify-content: center;
+  }
+
+  .covid_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .trend_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .trend_ForYouNav {
+    position: fixed;
+    top: 3.51vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .trend_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    align-content: center;
+  }
+
+  .trend_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .entertainment_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .entertainment_ForYouNav {
+    position: fixed;
+    top: 3.51vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .entertainment_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.6vw;
+    align-content: center;
+  }
+
+  .entertainment_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .lifestyle_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .lifestyle_ForYouNav {
+    position: fixed;
+    top: 3.51vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .lifestyle_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    align-content: center;
+  }
+
+  .lifestyle_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .shopping_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .shopping_ForYouNav {
+    position: fixed;
+    top: 3.51vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 0px;
+  }
+
+  .shopping_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    align-content: center;
+  }
+
+  .shopping_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .sports_ForYouNav {
+    position: fixed;
+    top: 3.77vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: -5px;
+  }
+
+  .sports_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    align-content: center;
+  }
+
+  .sports_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .health_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .health_ForYouNav {
+    position: fixed;
+    top: 3.51vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .health_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 3.4vw;
+    align-content: center;
+  }
+
+  .health_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .stocks_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .stocks_ForYouNav {
+    position: fixed;
+    top: 3.51vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .stocks_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3.4vw;
+    color: white;
+  }
+
+  .stocks_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .covid_title {
+    margin-top: 100px;
+    text-align: left;
+    color: white;
+    border: 1px solid red;
+    background: red;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    padding-left: 50px;
+    text-shadow: 1px 1px black;
+  }
+
+  .trend_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 100%;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .entertainment_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(225, 163, 194);
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(225, 163, 194);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .lifestyle_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(161, 84, 161);
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(161, 84, 161);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .shopping_title {
+    margin-top: 100px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 100%;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .health_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid orange;
+    padding: 3px;
+    width: 100%;
+    background-color: orange;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .stocks_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(34, 224, 34);
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(34, 224, 34);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .weather_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 100%;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+  }
+
+  .user_card_login {
+    width: 350px;
+    margin-top: 11vw;
+    margin-left: 40vw;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  .user_card_register {
+    width: 350px;
+    margin-top: 3vw;
+    margin-left: 40vw;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  .newsForecast {
+    overflow: hidden;
+    padding: 0px;
+    font-size: 20px;
+    height: 100%;
+    width: auto;
+    padding-top: 7vw;
+  }
+
+  .forecastCard {
+    padding: 5px;
+    padding-bottom: 45px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5%;
+    border: black 1px solid;
+    color: white;
+    text-shadow: 1px 1px black;
+    border-radius: 20px;
+  }
+
+  .forecastDays {
+    font-size: 2vw;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .helpSettings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 50px;
+    gap: 20px;
+    text-decoration: none;
+    padding-bottom: 3vw;
+  }
+
+  .help_button {
+    padding-top: 15px;
+    margin-left: 25vw;
+  }
+
+  .information_box {
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    width: 500px;
+    margin-left: 35%;
+    background-color: rgb(48, 48, 48);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .change_username {
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    width: 750px;
+    margin-left: 28%;
+    background-color: rgb(48, 48, 48);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .search_bar {
+    width: 500px;
+    margin-left: 18vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .button-search {
+    background-color: darkturquoise;
+    border-radius: 0.4em;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.4em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.4em;
+    width: 65px;
+    padding-bottom: 1.5px;
+    float: right;
+    margin-top: 13px;
+    margin-right: 11vw;
+  }
+
+  .dropdown {
+    padding-left: 28vw;
+  }
+
+  .covid_search_bar {
+    width: 500px;
+    margin-left: 23vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .trend_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .entertainment_search_bar {
+    width: 500px;
+    margin-left: 19vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .lifestyle_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .shopping_search_bar {
+    width: 500px;
+    margin-left: 20vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .health_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .stocks_search_bar {
+    width: 500px;
+    margin-left: 21vw;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1385px) and (min-width: 1367px) {
+  .nav_bar {
+    width: 1390px;
+  }
+
+  .ForYouNav {
+    position: fixed;
+    top: 4.7vw;
+    border: black 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    /* overflow: hidden; */
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 18px;
+  }
+
+  .ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+  }
+
+  .ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .UserLocation {
+    cursor: default;
+  }
+
+  .covid_background {
+    background-color: #212121;
+    padding: 0;
+    margin: 0;
+  }
+
+  .covid_nav_bar {
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .covid_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .covid_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .covid_register:active {
+    color: white;
+  }
+
+  .covid_login:active {
+    color: white;
+  }
+
+  .covid_register:link {
+    color: white;
+  }
+
+  .covid_login:link {
+    color: white;
+  }
+
+  .covid_register:visited {
+    color: white;
+  }
+
+  .covid_login:visited {
+    color: white;
+  }
+
+  .covid_register:hover {
+    color: #01a7e4;
+  }
+
+  .covid_login:hover {
+    color: #01a7e4;
+  }
+
+  .covid_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .covid_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    padding: 5px;
+    border: 1px solid black;
+    justify-content: center;
+  }
+
+  .covid_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    justify-content: center;
+    padding-left: 65px;
+  }
+
+  .covid_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .covid_title {
+    margin-top: 103px;
+    text-align: left;
+    color: white;
+    border: 1px solid red;
+    background: red;
+    padding: 5px;
+    position: fixed;
+    width: 1440px;
+    padding-left: 100px;
+    text-shadow: 1px 1px black;
+  }
+
+  .forecastDays {
+    font-size: 2vw;
+    height: 75px;
+    width: 175px;
+    text-align: center;
+  }
+
+  .forecastCard {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5%;
+    border: black 1px solid;
+    color: white;
+    text-shadow: 1px 1px black;
+    /* border-radius: 20px; */
+  }
+
+  .trend_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .trend_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .trend_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .trend_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .trend_register:active {
+    color: white;
+  }
+
+  .trend_login:active {
+    color: white;
+  }
+
+  .trend_register:link {
+    color: white;
+  }
+
+  .trend_login:link {
+    color: white;
+  }
+
+  .trend_register:visited {
+    color: white;
+  }
+
+  .trend_login:visited {
+    color: white;
+  }
+
+  .trend_register:hover {
+    color: #01a7e4;
+  }
+
+  .trend_login:hover {
+    color: #01a7e4;
+  }
+
+  .trend_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .trend_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .trend_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 15px;
+  }
+
+  .trend_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .trend_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 1440px;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #weather {
+    display: flex;
+    justify-content: center;
+  }
+
+  #stocks {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flexbox {
+    flex-wrap: wrap;
+  }
+
+  #one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .entertainment_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .entertainment_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .entertainment_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .entertainment_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .entertainment_register:active {
+    color: white;
+  }
+
+  .entertainment_login:active {
+    color: white;
+  }
+
+  .entertainment_register:link {
+    color: white;
+  }
+
+  .entertainment_login:link {
+    color: white;
+  }
+
+  .entertainment_register:visited {
+    color: white;
+  }
+
+  .entertainment_login:visited {
+    color: white;
+  }
+
+  .entertainment_register:hover {
+    color: #01a7e4;
+  }
+
+  .entertainment_login:hover {
+    color: #01a7e4;
+  }
+
+  .entertainment_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .entertainment_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1024px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .entertainment_ForYouNav a {
+    padding-left: 2px;
+  }
+
+  .entertainment_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .entertainment_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(225, 163, 194);
+    padding: 3px;
+    width: 1440px;
+    background-color: rgb(225, 163, 194);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+  .lifestyle_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .lifestyle_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .lifestyle_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .lifestyle_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .lifestyle_register:active {
+    color: white;
+  }
+
+  .lifestyle_login:active {
+    color: white;
+  }
+
+  .lifestyle_register:link {
+    color: white;
+  }
+
+  .lifestyle_login:link {
+    color: white;
+  }
+
+  .lifestyle_register:visited {
+    color: white;
+  }
+
+  .lifestyle_login:visited {
+    color: white;
+  }
+
+  .lifestyle_register:hover {
+    color: #01a7e4;
+  }
+
+  .lifestyle_login:hover {
+    color: #01a7e4;
+  }
+
+  .lifestyle_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .lifestyle_ForYouNav {
+    margin-top: 45px;
+  }
+
+  .lifestyle_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .lifestyle_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .lifestyle_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(161, 84, 161);
+    padding: 3px;
+    width: 1440px;
+    background-color: rgb(161, 84, 161);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .shopping_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .shopping_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .shopping_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .shopping_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .shopping_register:active {
+    color: white;
+  }
+
+  .shopping_login:active {
+    color: white;
+  }
+
+  .shopping_register:link {
+    color: white;
+  }
+
+  .shopping_login:link {
+    color: white;
+  }
+
+  .shopping_register:visited {
+    color: white;
+  }
+
+  .shopping_login:visited {
+    color: white;
+  }
+
+  .shopping_register:hover {
+    color: #01a7e4;
+  }
+
+  .shopping_login:hover {
+    color: #01a7e4;
+  }
+
+  .shopping_search_bar {
+    width: 500px;
+    margin-left: 150px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .shopping_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .shopping_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .shopping_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .shopping_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 1440px;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .health_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .health_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .health_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .health_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .health_register:active {
+    color: white;
+  }
+
+  .health_login:active {
+    color: white;
+  }
+
+  .health_register:link {
+    color: white;
+  }
+
+  .health_login:link {
+    color: white;
+  }
+
+  .health_register:visited {
+    color: white;
+  }
+
+  .health_login:visited {
+    color: white;
+  }
+
+  .health_register:hover {
+    color: #01a7e4;
+  }
+
+  .health_login:hover {
+    color: #01a7e4;
+  }
+
+  .health_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .health_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .health_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .health_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .health_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid orange;
+    padding: 3px;
+    width: 1440px;
+    background-color: orange;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .food_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .food_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .food_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .food_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .food_register:active {
+    color: white;
+  }
+
+  .food_login:active {
+    color: white;
+  }
+
+  .food_register:link {
+    color: white;
+  }
+
+  .food_login:link {
+    color: white;
+  }
+
+  .food_register:visited {
+    color: white;
+  }
+
+  .food_login:visited {
+    color: white;
+  }
+
+  .food_register:hover {
+    color: #01a7e4;
+  }
+
+  .food_login:hover {
+    color: #01a7e4;
+  }
+
+  .food_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .food_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .food_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.75vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .food_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .food_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #01a7e4;
+    padding: 3px;
+    width: 1440px;
+    background-color: #01a7e4;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .drink_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .drink_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .drink_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .drink_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .drink_register:active {
+    color: white;
+  }
+
+  .drink_login:active {
+    color: white;
+  }
+
+  .drink_register:link {
+    color: white;
+  }
+
+  .drink_login:link {
+    color: white;
+  }
+
+  .drink_register:visited {
+    color: white;
+  }
+
+  .drink_login:visited {
+    color: white;
+  }
+
+  .drink_register:hover {
+    color: #01a7e4;
+  }
+
+  .drink_login:hover {
+    color: #01a7e4;
+  }
+
+  .drink_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .drink_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .drink_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.75vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .drink_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .drink_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid mediumaquamarine;
+    padding: 3px;
+    width: 1440px;
+    background-color: mediumaquamarine;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .travel_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .travel_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .travel_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .travel_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .travel_register:active {
+    color: white;
+  }
+
+  .travel_login:active {
+    color: white;
+  }
+
+  .travel_register:link {
+    color: white;
+  }
+
+  .travel_login:link {
+    color: white;
+  }
+
+  .travel_register:visited {
+    color: white;
+  }
+
+  .travel_login:visited {
+    color: white;
+  }
+
+  .travel_register:hover {
+    color: #01a7e4;
+  }
+
+  .travel_login:hover {
+    color: #01a7e4;
+  }
+
+  .travel_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .travel_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .travel_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.75vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .travel_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .travel_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(219, 219, 4);
+    padding: 3px;
+    width: 1440px;
+    background-color: rgb(219, 219, 4);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .stocks_background {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+  }
+
+  .stocks_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .stocks_login {
+    color: white;
+    text-decoration: none;
+  }
+
+  .stocks_register {
+    color: white;
+    text-decoration: none;
+  }
+
+  .stocks_register:active {
+    color: white;
+  }
+
+  .stocks_login:active {
+    color: white;
+  }
+
+  .stocks_register:link {
+    color: white;
+  }
+
+  .stocks_login:link {
+    color: white;
+  }
+
+  .stocks_register:visited {
+    color: white;
+  }
+
+  .stocks_login:visited {
+    color: white;
+  }
+
+  .stocks_register:hover {
+    color: #01a7e4;
+  }
+
+  .stocks_login:hover {
+    color: #01a7e4;
+  }
+
+  .stocks_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .stocks_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .stocks_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.75vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .stocks_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .stocks_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(34, 224, 34);
+    padding: 3px;
+    width: 1440px;
+    background-color: rgb(34, 224, 34);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .nav_bar {
+    position: fixed;
+    top: 0;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1024px;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #3a3b3c;
+    color: white;
+  }
+
+  .search_bar {
+    width: 200px;
+    margin-left: 20px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .footer {
+    background-color: #3a3b3c;
+    color: white;
+    height: 300px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
+
+  .footer_list {
+    border-left: 1px solid #01a7e4;
+    border-right: 1px solid #01a7e4;
+    padding: 50px;
+    list-style: none;
+    float: right;
+    padding-right: 100px;
+  }
+
+  .footer_list li {
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .footer_list li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer_list li a:hover {
+    color: #01a7e4;
+    text-decoration: none;
+  }
+
+  .footer_list li a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  .social_list {
+    list-style: none;
+  }
+
+  .social_list li {
+    padding: 5px;
+  }
+
+  .twitter_img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 5px;
+    background-color: white;
+    transition: all ease 1s;
+  }
+
+  .twitter_img:hover {
+    height: 33px;
+    width: 33px;
+    transition: all ease 1s;
+    cursor: pointer;
+  }
+
+  .linkedin_img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 5px;
+    background-color: white;
+    transition: all ease 1s;
+  }
+
+  .linkedin_img:hover {
+    height: 33px;
+    width: 33px;
+    transition: all ease 1s;
+    cursor: pointer;
+  }
+
+  .instagram_img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 5px;
+    background-color: white;
+    transition: all ease 1s;
+  }
+
+  .instagram_img:hover {
+    height: 33px;
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 5px;
+    background-color: white;
+    transition: all ease 1s;
+  }
+
+  .facebook_img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 5px;
+    background-color: white;
+    transition: all ease 1s;
+  }
+
+  .facebook_img:hover {
+    height: 33px;
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 1em;
+    padding: 5px;
+    background-color: white;
+    transition: all ease 1s;
+  }
+
+  .contact_button {
+    border: 1px solid white;
+    padding: 5px;
+    padding-left: 35px;
+    border-radius: 0.9em;
+    transition: 1s all ease;
+    cursor: pointer;
+    margin-top: 110px;
+    margin-left: 175px;
+    padding-right: 35px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact_button:hover {
+    transition: 1s all ease;
+    background-color: white;
+    color: #01a7e4;
+    border: 1px solid #01a7e4;
+  }
+
+  .covid_nav_bar {
+    width: 1024px;
+  }
+
+  .covid_search_bar {
+    width: 300px;
+  }
+
+  .search_img {
+    margin-right: 200px;
+  }
+
+  .covid_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    padding: 5px;
+    border: 1px solid black;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .covid_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    justify-content: center;
+    padding-left: 25px;
+  }
+
+  .covid_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .covid_title {
+    margin-top: 100px;
+    text-align: left;
+    color: white;
+    border: 1px solid red;
+    background: red;
+    padding: 2px;
+    position: fixed;
+    width: 1024px;
+    padding-left: 50px;
+    text-shadow: 1px 1px black;
+  }
+
+  .trend_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .trend_search_bar {
+    width: 500px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .trend_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+    margin-top: 23px;
+  }
+
+  .trend_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 22px;
+  }
+
+  .trend_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .trend_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 1440px;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .entertainment_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1024px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .entertainment_search_bar {
+    width: 200px;
+  }
+
+  .entertainment_ForYouNav {
+    margin-top: 20px;
+  }
+
+  .entertainment_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 65px;
+  }
+
+  .entertainment_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .entertainment_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(225, 163, 194);
+    padding: 3px;
+    width: 1440px;
+    background-color: rgb(225, 163, 194);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .lifestyle_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .lifestyle_search_bar {
+    width: 200px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .lifestyle_ForYouNav {
+    margin-top: 15px;
+  }
+
+  .lifestyle_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 23px;
+  }
+
+  .lifestyle_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .lifestyle_title {
+    margin-top: 97px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(161, 84, 161);
+    padding: 3px;
+    width: 1440px;
+    background-color: rgb(161, 84, 161);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .shopping_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .shopping_search_bar {
+    width: 200px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .shopping_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  .shopping_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 25px;
+  }
+
+  .shopping_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .shopping_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 1440px;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .health_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .health_search_bar {
+    width: 200px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .health_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  .health_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.94vw;
+    align-content: center;
+    padding-left: 25px;
+  }
+
+  .health_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .health_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid orange;
+    padding: 3px;
+    width: 1440px;
+    background-color: orange;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .stocks_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 1440px;
+    border: 2px solid black;
+    z-index: 1;
+  }
+  .stocks_search_bar {
+    width: 200px;
+    margin-left: 220px;
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .stocks_ForYouNav {
+    position: fixed;
+    top: 4.75vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 1440px;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  .stocks_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 1.75vw;
+    align-content: center;
+    padding-left: 25px;
+  }
+
+  .stocks_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .stocks_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(34, 224, 34);
+    padding: 3px;
+    width: 1440px;
+    background-color: rgb(34, 224, 34);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .dropdown {
+    margin-right: 900px;
+  }
+
+  .margin_in_nav {
+    gap: 0px;
+  }
+
+  .newsForecast {
+    overflow: hidden;
+    padding: 0px;
+    font-size: 20px;
+    height: 100%;
+    width: auto;
+  }
+
+  .column {
+    inline-size: 500px;
+    overflow: hidden;
+    padding: 0px;
+    font-size: 20px;
+    height: 100%;
+    width: auto;
+    flex: 10%;
+  }
+
+  .columnForecast {
+    inline-size: 300px;
+    overflow: hidden;
+    padding: 0px;
+    font-size: 20px;
+    display: inline;
+    height: 100%;
+    width: 100%;
+  }
+
+  .trend_search_bar {
+    width: 300px;
+  }
+
+  .forecastDays {
+    font-size: 20px;
+    height: 50px;
+    width: 65px;
+    text-align: center;
+  }
+
+  .forecastCard {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5%;
+    border: black 1px solid;
+    color: white;
+    text-shadow: 1px 1px black;
+    /* border-radius: 20px; */
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1034px){
+  .nav_bar {
+    position: fixed;
+    top: 0;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #3a3b3c;
+    color: white;
+  }
+
+  .margin_in_nav {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  .ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.5vw;
+    justify-content: center;
+  }
+
+  .ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .covid_nav_bar {
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .covid_ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    padding: 5px;
+    border: 1px solid black;
+    justify-content: center;
+  }
+
+  .covid_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.5vw;
+    justify-content: center;
+  }
+
+  .covid_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .trend_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .trend_ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .trend_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.5vw;
+    align-content: center;
+  }
+
+  .trend_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .entertainment_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .entertainment_ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .entertainment_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.7vw;
+    align-content: center;
+  }
+
+  .entertainment_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .lifestyle_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .lifestyle_ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .lifestyle_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.5vw;
+    align-content: center;
+  }
+
+  .lifestyle_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .shopping_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .shopping_ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 0px;
+  }
+
+  .shopping_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.5vw;
+    align-content: center;
+  }
+
+  .shopping_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .sports_ForYouNav {
+    position: fixed;
+    top: 5.3vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: -5px;
+  }
+
+  .sports_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.5vw;
+    align-content: center;
+  }
+
+  .sports_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .health_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .health_ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .health_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2.5vw;
+    align-content: center;
+  }
+
+  .health_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .stocks_nav_bar {
+    position: fixed;
+    background-color: #3a3b3c;
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .stocks_ForYouNav {
+    position: fixed;
+    top: 4.94vw;
+    border: black 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3b3c;
+    font-stretch: expanded;
+    padding: 5px;
+    margin-top: 2px;
+  }
+
+  .stocks_ForYouNav a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 2.5vw;
+    color: white;
+  }
+
+  .stocks_ForYouNav a:hover {
+    text-decoration: underline;
+  }
+
+  .covid_title {
+    margin-top: 100px;
+    text-align: left;
+    color: white;
+    border: 1px solid red;
+    background: red;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    padding-left: 50px;
+    text-shadow: 1px 1px black;
+  }
+
+  .trend_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 100%;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .entertainment_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(225, 163, 194);
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(225, 163, 194);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .lifestyle_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(161, 84, 161);
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(161, 84, 161);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .shopping_title {
+    margin-top: 100px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 100%;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .health_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid orange;
+    padding: 3px;
+    width: 100%;
+    background-color: orange;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .stocks_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid rgb(34, 224, 34);
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(34, 224, 34);
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+  }
+
+  .weather_title {
+    margin-top: 103px;
+    color: white;
+    position: fixed;
+    border: 1px solid #81d2ef;
+    padding: 3px;
+    width: 100%;
+    background-color: #81d2ef;
+    text-shadow: 1px 1px black;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+  }
+
+  .user_card_login {
+    width: 350px;
+    margin-top: 8vw;
+    margin-left: 36vw;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  .user_card_register {
+    width: 350px;
+    margin-top: 3vw;
+    margin-left: 40vw;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  .newsForecast {
+    overflow: hidden;
+    padding: 0px;
+    font-size: 20px;
+    height: 100%;
+    width: auto;
+    padding-top: 11vw;
+  }
+
+  .forecastCard {
+    padding: 5px;
+    padding-bottom: 45px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5%;
+    border: black 1px solid;
+    color: white;
+    text-shadow: 1px 1px black;
+    border-radius: 20px;
+  }
+
+  .forecastDays {
+    font-size: 2vw;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .helpSettings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 50px;
+    gap: 20px;
+    text-decoration: none;
+    padding-bottom: 3vw;
+  }
+
+  .help_button {
+    padding-top: 15px;
+    margin-left: 25vw;
+  }
+
+  .information_box {
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    width: 500px;
+    margin-left: 30%;
+    background-color: rgb(48, 48, 48);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .change_username {
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    width: 750px;
+    margin-left: 21%;
+    background-color: rgb(48, 48, 48);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .search_bar {
+    width: 500px;
+    /* margin-left: 5vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .button-search {
+    background-color: darkturquoise;
+    border-radius: 0.4em;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.4em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.4em;
+    width: 65px;
+    padding-bottom: 1.5px;
+    float: right;
+    margin-top: 13px;
+    /* margin-right: 5vw; */
+  }
+
+  .dropdown {
+    padding-left: 4.8vw;
+  }
+
+  .covid_search_bar {
+    width: 500px;
+    /* margin-left: 23vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .trend_search_bar {
+    width: 500px;
+    /* margin-left: 21vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .entertainment_search_bar {
+    width: 450px;
+    /* margin-left: 19vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .lifestyle_search_bar {
+    width: 500px;
+    /* margin-left: 21vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .shopping_search_bar {
+    width: 500px;
+    /* margin-left: 20vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .health_search_bar {
+    width: 500px;
+    /* margin-left: 21vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .stocks_search_bar {
+    width: 500px;
+    /* margin-left: 21vw; */
+    border-right: none;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    outline: none;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-top: 7.125px;
+    padding-bottom: 7.125px;
+  }
+
+  .title-login {
+    margin-left: 9vw;
+    color: black;
+  }
+
+  .form_container {
+    margin-top: 0;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .input-group {
+    border: 0;
+    border-radius: 0.25rem 0 0 0.25rem;
+    margin-left: 7vw;
+  }
+
+  .signup_btn {
+    margin-left: 5vw;
+  }
+  
+  .openHelp {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    margin-left: 25vw;
+    margin-top: 14px;
+  }
+
+  .card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 500px;
+    width: 300px;
+    margin: 15px;
+    padding: 50px;
+    margin-top: 11vw;
+    margin-left: 2vw;
+    text-align: center;
+    display: inline-block;
+    line-height: 1em;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 756px) {
+}

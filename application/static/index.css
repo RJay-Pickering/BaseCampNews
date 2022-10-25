@@ -2307,11 +2307,10 @@ html, body  {
 
 /* ////////////////////////////////////sign-up//////////////////////////////////// */
 .user_card_register {
-  width: fit-content;
+  min-width: fit-content;
   background: white;
   position: relative;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   padding-top: 4vh;
   padding-bottom: 5vh;
@@ -2329,13 +2328,7 @@ html, body  {
 
 .signUpBody {
   margin: 0;
-  width: fit-content;
   background-color: white;
-  /* align-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; */
 }
 
 .title-register {
@@ -2400,21 +2393,27 @@ html, body  {
 }
 /* /////////////////////////////////end of sign-up//////////////////////////////// */
 
-/* @media screen and (max-width: 2559px) or (max-height: 1599px) {
-  .user_card_register {
-    width: fit-content;
-    margin-bottom: auto;
-    background: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
+@media screen and (max-width: 603px) {
+  .input-group-interest{
+    margin-left: 0;
+    margin-right: 0;
   }
-} */
+  
+  .form_container-interest {
+    margin-top: 2vh;
+    display: contents;
+  }
+
+  .user_card_register {
+    padding-top: 4vh;
+    padding-bottom: 8vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+  }
+  .signUpBody{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}

@@ -2308,18 +2308,11 @@ html, body  {
 /* ////////////////////////////////////sign-up//////////////////////////////////// */
 .user_card_register {
   min-width: fit-content;
-  background: white;
   position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 4vh;
   padding-bottom: 5vh;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
 }
 
 .signup_btn {
@@ -2390,6 +2383,7 @@ html, body  {
 .form_container-interest {
   margin-top: 2vh;
   display: flex;
+  justify-content: center;
 }
 /* /////////////////////////////////end of sign-up//////////////////////////////// */
 

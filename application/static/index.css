@@ -2200,35 +2200,31 @@ html, body  {
 }
 
 .user_card_login {
-  width: 350px;
-  margin-top: 180px;
-  margin-left: 525px;
-  margin-bottom: auto;
-  background: white;
-  position: relative;
+  position: absolute;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
+  border-radius: 4vh; */
 }
 
 .title-login {
-  margin-left: 105px;
-  color: black;
+  text-align: center;
+  align-items: center;
 }
 
 .bcn_img2 {
   height: 60px;
   width: auto;
   padding: 0;
-  margin-left: 35px;
-  /* border: 2px solid black; */
 }
 
 .form_container {
@@ -2236,12 +2232,13 @@ html, body  {
   align-content: center;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .input-group {
   border: 0;
   border-radius: 0.25rem 0 0 0.25rem;
-  margin-left: 100px;
 }
 
 .signInText {
@@ -2261,13 +2258,10 @@ html, body  {
 .login_btn {
   background: white;
   color: black;
-  margin-bottom: 30px;
-  margin-top: 30px;
   border: 1px solid #81d2ef;
   border-radius: 1em;
-  width: 25%;
-  padding: 5px;
-  margin-left: 125px;
+  width: fit-content;
+  padding: 1vh;
 }
 
 .login_btn:focus {
@@ -2308,11 +2302,12 @@ html, body  {
 /* ////////////////////////////////////sign-up//////////////////////////////////// */
 .user_card_register {
   min-width: fit-content;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  padding-top: 4vh;
-  padding-bottom: 5vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .signup_btn {
@@ -2398,16 +2393,21 @@ html, body  {
     display: contents;
   }
 
-  .user_card_register {
-    padding-top: 4vh;
-    padding-bottom: 8vh;
-    padding-left: 7vh;
-    padding-right: 7vh;
-  }
   .signUpBody{
     text-align: center;
     align-items: center;
     align-content: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .user_card_register {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 }

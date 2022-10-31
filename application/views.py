@@ -11,6 +11,9 @@ from django.contrib.auth.models import Group
 
 # Create your views here.
 
+def new_home_page(request):
+    return render(request, "test123.html")
+
 def homeRedirect(request):
     return redirect("home")
 
@@ -155,6 +158,8 @@ def foryou(request):
         f.write('{"user" : "' + request.user.username + '", "interest1": "' + request.user.interest1 + '", "interest2": "' 
         + request.user.interest2 + '", "interest3" : "' + request.user.interest3 + '" }')
         f.close()
+
+    
 
     return render(request, 'nav/fyp.html')
 

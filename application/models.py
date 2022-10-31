@@ -11,7 +11,7 @@ from .managers import CustomerManager
 
 
 class Customer(AbstractBaseUser, PermissionsMixin):
-    username = models.CharField(max_length=128)
+    username = models.CharField(max_length=128, default='New_User_1953', blank="New_User_1953")
     email = models.EmailField(unique=True, default='')
     password1 = models.CharField(max_length=120)
     password2 = models.CharField(max_length=120)

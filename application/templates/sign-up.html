@@ -20,11 +20,6 @@
             <form method="POST" action="">
                 {% csrf_token %}
                 <div class="input-group1">
-                  {{form.username.label}}
-                  <p></p>
-                  {{form.username}}
-                </div>
-                <div class="input-group1">
                   <p>{{form.email.label}}</p>
                   {{form.email}}
                 </div>

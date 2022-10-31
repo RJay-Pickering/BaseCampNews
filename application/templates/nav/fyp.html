@@ -9,20 +9,20 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
     <title>For You</title>
   </head>
-  <body id="main" class="shopping_background">
-    <nav class="shopping_nav_bar">
-      <div class="margin_in_nav">
-        <img src="{% static 'bcca.png' %}" class="bcn_img" />
-        <p>BCN | For You</p>
-        <form action="https://google.com/search" target="_blank">
-          <input type="text" class="shopping_search_bar" name="q" />
+  <body id="main" class="fyp_background">
+    <nav class="fyp_nav_bar">
+      <div class="fyp_margin_in_nav">
+        <div>
+          <img src="{% static 'bcca.png' %}" class="bcn_img" />
+          <p class="nav_bcn_fyp">BCN | Search</p>
+        </div>
+        <form action="https://google.com/search" target="_blank" class="fyp-searching-containers">
+          <input type="text" class="fyp_search_bar" name="topics" placeholder="Search for topics..."/>
           <button class="button-search">
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
         </form>
-        <p id="city"></p>
-        <p id="temp"></p>
-        <div id="mySidebar" class="sidebar">
+        <div id="mySidebar" class="fyp_sidebar">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >×</a
           >
@@ -36,12 +36,16 @@
             <a href="{% url 'signup' %}" class="register">Register</a>
           </div>
           {% endif %}
+          <div class="location_info">
+            <p id="city"></p>
+            <p id="temp"></p>
+          </div>
         </div>
         <button class="openbtn" onclick="openNav()">☰</button>
       </div>
     </nav>
 
-    <div class="shopping_ForYouNav">
+    {% comment %} <div class="fyp_ForYouNav">
       <a href="{% url 'covid' %}" class="covid_link">Covid-19</a>
       <a href="{% url 'weather' %}">Weather</a>
       <a href="{% url 'trending' %}">Trending</a>
@@ -53,7 +57,7 @@
       <a href="{% url 'health' %}" class="health_link">Health</a>
       <a href="{% url 'stocks' %}" class="stocks_link">Stocks</a>
       <a href="{% url 'sport' %}">Sports</a>
-    </div>
+    </div> {% endcomment %}
     <div class="news" id="news">
       <div class="column" id="one"></div>
     </div>

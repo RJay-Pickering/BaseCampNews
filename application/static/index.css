@@ -161,11 +161,11 @@ html, body  {
 }
 
 .openbtn {
-  font-size: 20px;
+  font-size: 3.5vh;
   cursor: pointer;
   background-color: #3a3b3c;
   color: white;
-  padding: 10px 15px;
+  margin-right: 2vh;
   border: none;
 }
 
@@ -286,17 +286,17 @@ html, body  {
   border-top-right-radius: 0.4em;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0.4em;
-  width: 65px;
-  padding-bottom: 1.5px;
+  width: 6vh;
+  padding-bottom: 0.2vw;
   float: right;
-  margin-top: 13px;
+  width: 6vh;
+  padding-top: 0.2vw;
 }
 
 .search_img {
-  width: 30px;
-  height: 30px;
+  width: 2.5vh;
+  height: 3vh;
   cursor: pointer;
-  margin: 0;
 }
 /* /////////////////////////////////end of Navbar///////////////////////////////// */
 
@@ -880,6 +880,204 @@ html, body  {
   transition: all ease 1s;
 }
 /* /////////////////////////////////end of Footer///////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////fyp////////////////////////////////////// */
+.fyp_background {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+.fyp_nav_bar {
+  position: fixed;
+  background-color: #3a3b3c;
+  color: white;
+  width: 100%;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.fyp_margin_in_nav{
+  margin-left: 2vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fyp_margin_in_nav div {
+  display: flex;
+}
+
+.fyp_search_bar {
+  width: 40vw;
+  border-right: none;
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+  outline: none;
+  height: 100%;
+  font-size: 2.15vh;
+  padding-top: 0.88vh;
+  padding-bottom: 0.88vh;
+  padding-left: 2vh;
+}
+
+.fyp_ForYouNav {
+  position: fixed;
+  top: 11.59vh;
+  border: black 2px solid;
+  border-top: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #3a3b3c;
+  font-stretch: expanded;
+  padding: 5px;
+  margin-top: 0px;
+  align-content: center;
+  text-align: center;
+}
+
+.fyp_ForYouNav a {
+  font-size: 3vh;
+  text-decoration: none;
+  color: white;
+  padding: 2vh;
+}
+
+.fyp_ForYouNav a:hover {
+  text-decoration: underline;
+}
+
+.fyp_login {
+  color: white;
+  text-decoration: none;
+}
+
+.fyp_register {
+  color: white;
+  text-decoration: none;
+}
+
+.fyp_register:active {
+  color: white;
+}
+
+.fyp_login:active {
+  color: white;
+}
+
+.fyp_register:link {
+  color: white;
+}
+
+.fyp_login:link {
+  color: white;
+}
+
+.fyp_register:visited {
+  color: white;
+}
+
+.fyp_login:visited {
+  color: white;
+}
+
+.fyp_register:hover {
+  color: #01a7e4;
+}
+
+.fyp_login:hover {
+  color: #01a7e4;
+}
+
+.fyp_title {
+  margin-top: 103px;
+  color: white;
+  position: fixed;
+  border: 1px solid #81d2ef;
+  padding: 3px;
+  width: 1440px;
+  background-color: #81d2ef;
+  text-shadow: 1px 1px black;
+  padding-left: 50px;
+}
+
+.fyp_sidebar {
+  display: flex;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 3.5vh;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.fyp_sidebar a {
+  padding: 2vh 2vh 2vh 4vh;
+  text-decoration: none;
+  font-size: 2.5vh;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.fyp_sidebar p {
+  padding: 2vh 2vh 2vh 4vh;
+  text-decoration: none;
+  font-size: 3.5vh;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.fyp_sidebar a:hover {
+  color: gray;
+}
+
+.fyp_sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2.8vh;
+  font-size: 5vh;
+}
+
+.fyp-searching-containers{
+  display: flex;
+}
+/* /////////////////////////////////end of fyp//////////////////////////////// */
+
 
 
 
@@ -1590,7 +1788,7 @@ html, body  {
   position: fixed;
   background-color: #3a3b3c;
   color: white;
-  width: 1440px;
+  width: 100%;
   border: 2px solid black;
   z-index: 1;
 }
@@ -2399,6 +2597,17 @@ html, body  {
     align-content: center;
     justify-content: center;
   }
+
+  .button-search {
+    display: none;
+  }
+
+  .fyp_search_bar {
+    font-size: initial;
+    padding-left: 2vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+  }
 }
 
 @media screen and (max-height: 750px) {
@@ -2409,5 +2618,16 @@ html, body  {
     transform: none;
     margin-top: 3vh;
     margin-bottom: 3vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .fyp_margin_in_nav div p{
+    display: none;
+  }
+
+  .fyp_search_bar {
+    font-size: initial;
+    padding-left: 2px;
   }
 }

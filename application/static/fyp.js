@@ -41,6 +41,7 @@ fetch("/static/udata.json")
       })
       .then((data) => {
         apples = 0;
+        console.log(data)
         Array.from(data.results).forEach(function (a) {
           var randomAdPlace = Math.floor(Math.random() * 10) + 1;
           console.log(randomAdPlace);
@@ -54,34 +55,32 @@ fetch("/static/udata.json")
             aLink.target = "_blank";
             const article = document.createElement("div");
             const desc = document.createElement("p");
-            desc.innerText = a.description;
-            desc.style.fontSize = "10px";
-            const date = document.createElement("p");
-            date.innerText = `Published: ${a.pubDate}`;
+            if (a.description === null) {
+              desc.innerText = "(description not found or unavailable!)"
+            } else {
+              desc.innerText = a.description;
+            }
+            desc.style.fontSize = "2vh";
             article.classList.add("card");
             const image = document.createElement("img");
             if (a.image_url == null) {
               image.src =
                 "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-              image.style.width = "250px";
-              image.style.height = "200px";
             } else {
               image.src = a.image_url;
-              image.style.width = "250px";
-              image.style.height = "200px";
             }
             image.classList.add("apiImage");
             const title = document.createElement("p");
             title.innerText = a.title;
-            article.appendChild(title);
-            article.appendChild(image);
-            article.appendChild(desc);
-            article.appendChild(date);
+            title.style.fontSize = "3vh"
+            aLink.appendChild(title);
+            aLink.appendChild(image);
+            aLink.appendChild(desc);
             aLink.classList.add("aLink");
-            aLink.appendChild(article);
+            article.appendChild(aLink);
             const one = document.getElementById("one");
             one.classList.add("column");
-            one.appendChild(aLink);
+            one.appendChild(article);
             console.log(article);
           }
         });
@@ -102,34 +101,38 @@ function randomAdFunction(i) {
       const article = document.createElement("div");
       const desc = document.createElement("p");
       desc.innerText = a.creator;
-      desc.style.fontSize = "10px";
+      desc.style.fontSize = "2vh";
       article.classList.add("card");
       const image = document.createElement("img");
       image.src = a.image_url;
       image.classList.add("apiImage");
       const title = document.createElement("p");
       title.innerText = a.title;
-      article.appendChild(title);
-      article.appendChild(image);
-      article.appendChild(desc);
+      title.style.fontSize = "3vh"
+      aLink.appendChild(title);
+      aLink.appendChild(image);
+      aLink.appendChild(desc);
       aLink.classList.add("aLink");
-      aLink.appendChild(article);
+      article.appendChild(aLink);
       const one = document.getElementById("one");
       one.classList.add("column");
       // one.appendChild(aLink);
-      one.insertBefore(aLink, one.children[i]);
+      one.insertBefore(article, one.children[i]);
       console.log(article);
     });
 }
 
 function openNav() {
-  document.getElementById("mySidebar").style.width = "500px";
-  document.getElementById("main").style.marginRight = "250px";
-  document.getElementById("mySidebar").style.border = "1px solid black";
-  document.getElementById("mySidebar").style.zIndex = "10";
+  console.log("checking")
+  document.getElementById("mySidebar").classList.add("open_sidebar_JS-CSS");
+  document.getElementById("main").classList.add("open_main_JS-CSS");
+  document.getElementById("mySidebar").classList.remove("close_sidebar_JS-CSS");
+  document.getElementById("main").classList.remove("close_main_JS-CSS");
 }
 
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginRight = "0";
+  document.getElementById("mySidebar").classList.add("close_sidebar_JS-CSS");
+  document.getElementById("main").classList.add("close_main_JS-CSS");
+  document.getElementById("mySidebar").classList.remove("open_sidebar_JS-CSS");
+  document.getElementById("main").classList.remove("open_main_JS-CSS");
 }

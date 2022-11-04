@@ -123,16 +123,11 @@ function randomAdFunction(i) {
 }
 
 function openNav() {
-  console.log("checking")
   document.getElementById("mySidebar").classList.add("open_sidebar_JS-CSS");
-  document.getElementById("main").classList.add("open_main_JS-CSS");
   document.getElementById("mySidebar").classList.remove("close_sidebar_JS-CSS");
-  document.getElementById("main").classList.remove("close_main_JS-CSS");
 }
 
 function closeNav() {
   document.getElementById("mySidebar").classList.add("close_sidebar_JS-CSS");
-  document.getElementById("main").classList.add("close_main_JS-CSS");
   document.getElementById("mySidebar").classList.remove("open_sidebar_JS-CSS");
-  document.getElementById("main").classList.remove("open_main_JS-CSS");
 }

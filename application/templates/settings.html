@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
     <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'settings_logo.png' %}" />
   </head>
   <body id="main" class="settings_background">
     <div id="helpSidebar" class="sidebarHelp">
@@ -17,101 +18,103 @@
           <h2>Change Help</h2>
           <p>This will change your specific part of your account. Just input a new value in the right text box and press the enter button provided to update your desired part.</p>
           <h2>Website Error</h2>
-          <p>If the website is shut down or not working/loading at all, check your internet. If internet connection is fine, we may be working on this website to update it, check back later!</p>
+          <p class="last_help_tip">If the website is shut down or not working/loading at all, check your internet. If internet connection is fine, we may be working on this website to update it, check back later!</p>
         </div>
+    </div>
+    <div class="settings_flex"> 
+      <a href="{% url 'home' %}" class="home_settings">←</a>
+      <h1>Base Camp News Settings</h1>
+      <div class="help_button">
+        <p class="openHelp" onclick="openHelp()">Help</p>
       </div>
-      <div class="settings_flex"> 
-        <a href="{% url 'home' %}" class="home_settings">←</a>
-        <h1>Base Camp News Settings</h1>
-        <div class="help_button">
-          <p class="openHelp" onclick="openHelp()">Help</p>
-        </div>
-      </div>
+    </div>
     {% comment %} {% for message in messages %}
     <p id="messages">{{message}}</p>
     {% endfor %} {% endcomment %}
-    <div class="information_box">
-      <h2>Account Information</h2>
-      <p>Username: {{request.user.username}}</p>
-      <p>Email: {{request.user.email}}</p>
-      <p>First Interest: {{request.user.interest1}}</p>
-      <p>Second Interest: {{request.user.interest2}}</p>
-      <p>Third Interest: {{request.user.interest3}}</p>
-      <p>Date Joined: {{request.user.date_joined}}</p>
-    </div>
-    <div class="change_username">
-      <form action="" method="POST" >
-        {% csrf_token %}
-        <h2>Change Username</h2>
-        <div><input
-          type="text"
-          name="new_username"
-        />
-        <div class="submit_button">
-        <input type="submit" value="Submit" name="username_change" />
-        </div>
-      </form>
-    </div>
-    <div class="change_email">
-      <form action="" method="POST" >
+    <div class="settings_forms_2-0">
+      <div class="information_box">
+        <h2>Account Information</h2>
+        <p>Username: {{request.user.username}}</p>
+        <p>Email: {{request.user.email}}</p>
+        <p>First Interest: {{request.user.interest1}}</p>
+        <p>Second Interest: {{request.user.interest2}}</p>
+        <p>Third Interest: {{request.user.interest3}}</p>
+        <p>Date Joined: {{request.user.date_joined}}</p>
+      </div>
+      <div class="change_username">
+        <form action="" method="POST" >
           {% csrf_token %}
-          <h2>Change Email</h2>
+          <h2>Change Username</h2>
           <div><input
             type="text"
-            name="new_email"
+            name="new_username"
           />
           <div class="submit_button">
-          <input type="submit" value="Submit" name="email_change" />
+          <input type="submit" value="Submit" name="username_change" />
           </div>
-      </form>
-    </div>
-    <div class="password_box">
-      <form action="" method="POST" >
-        {% csrf_token %}
-        <h2>Change Password</h2>
-        <p>{{form.old_password.label}}</p>
-        <p>{{form.old_password}}</p>
-        <p>{{form.new_password1.label}}</p>
-        <p>{{form.new_password1}}</p>
-        <p>{{form.new_password2.label}}</p>
-        <p>{{form.new_password2}}</p>
-        <div class="submit_button">
-        <input type="submit" value="Submit" name="password_change" />
-        </div>
-      </form>
-    </div>
-
-    <div class="interest_change">
-      <form action="" method="POST" class="interest_change">
+        </form>
+      </div>
+      <div class="change_email">
+        <form action="" method="POST" >
+            {% csrf_token %}
+            <h2>Change Email</h2>
+            <div><input
+              type="text"
+              name="new_email"
+            />
+            <div class="submit_button">
+            <input type="submit" value="Submit" name="email_change" />
+            </div>
+        </form>
+      </div>
+      <div class="password_box">
+        <form action="" method="POST" >
           {% csrf_token %}
-          <h2>Change Interests</h2>
-          <p>First Interest</p>
-          <div><input
-            type="text"
-            name="new_first"
-          />
+          <h2>Change Password</h2>
+          <p>{{form.old_password.label}}</p>
+          <p>{{form.old_password}}</p>
+          <p>{{form.new_password1.label}}</p>
+          <p>{{form.new_password1}}</p>
+          <p>{{form.new_password2.label}}</p>
+          <p>{{form.new_password2}}</p>
           <div class="submit_button">
-          <input type="submit" value="Submit" name="first_change" />
+          <input type="submit" value="Submit" name="password_change" />
           </div>
+        </form>
+      </div>
 
-          <p>Second Interest</p>
-          <div><input
-            type="text"
-            name="new_second"
-          />
-          <div class="submit_button">
-          <input type="submit" value="Submit" name="second_change" />
-          </div>
+      <div class="interest_change">
+        <form action="" method="POST" class="interest_change">
+            {% csrf_token %}
+            <h2>Change Interests</h2>
+            <p>First Interest</p>
+            <div><input
+              type="text"
+              name="new_first"
+            />
+            <div class="submit_button">
+            <input type="submit" value="Submit" name="first_change" />
+            </div>
 
-          <p>Third Interest</p>
-          <div><input
-            type="text"
-            name="new_third"
-          />
-          <div class="submit_button">
-          <input type="submit" value="Submit" name="third_change" />
-          </div>
-      </form>
+            <p>Second Interest</p>
+            <div><input
+              type="text"
+              name="new_second"
+            />
+            <div class="submit_button">
+            <input type="submit" value="Submit" name="second_change" />
+            </div>
+
+            <p>Third Interest</p>
+            <div><input
+              type="text"
+              name="new_third"
+            />
+            <div class="submit_button">
+            <input type="submit" value="Submit" name="third_change" />
+            </div>
+        </form>
+      </div>
     </div>
 
     <script src="{% static 'main.js' %}" defer></script>

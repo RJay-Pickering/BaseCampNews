@@ -2240,7 +2240,6 @@ ul{
 .sidebarHelp {
   display: flex;
   height: 100%;
-  width: 0;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -2248,15 +2247,28 @@ ul{
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 30px;
   flex-direction: column;
   z-index: 1;
+  text-align: center;
+  padding: 0;
 }
 
 .sidebarHelp p {
-  /* padding: 8px 8px 8px 8px; */
+  padding-left: 2vh;
+  padding-right: 2vh;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 3vh;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebarHelp .last_help_tip {
+  padding-bottom: 5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  text-decoration: none;
+  font-size: 3vh;
   color: black;
   display: block;
   transition: 0.3s;
@@ -2274,7 +2286,7 @@ ul{
 .sidebarHelp h2 {
   /* padding: 8px 8px 8px 8px; */
   text-decoration: none;
-  font-size: 25px;
+  font-size: 3vh;
   color: black;
   display: block;
   transition: 0.3s;
@@ -2283,9 +2295,11 @@ ul{
 .sidebarHelp .closeHelp {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 0;
+  font-size: 3.6vh;
+  margin-right: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .settings_background {
@@ -2298,14 +2312,17 @@ ul{
   flex-direction: row;
   border: 1px solid #3a3b3c;
   background-color: #3a3b3c;
-  text-shadow: 3px black;
+  justify-content: space-between;
+}
+
+.settings_flex h1{
+  font-size: 3vw;
 }
 
 .home_settings {
-  font-size: 60px;
+  font-size: 5.5vw;
   text-decoration: none;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 3vw;
   color: white;
 }
 
@@ -2314,25 +2331,21 @@ ul{
 }
 
 .help_button {
-  padding-top: 15px;
+  margin-right: 3vw;
 }
 
 .helpSettings {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
-  margin-left: 50px;
   gap: 20px;
   text-decoration: none;
 }
 
 .openHelp {
-  font-size: 20px;
+  font-size: 2.5vw;
   cursor: pointer;
   color: white;
   float: right;
-  margin-left: 750px;
-  margin-top: 14px;
 }
 
 .openHelp:hover {
@@ -2342,22 +2355,17 @@ ul{
 .information_box {
   border: 1px solid black;
   text-align: center;
-  padding: 25px;
-  font-size: 20px;
-  width: 500px;
-  margin-left: 450px;
+  font-size: 2.5vh;
+  width: 30vw;
   background-color: rgb(48, 48, 48);
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .change_username {
   border: 1px solid black;
   text-align: center;
-  padding: 25px;
-  font-size: 20px;
-  width: 750px;
-  margin-left: 325px;
+  font-size: 2vh;
+  width: 50vw;
+  padding-bottom: 3vh;
   background-color: rgb(48, 48, 48);
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2377,6 +2385,19 @@ ul{
 
 .interest_change {
   text-align: center;
+}
+
+.sidebarHelper_padding_issue {
+  padding: 2vw;
+  padding-top: 6vh;
+}
+
+.settings_forms_2-0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5vw;
 }
 /* /////////////////////////////////end of setting///////////////////////////////// */
 
@@ -2653,6 +2674,25 @@ ul{
   .open_sidebar_JS-CSS {
     width: 100%;
   }
+
+  .sidebarHelper_padding_issue{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .information_box {
+    border-top: none;
+    width: 100%;
+  }
+  
+  .change_username {
+    border: none;
+    width: 100%;
+  }
+
+  .settings_background {
+    background-color: rgb(48, 48, 48);
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -2664,5 +2704,63 @@ ul{
 @media screen and (max-width: 280px) {
   .card{
     width: 62.5%;
+  }
+}
+
+@media screen and (width: 912px) and (height: 1368px) {
+  .card{
+    padding: 0;
+  }
+
+  .apiImage {
+    height: 15vh;
+    width: 27vh;
+  }
+
+  .information_box {
+    width: 35vh;
+  }
+  
+  .change_username {
+    width: 50vh;
+  }
+}
+
+@media screen and (width: 820px) and (height: 1180px) {
+  .card{
+    padding: 0;
+  }
+
+  .apiImage {
+    height: 15vh;
+    width: 27vh;
+  }
+
+  .information_box {
+    width: 40vh;
+  }
+  
+  .change_username {
+    width: 50vh;
+  }
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+  .information_box {
+    width: 35vh;
+  }
+  
+  .change_username {
+    width: 50vh;
+  }
+}
+
+@media screen and (width: 540px) and (height: 720px) {
+  .information_box {
+    width: 35vh;
+  }
+  
+  .change_username {
+    width: 50vh;
   }
 }

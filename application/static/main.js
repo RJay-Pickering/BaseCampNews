@@ -115,28 +115,32 @@ function randomAdFunction(i) {
     });
 }
 
+var sidebarElement = document.getElementById("helpSidebar")
+
+sidebarElement.classList.add("close_sidebar_JS-CSS")
+
 function openNav() {
-  document.getElementById("mySidebar").style.width = "500px";
-  document.getElementById("main").style.marginRight = "250px";
-  document.getElementById("mySidebar").style.border = "1px solid black";
-  document.getElementById("mySidebar").style.zIndex = "10";
+  sidebarElement.classList.add("open_sidebar_JS-CSS")
+  sidebarElement.classList.add("sidebarHelper_padding_issue")
+  sidebarElement.classList.remove("close_sidebar_JS-CSS")
 }
 
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginRight = "0";
+  sidebarElement.classList.add("close_sidebar_JS-CSS")
+  sidebarElement.classList.remove("sidebarHelper_padding_issue")
+  sidebarElement.classList.remove("open_sidebar_JS-CSS")
 }
 
 function openHelp() {
-  document.getElementById("helpSidebar").style.width = "500px";
-  document.getElementById("main").style.marginRight = "250px";
-  document.getElementById("helpSidebar").style.border = "1px solid black";
-  document.getElementById("helpSidebar").style.zIndex = "10";
+  sidebarElement.classList.add("open_sidebar_JS-CSS")
+  sidebarElement.classList.add("sidebarHelper_padding_issue")
+  sidebarElement.classList.remove("close_sidebar_JS-CSS")
 }
 
 function closeHelp() {
-  document.getElementById("helpSidebar").style.width = "0";
-  document.getElementById("main").style.marginRight = "0";
+  sidebarElement.classList.remove("open_sidebar_JS-CSS")
+  sidebarElement.classList.remove("sidebarHelper_padding_issue")
+  sidebarElement.classList.add("close_sidebar_JS-CSS")
 }
 
 // fetch(

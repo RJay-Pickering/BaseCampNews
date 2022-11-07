@@ -20,15 +20,17 @@
       {% endif %}
       <p>What would you like to do today?</p>
 
-      {% if request.user.is_authenticated %}
-        <a href="{% url 'foryou' %}">Topics For You</a>
-        <a href="{% url 'settings' %}">Settings</a>
-        <a href="{% url 'logout' %}">Logout</a>
-      {% else %}
-        <a href="{% url 'foryou' %}">Topics For You</a>
-        <a href="{% url 'signup' %}">Sign Up</a>
-        <a href="{% url 'signin' %}">Log In</a>
-      {% endif %}
+      <div class="userNavHome">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'foryou' %}">Topics For You</a>
+          <a href="{% url 'settings' %}">Settings</a>
+          <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+          <a href="{% url 'foryou' %}">Topics For You</a>
+          <a href="{% url 'signup' %}">Sign Up</a>
+          <a href="{% url 'signin' %}">Log In</a>
+        {% endif %}
+      </div>
 
       <div class="shape"></div>
       <div class="the_river"></div>

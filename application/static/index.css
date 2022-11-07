@@ -2693,6 +2693,11 @@ Dark Sand: #a28089
   text-decoration-color: #51e2f5;
 }
 
+.userNavHome {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 603px) {
   .input-group-interest{
     margin-left: 0;

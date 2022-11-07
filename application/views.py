@@ -17,9 +17,12 @@ def new_home_page(request):
 def homeRedirect(request):
     return redirect("home")
 
-@unauthenticated_user
 def test_page(request):
-    return render(request, "index.html")
+    if request.user.is_authenticated:
+        context={"username": request.user.username}
+    else:
+        context={"username": "guest"}
+    return render(request, "index.html", context)
 
 @unauthenticated_user
 def sign_in(request):
@@ -33,7 +36,7 @@ def sign_in(request):
 
         if cus is not None:
             login(request, cus)
-            return redirect("foryou")
+            return redirect("home")
         messages.info(request, "Username or Password is incorrect")
 
     return render(request, 'sign-in.html')
@@ -57,38 +60,38 @@ def logoutUser(request):
 	logout(request)
 	return redirect('home')
 
-def navCovid(request):
-    return render(request, 'nav/covid.html')
+# def navCovid(request):
+#     return render(request, 'nav/covid.html')
 
-def navDrink(request):
-    return render(request, 'nav/drink.html')
+# def navDrink(request):
+#     return render(request, 'nav/drink.html')
 
-def navEntertain(request):
-    return render(request, 'nav/entertainment.html')
+# def navEntertain(request):
+#     return render(request, 'nav/entertainment.html')
 
-def navFood(request):
-    return render(request, 'nav/food.html')
+# def navFood(request):
+#     return render(request, 'nav/food.html')
 
-def navHealth(request):
-    return render(request, 'nav/health.html')
+# def navHealth(request):
+#     return render(request, 'nav/health.html')
 
-def navLivestyle(request):
-    return render(request, 'nav/livestyle.html')
+# def navLivestyle(request):
+#     return render(request, 'nav/livestyle.html')
 
-def navShopping(request):
-    return render(request, 'nav/shopping.html')
+# def navShopping(request):
+#     return render(request, 'nav/shopping.html')
 
-def navStocks(request):
-    return render(request, 'nav/stocks.html')
+# def navStocks(request):
+#     return render(request, 'nav/stocks.html')
 
-def navTravel(request):
-    return render(request, 'nav/travel.html')
+# def navTravel(request):
+#     return render(request, 'nav/travel.html')
 
-def navTrending(request):
-    return render(request, 'nav/trending.html')
+# def navTrending(request):
+#     return render(request, 'nav/trending.html')
 
-def navWeather(request):
-    return render(request, 'nav/weather.html')
+# def navWeather(request):
+#     return render(request, 'nav/weather.html')
 
 @login_required(login_url='signin')
 def settingStyle(request):
@@ -159,9 +162,7 @@ def foryou(request):
         + request.user.interest2 + '", "interest3" : "' + request.user.interest3 + '" }')
         f.close()
 
-    
-
     return render(request, 'nav/fyp.html')
 
-def sport(request):
-    return render(request, 'nav/sports.html')
+# def sport(request):
+#     return render(request, 'nav/sports.html')

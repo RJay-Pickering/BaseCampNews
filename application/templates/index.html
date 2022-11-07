@@ -25,9 +25,9 @@
         <a href="{% url 'settings' %}">Settings</a>
         <a href="{% url 'logout' %}">Logout</a>
       {% else %}
-        <a href="#">Topics For You</a>
-        <a href="#">Sign Up</a>
-        <a href="#">Log In</a>
+        <a href="{% url 'foryou' %}">Topics For You</a>
+        <a href="{% url 'signup' %}">Sign Up</a>
+        <a href="{% url 'signin' %}">Log In</a>
       {% endif %}
 
       <div class="shape"></div>

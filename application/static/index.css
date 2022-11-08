@@ -2676,26 +2676,55 @@ Dark Sand: #a28089
 }
 
 .top_part_of_home h1{
-  color: #FFFAF1;;
-  -webkit-text-stroke: 0.5px black;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  color: #FFFAF1;
+  font-size: 6vh;
 }
 
 .top_part_of_home p{
   font-size: 3vh;
   color: #FFFAF1;
-  -webkit-text-stroke: 0.5px black;
 }
 
 .top_part_of_home a{
   font-size: 3vh;
   color: #51e2f5;;
-  -webkit-text-stroke: 0.5px black;
   text-decoration-color: #51e2f5;
 }
 
 .userNavHome {
   display: flex;
   flex-direction: column;
+  gap: 2vh;
+}
+
+.column-homepage {
+  /* inline-size: 500px; */
+  overflow: hidden;
+  padding: 0px;
+  padding-top: 10vh !important;
+  font-size: 20px;
+  height: 100%;
+  width: auto;
+  flex: 33.3%;
+  position: absolute;
+}
+
+.footer-home {
+  background-color: #3a3b3c;
+  color: white;
+  height: fit-content;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.flexbox_for_news_homepage {
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 603px) {
@@ -2731,6 +2760,16 @@ Dark Sand: #a28089
 @media screen and (max-width: 912px) {
   .card {
     height: 65vh;
+  }
+
+  .shape {
+    width: 100%; 
+    height: 50vh;
+  }
+
+  .the_river {
+    width: 100%; 
+    height: 16.6vh;
   }
 }
 
@@ -2848,3 +2887,93 @@ Dark Sand: #a28089
     width: 50vh;
   }
 }
+
+/* //////////////////////////This is for sideways screens////////////////////////// */
+@media screen and (orientation: landscape) {
+  .home_background {
+    background-color:  #3a3b3c;
+    /* overflow: hidden; */
+  }
+  
+  .shape {
+    position: absolute;
+    background: #212121;
+    width: 100%; height: 50vw;
+    clip-path: polygon(27.9236% 233.08%, 6.01899e+06% 215.51%, 719117% 169.51%, -1498.98% 112.65%, 49.8548% 66.6504%, 63.2402% 49.08%, 91.614% 66.6504%, 700.404% 112.65%, 731446% 169.51%, -1.01183e+07% 215.51%, -3.1114e+07% 233.08%, -1.41569e+07% 215.51%, -704269% 169.51%, -2045.86% 112.65%, 50.2498% 66.6504%, 75.4137% 49.08%, 136.918% 66.6504%, -375.416% 112.65%, -741630% 169.51%, 1.28082e+07% 215.51%, 2.92777e+07% 233.08%, 3.47963e+06% 215.51%, 688727% 169.51%, -2806.63% 112.65%, 45.9922% 66.6504%, -24.6988% 49.08%, -107.845% 66.6504%, -1109.78% 112.65%, 749533% 169.51%, 1.52457e+06% 215.51%, 3.56429e+06% 233.08%, 1.18221e+07% 215.51%, -668566% 169.51%, -1906.3% 112.65%, 49.0295% 66.6504%, 32.7227% 49.08%, 2.69763% 66.6504%, -1878.76% 112.65%, -754791% 169.51%, -1.3831e+07% 215.51%, -3.26315e+07% 233.08%, -1.1412e+07% 215.51%, 647495% 169.51%, -1173.4% 112.65%, 49.0204% 66.6504%, 36.5017% 49.08%, 11.5576% 66.6504%, -2177.49% 112.65%, 758102% 169.51%, 7.75568e+06% 215.51%, 2.71416e+07% 233.08%, -4.16478e+06% 215.51%, -624399% 169.51%, -209.684% 112.65%, 48.447% 66.6504%, 32.0364% 49.08%, -3.42009% 66.6504%, -1992.34% 112.65%, -758690% 169.51%, 8.62725e+06% 215.51%, 7.09197e+06% 233.08%, 1.42067e+07% 215.51%, 599320% 169.51%, 764.321% 112.65%, 43.6528% 66.6504%, -30.7538% 49.08%, -318.358% 66.6504%, -408.325% 112.65%, 756293% 169.51%, -1.35441e+07% 215.51%, -3.38149e+07% 233.08%, -5.36741e+06% 215.51%, -572304% 169.51%, 1738.19% 112.65%, 54.1396% 66.6504%, 78.5679% 49.08%, 118.99% 66.6504%, -613.933% 112.65%, -753265% 169.51%, 460607% 215.51%, 2.47273e+07% 233.08%, -1.06053e+07% 215.51%, 543904% 169.51%, 2232.04% 112.65%, 52.2919% 66.6504%, 65.4779% 49.08%, 90.2093% 66.6504%, 429.684% 112.65%, 746991% 169.51%, 1.32353e+07% 215.51%);
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .the_river {
+    position: absolute;
+    background: #51e2f5;
+    width: 100%; height: 16.6vw;
+    bottom: 0;
+  }
+  
+  .copyrights-to-basecamp{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 1vw;
+    font-size: 1vw;
+    z-index: 1;
+    color: #FFFAF1;
+  }
+  
+  .top_part_of_home {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .top_part_of_home h1{
+    color: #FFFAF1;
+  }
+  
+  .top_part_of_home p{
+    font-size: 3vh;
+    color: #FFFAF1;
+  }
+  
+  .top_part_of_home a{
+    font-size: 3vh;
+    color: #51e2f5;;
+    text-decoration-color: #51e2f5;
+  }
+  
+  .userNavHome {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 603px) {
+    .input-group-interest{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .form_container-interest {
+      margin-top: 2vh;
+      display: contents;
+    }
+  
+    .signUpBody{
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+  
+    .button-search {
+      display: none;
+    }
+  
+    .fyp_search_bar {
+      font-size: initial;
+      padding-left: 2vh;
+      border-top-right-radius: 1vh;
+      border-bottom-right-radius: 1vh;
+    }
+  }
+}
+/* //////////////////////////end of sideways screen stuff////////////////////////// */

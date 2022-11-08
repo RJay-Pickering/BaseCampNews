@@ -79,7 +79,7 @@ fetch("/static/udata.json")
             aLink.classList.add("aLink");
             article.appendChild(aLink);
             const one = document.getElementById("one");
-            one.classList.add("column");
+            // one.classList.add("column");
             one.appendChild(article);
             console.log(article);
           }
@@ -115,7 +115,7 @@ function randomAdFunction(i) {
       aLink.classList.add("aLink");
       article.appendChild(aLink);
       const one = document.getElementById("one");
-      one.classList.add("column");
+      // one.classList.add("column");
       // one.appendChild(aLink);
       one.insertBefore(article, one.children[i]);
       console.log(article);

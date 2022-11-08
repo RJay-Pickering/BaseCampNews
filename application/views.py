@@ -20,8 +20,17 @@ def homeRedirect(request):
 def test_page(request):
     if request.user.is_authenticated:
         context={"username": request.user.username}
+        with open('application/static/udata.json', 'w') as f:
+            f.write("")
+            f.close()
+
+        with open('application/static/udata.json', 'a') as f:
+            f.write('{"user" : "' + request.user.username + '", "interest1": "' + request.user.interest1 + '", "interest2": "' 
+            + request.user.interest2 + '", "interest3" : "' + request.user.interest3 + '" }')
+            f.close()
     else:
         context={"username": "guest"}
+
     return render(request, "index.html", context)
 
 @unauthenticated_user
@@ -153,16 +162,17 @@ def settingStyle(request):
 
 @login_required(login_url='signin')
 def foryou(request):
-    with open('application/static/udata.json', 'w') as f:
-        f.write("")
-        f.close()
-
-    with open('application/static/udata.json', 'a') as f:
-        f.write('{"user" : "' + request.user.username + '", "interest1": "' + request.user.interest1 + '", "interest2": "' 
-        + request.user.interest2 + '", "interest3" : "' + request.user.interest3 + '" }')
-        f.close()
-
-    return render(request, 'nav/fyp.html')
+    with open('application/static/topics.json', 'w') as topic:
+        topic.write('{"the_topic" : "NONE_TYPE_404"}')
+        topic.close()
+    if request.method == "POST":
+        if 'searchForTopics' in request.POST:
+            news_topics = request.POST.get('topics')
+            with open('application/static/topics.json', 'w') as topic:
+                topic.write('{"the_topic" : "' + news_topics + '"}')
+                topic.close()
+        return render(request, 'nav/fyp.html', {"topicType": news_topics})
+    return render(request, 'nav/fyp.html', {"topicType": "Search"})
 
 # def sport(request):
 #     return render(request, 'nav/sports.html')

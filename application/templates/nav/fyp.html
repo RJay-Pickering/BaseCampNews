@@ -7,23 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'index.css' %}" />
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
-    <title>For You</title>
+    <title>BCN Search</title>
   </head>
   <body id="main" class="fyp_background">
     <nav class="fyp_nav_bar">
       <div class="fyp_margin_in_nav">
         <div class = "bcn_logo_and_text">
           <img src="{% static 'bcca.png' %}" class="bcn_img" />
-          <p class="nav_bcn_fyp">BCN | Search</p>
+          <p class="nav_bcn_fyp">BCN | {{topicType}}</p>
         </div>
-        <form action="https://google.com/search" target="_blank" class="fyp-searching-containers">
+        <form action="" method="POST" class="fyp-searching-containers">
+          {% csrf_token %}
           <input type="text" class="fyp_search_bar" name="topics" placeholder="Search for topics..."/>
-          <button class="button-search">
+          <button class="button-search" name="searchForTopics">
             <img src="{% static 'magnifying.png' %}" class="search_img" />
           </button>
         </form>
         <div id="mySidebar" class="fyp_sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavMenu()"
             >×</a
           >
           {% if request.user.is_authenticated %}
@@ -41,7 +42,7 @@
             <p id="temp"></p>
           </div>
         </div>
-        <button class="openbtn" onclick="openNav()">☰</button>
+        <button class="openbtn" onclick="openNavMenu()">☰</button>
       </div>
     </nav>
 
@@ -61,7 +62,7 @@
     <div class="news" id="news">
       <div class="column" id="one"></div>
     </div>
-    <script src="{% static 'fyp.js' %}" defer></script>
+    <script src="{% static 'main.js' %}" defer></script>
     <footer class="footer">
       <div class="flexbox">
         <div class="column">

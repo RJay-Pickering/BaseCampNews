@@ -25,60 +25,180 @@ function showPosition(position) {
     });
 }
 
-// first column
-fetch(
-  "https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=America&language=en"
-)
+var API_Link = ""
+
+fetch("/static/topics.json")
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    apples = 0;
-    Array.from(data.results).forEach(function (a) {
-      var randomAdPlace = Math.floor(Math.random() * 10) + 1;
-      console.log(randomAdPlace);
-      if (randomAdPlace === 5) {
-        randomAdFunction(apples);
-        apples++;
-      } else {
-        apples++;
-        const aLink = document.createElement("a");
-        aLink.href = `${a.link}`;
-        aLink.target = "_blank";
-        const article = document.createElement("div");
-        const desc = document.createElement("p");
-        desc.innerText = a.description;
-        desc.style.fontSize = "10px";
-        const date = document.createElement("p");
-        date.innerText = `Published: ${a.pubDate}`;
-        article.classList.add("card");
-        const image = document.createElement("img");
-        if (a.image_url == null) {
-          image.src =
-            "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-          image.style.width = "250px";
-          image.style.height = "200px";
-        } else {
-          image.src = a.image_url;
-          image.style.width = "250px";
-          image.style.height = "200px";
-        }
-        image.classList.add("apiImage");
-        const title = document.createElement("p");
-        title.innerText = a.title;
-        article.appendChild(title);
-        article.appendChild(image);
-        article.appendChild(desc);
-        article.appendChild(date);
-        aLink.classList.add("aLink");
-        aLink.appendChild(article);
-        const one = document.getElementById("one");
-        one.classList.add("column");
-        one.appendChild(aLink);
-        console.log(article);
-      }
-    });
+    console.log(data.the_topic)
+    if (data.the_topic === "NONE_TYPE_404"){
+      fetch(
+        `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=America&language=en`
+      )
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          apples = 0;
+          Array.from(data.results).forEach(function (a) {
+            var randomAdPlace = Math.floor(Math.random() * 10) + 1;
+            console.log(randomAdPlace);
+            if (randomAdPlace === 5) {
+              randomAdFunction(apples);
+              apples++;
+            } else {
+              apples++;
+              const aLink = document.createElement("a");
+              aLink.href = `${a.link}`;
+              aLink.target = "_blank";
+              const article = document.createElement("div");
+              const desc = document.createElement("p");
+              desc.innerText = a.description;
+              desc.style.fontSize = "10px";
+              const date = document.createElement("p");
+              date.innerText = `Published: ${a.pubDate}`;
+              article.classList.add("card");
+              const image = document.createElement("img");
+              if (a.image_url == null) {
+                image.src =
+                  "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+                image.style.width = "250px";
+                image.style.height = "200px";
+              } else {
+                image.src = a.image_url;
+                image.style.width = "250px";
+                image.style.height = "200px";
+              }
+              image.classList.add("apiImage");
+              const title = document.createElement("p");
+              title.innerText = a.title;
+              article.appendChild(title);
+              article.appendChild(image);
+              article.appendChild(desc);
+              article.appendChild(date);
+              aLink.classList.add("aLink");
+              aLink.appendChild(article);
+              const one = document.getElementById("one");
+              one.classList.add("column");
+              one.appendChild(aLink);
+              console.log(article);
+            }
+          });
+        });
+    } else {
+      fetch(
+        `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${data.the_topic}&language=en`
+      )
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          apples = 0;
+          Array.from(data.results).forEach(function (a) {
+            var randomAdPlace = Math.floor(Math.random() * 10) + 1;
+            console.log(randomAdPlace);
+            if (randomAdPlace === 5) {
+              randomAdFunction(apples);
+              apples++;
+            } else {
+              apples++;
+              const aLink = document.createElement("a");
+              aLink.href = `${a.link}`;
+              aLink.target = "_blank";
+              const article = document.createElement("div");
+              const desc = document.createElement("p");
+              desc.innerText = a.description;
+              desc.style.fontSize = "10px";
+              const date = document.createElement("p");
+              date.innerText = `Published: ${a.pubDate}`;
+              article.classList.add("card");
+              const image = document.createElement("img");
+              if (a.image_url == null) {
+                image.src =
+                  "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+                image.style.width = "250px";
+                image.style.height = "200px";
+              } else {
+                image.src = a.image_url;
+                image.style.width = "250px";
+                image.style.height = "200px";
+              }
+              image.classList.add("apiImage");
+              const title = document.createElement("p");
+              title.innerText = a.title;
+              article.appendChild(title);
+              article.appendChild(image);
+              article.appendChild(desc);
+              article.appendChild(date);
+              aLink.classList.add("aLink");
+              aLink.appendChild(article);
+              const one = document.getElementById("one");
+              one.classList.add("column");
+              one.appendChild(aLink);
+              console.log(article);
+            }
+          });
+        });
+    }
   });
+
+// first column
+// fetch(
+//   `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=America&language=en`
+// )
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     apples = 0;
+//     Array.from(data.results).forEach(function (a) {
+//       var randomAdPlace = Math.floor(Math.random() * 10) + 1;
+//       console.log(randomAdPlace);
+//       if (randomAdPlace === 5) {
+//         randomAdFunction(apples);
+//         apples++;
+//       } else {
+//         apples++;
+//         const aLink = document.createElement("a");
+//         aLink.href = `${a.link}`;
+//         aLink.target = "_blank";
+//         const article = document.createElement("div");
+//         const desc = document.createElement("p");
+//         desc.innerText = a.description;
+//         desc.style.fontSize = "10px";
+//         const date = document.createElement("p");
+//         date.innerText = `Published: ${a.pubDate}`;
+//         article.classList.add("card");
+//         const image = document.createElement("img");
+//         if (a.image_url == null) {
+//           image.src =
+//             "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
+//           image.style.width = "250px";
+//           image.style.height = "200px";
+//         } else {
+//           image.src = a.image_url;
+//           image.style.width = "250px";
+//           image.style.height = "200px";
+//         }
+//         image.classList.add("apiImage");
+//         const title = document.createElement("p");
+//         title.innerText = a.title;
+//         article.appendChild(title);
+//         article.appendChild(image);
+//         article.appendChild(desc);
+//         article.appendChild(date);
+//         aLink.classList.add("aLink");
+//         aLink.appendChild(article);
+//         const one = document.getElementById("one");
+//         one.classList.add("column");
+//         one.appendChild(aLink);
+//         console.log(article);
+//       }
+//     });
+//   });
+
 
 function randomAdFunction(i) {
   fetch("/static/ads.json")
@@ -115,6 +235,7 @@ function randomAdFunction(i) {
     });
 }
 
+
 var sidebarElement = document.getElementById("helpSidebar")
 
 sidebarElement.classList.add("close_sidebar_JS-CSS")
@@ -143,109 +264,12 @@ function closeHelp() {
   sidebarElement.classList.add("close_sidebar_JS-CSS")
 }
 
-// fetch(
-//   ` https://api.openweathermap.org/data/2.5/weather?lat={}&lon={lon}&appid={7478d475030acf9b38bb829cba45b7b5}`
-//   // "https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5"
-// )
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log(data);
-//     var city = document.getElementById("city");
-//     var temp = document.getElementById("temp");
-//     // var humidity = document.getElementById("humid");
-//     // var windSpeed = document.getElementById("windSpeed");
-//     city.innerText = `City: ${data.name}`;
-//     temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
-//     // humidity.innerText = `Humidity: \n${data.main.humidity}%`;
-//     // windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`;
-//   });
+function openNavMenu() {
+  document.getElementById("mySidebar").classList.add("open_sidebar_JS-CSS");
+  document.getElementById("mySidebar").classList.remove("close_sidebar_JS-CSS");
+}
 
-// second column
-// fetch(
-//   "https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=movies"
-// )
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log(data.results);
-//     Array.from(data.results).forEach(function (a) {
-//       console.log(a);
-//       const aLink = document.createElement("a");
-//       aLink.href = `${a.link}`;
-//       aLink.target = "_blank";
-//       const article = document.createElement("div");
-//       const desc = document.createElement("p");
-//       const image = document.createElement("img");
-//       if (a.image_url == null) {
-//         image.src =
-//           "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-//       } else {
-//         image.src = a.image_url;
-//       }
-//       image.classList.add("apiImage");
-//       image.style.width = "350px";
-//       image.style.height = "auto";
-//       desc.innerText = a.description;
-//       desc.style.fontSize = "14px";
-//       const date = document.createElement("p");
-//       date.innerText = `Published: ${a.pubDate}`;
-//       article.classList.add("card");
-//       article.innerHTML = a.title;
-//       article.appendChild(image);
-//       article.appendChild(desc);
-//       article.appendChild(date);
-//       aLink.classList.add("aLink");
-//       aLink.appendChild(article);
-//       const two = document.getElementById("two");
-//       two.classList.add("column");
-//       two.appendChild(aLink);
-//     });
-//   });
-
-// // third column
-// fetch(
-//   "https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=india"
-// )
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log(data.results);
-//     Array.from(data.results).forEach(function (a) {
-//       console.log(a);
-//       const aLink = document.createElement("a");
-//       aLink.href = `${a.link}`;
-//       aLink.target = "_blank";
-//       const article = document.createElement("div");
-//       const image = document.createElement("img");
-//       if (a.image_url == null) {
-//         image.src =
-//           "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-//       } else {
-//         image.src = a.image_url;
-//       }
-//       image.classList.add("apiImage");
-//       image.style.width = "350px";
-//       image.style.height = "auto";
-//       desc.innerText = a.description;
-//       desc.style.fontSize = "14px";
-//       const desc = document.createElement("p");
-//       desc.innerText = a.description;
-//       desc.style.fontSize = "14px";
-//       const date = document.createElement("p");
-//       date.innerText = `Published: ${a.pubDate}`;
-//       article.classList.add("card");
-//       article.innerHTML = a.title;
-//       article.appendChild(image);
-//       article.appendChild(desc);
-//       article.appendChild(date);
-//       aLink.classList.add("aLink");
-//       aLink.appendChild(article);
-//       const three = document.getElementById("three");
-//       three.classList.add("column");
-//       three.appendChild(aLink);
-//     });
-//  });
+function closeNavMenu() {
+  document.getElementById("mySidebar").classList.add("close_sidebar_JS-CSS");
+  document.getElementById("mySidebar").classList.remove("open_sidebar_JS-CSS");
+}

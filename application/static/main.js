@@ -273,3 +273,8 @@ function closeNavMenu() {
   document.getElementById("mySidebar").classList.add("close_sidebar_JS-CSS");
   document.getElementById("mySidebar").classList.remove("open_sidebar_JS-CSS");
 }
+
+var usernames = document.getElementById("username_submit")
+usernames.addEventListener("click", function e() {
+  window.location.href=window.location.href
+})

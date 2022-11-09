@@ -73,14 +73,14 @@ fetch("/static/udata.json")
             const title = document.createElement("p");
             title.innerText = a.title;
             title.style.fontSize = "3vh"
-            aLink.appendChild(title);
-            aLink.appendChild(image);
-            aLink.appendChild(desc);
+            article.appendChild(title);
+            article.appendChild(image);
+            article.appendChild(desc);
             aLink.classList.add("aLink");
-            article.appendChild(aLink);
+            aLink.appendChild(article);
             const one = document.getElementById("one");
-            // one.classList.add("column");
-            one.appendChild(article);
+            one.classList.add("column");
+            one.appendChild(aLink);
             console.log(article);
           }
         });

@@ -34,11 +34,11 @@
     <div class="settings_forms_2-0">
       <div class="information_box">
         <h2>Account Information</h2>
-        <p>Username: {{request.user.username}}</p>
-        <p>Email: {{request.user.email}}</p>
-        <p>First Interest: {{request.user.interest1}}</p>
-        <p>Second Interest: {{request.user.interest2}}</p>
-        <p>Third Interest: {{request.user.interest3}}</p>
+        <p>Username: {{user}}</p>
+        <p>Email: {{email}}</p>
+        <p>First Interest: {{Interest_1}}</p>
+        <p>Second Interest: {{Interest_2}}</p>
+        <p>Third Interest: {{Interest_3}}</p>
         <p>Date Joined: {{request.user.date_joined}}</p>
       </div>
       <div class="change_username">
@@ -50,7 +50,7 @@
             name="new_username"
           />
           <div class="submit_button">
-          <input type="submit" value="Submit" name="username_change" />
+          <input type="submit" value="Submit" name="username_change" id="username_submit"/>
           </div>
         </form>
       </div>

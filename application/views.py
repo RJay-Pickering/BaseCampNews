@@ -38,15 +38,24 @@ def sign_in(request):
     if request.method == 'POST':
         email = request.POST.get('email')
         password = request.POST.get('password')
-        usern = Customer.objects.get(email = email)
-        messages.info(request, usern)
+        usern = ""
+        try:
+            usern = Customer.objects.get(email = email)
+        except:
+            usern = "NaN"
+        # messages.info(request, usern)
         cus = authenticate(request, email=email, password=password)
-        messages.info(request, cus)
+        # messages.info(request, cus)
 
-        if cus is not None:
-            login(request, cus)
-            return redirect("home")
-        messages.info(request, "Username or Password is incorrect")
+        if usern != "NaN":
+            if cus is not None:
+                login(request, cus)
+                return redirect("home")
+            messages.info(request, "Your Password is incorrect!")
+        elif usern == "NaN" and cus is None:
+            messages.info(request, "Your Email and Password is incorrect!")
+        else:
+            messages.info(request, "Your Email is incorrect!")
 
     return render(request, 'sign-in.html')
 
@@ -104,11 +113,17 @@ def logoutUser(request):
 
 @login_required(login_url='signin')
 def settingStyle(request):
+    username = request.user.username
+    email = request.user.email
+    password = request.user.password
+    interestOne = request.user.interest1
+    interestTwo = request.user.interest2
+    interestThree = request.user.interest3
     if request.method == 'POST':
         if 'password_change' in request.POST:
             if request.method == 'POST':
                 form = PasswordChangeForm(request.user, request.POST)
-                context = {'form':form}
+                context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
                 if form.is_valid():
                     user = form.save()
                     update_session_auth_hash(request, user)  # Important!
@@ -116,48 +131,48 @@ def settingStyle(request):
                 else:
                     messages.error(request, 'Please correct the error below.')
         elif 'username_change' in request.POST:
-            username = request.user.username
+            user_email = request.user.email
             newusername = request.POST.get('new_username')
-            user = Customer.objects.get(username = username)
+            user = Customer.objects.get(email = user_email)
             user.username = newusername
             user.save()
             form = PasswordChangeForm(request.user, request.POST)
-            context = {'form':form}
+            context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
         elif 'email_change' in request.POST:
-            username = request.user.username
+            user_email = request.user.email
             newemail = request.POST.get('new_email')
-            emails = Customer.objects.get(username = username)
+            emails = Customer.objects.get(email = user_email)
             emails.email = newemail
             emails.save()
             form = PasswordChangeForm(request.user, request.POST)
-            context = {'form':form}
+            context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
         elif 'first_change' in request.POST:
-            username = request.user.username
+            user_email = request.user.email
             newInterest = request.POST.get('new_first')
-            Interest = Customer.objects.get(username = username)
+            Interest = Customer.objects.get(email = user_email)
             Interest.interest1 = newInterest
             Interest.save()
             form = PasswordChangeForm(request.user, request.POST)
-            context = {'form':form}
+            context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
         elif 'second_change' in request.POST:
-            username = request.user.username
+            user_email = request.user.email
             newInterest = request.POST.get('new_second')
-            Interest = Customer.objects.get(username = username)
+            Interest = Customer.objects.get(email = user_email)
             Interest.interest2 = newInterest
             Interest.save()
             form = PasswordChangeForm(request.user, request.POST)
-            context = {'form':form}
+            context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
         elif 'third_change' in request.POST:
-            username = request.user.username
+            user_email = request.user.email
             newInterest = request.POST.get('new_third')
-            Interest = Customer.objects.get(username = username)
+            Interest = Customer.objects.get(email = user_email)
             Interest.interest3 = newInterest
             Interest.save()
             form = PasswordChangeForm(request.user, request.POST)
-            context = {'form':form}
+            context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
     else:
         form = PasswordChangeForm(request.user, request.POST)
-        context = {'form':form}
+        context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
     return render(request, 'settings.html', context)
 
 @login_required(login_url='signin')

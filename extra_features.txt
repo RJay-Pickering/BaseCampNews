@@ -1,0 +1,5 @@
+This is for extra features to add in the future!!!
+
+1.  Test new api: 
+    - hacker news: https://github.com/HackerNews/API
+    - area where to use some ideas from: https://github.com/udacity/news-aggregator/blob/master/index.html

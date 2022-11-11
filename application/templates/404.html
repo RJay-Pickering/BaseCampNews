@@ -1,11 +1,72 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-<title>Wrong address</title>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="{% static 'errorPages.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
+    <script src="{% static 'errorPage.js' %}" defer></script>
+</head>
+<body class="bgImage" onClick="bodyHtml()">
+    <div class="head">
+        <div class="headerobjectswrapper">
+            <div class="weatherforcastbox">
+                <span style="font-style: italic;">Weatherforcast for <span id = "city"></span>: <span id = "weather"></span></span>
+                <br>
+                <span>Wind: <span id = "windSpeed"></span>km/h SSE; Ther: <span id = "temp"></span>°F; Hum: <span id = "humid"></span>%</span>
+            </div>
+            <header>
+                <a href="{% url 'home' %}" class="header">Base Camp News</a> 
+            </header>
+        </div>
+    
+        <div class="subhead">BCCA - <span id = "day"></span> <span id = "date"></span> - 404 Error</div>
+    </div>
+    <div class="content">
+        <div class="collumns">
+            <div class="collumn">
+                <div class="head">
+                    {% if request.user.is_authenticated %}
+                        <span class="headline hl3">{{request.user.username}} has gone missing from the pages!<span>
+                    {% else %}
+                        <span class="headline hl3">A User has gone missing from the pages!<span>
+                    {% endif %}
+                    <p><span class="headline hl4">by ERROR BOT</span></p>
+                </div>
+                <div class="belowHead">
+                    <img src="{% static 'missingMark.jpeg' %}" class="missing_person">
+                    <p>Lorem ipsum dolor sit amet, te molestie vivendum recteque qui, in eam splendide intellegat quaerendum. Et quo aliquid persequeris, ei cibo aperiri definitionem vis, ne eos odio error consul. Te duo vide probatus, nec nusquam principes in. Vim in possim necessitatibus. Id iusto corpora dissentiunt nam, ei quas numquam civibus vim, mel alii choro sadipscing id.
 
-<h1>Ooops!</h1>
-
-<h2>I cannot find the file you requested!</h2>
-
+                        Ut porro splendide honestatis eam. His dicant senserit ea, in habeo commodo iudicabit qui, ei altera doming suavitate sit. Everti eirmod nominavi vel et, ei est vitae mucius discere. Brute perfecto sed ad, et per mucius ponderum, usu movet euripidis dissentiet an. Populo mollis eos et, pri ne elitr iisque invenire.
+                        
+                        Ut stet purto senserit cum, modo quas summo has ea, his ex accumsan appareat adversarium. Nam et partem maluisset, no vim delenit alienum iracundia, quando tollit libris pri no. Ad nam semper accumsan, ea liber semper has. Qui iisque legimus meliore ex, et sed autem mundi democritum. Pro et possim conceptam theophrastus, sea timeam neglegentur cu. Et nec placerat interpretaris.
+                        
+                        Persius docendi est at. An tation prodesset adversarium cum. Cum vocent persecuti an, nam utinam urbanitas ad. Te nec dicunt inermis maluisset, cum vide ridens te, tantas dolore cu vim. Et veri lorem velit ius, no qui electram evertitur inciderint. Nec expetendis constituam ad, vero pertinax usu no, impedit luptatum at nec.
+                        
+                        Tritani dolorum eam et, et wisi nemore mel. Mei te veri vulputate, mei iudico ancillae no. Eruditi legimus ei mel, ad mel utinam consequat. Ne mea cetero virtute postulant, eu has expetenda argumentum. Cu reque primis suscipit cum, dictas vulputate eam id.
+                        
+                        Sea ne elitr nobis, apeirian partiendo pri ei. Sit verear gloriatur ex, no latine suscipit nominati has. In sit clita fastidii, eum ut veniam labore. Omnium tincidunt eum id, congue dissentiunt voluptatibus quo eu, vix ipsum deterruisset in. Eu pro impedit vocibus molestie, oratio everti at vis. Mea modo falli percipit cu, no mollis signiferumque qui. Pri no apeirian atomorum.
+                        
+                        Nam partiendo intellegam te. Mel quas probo eu. Purto dolorum copiosae ne usu. Est possim senserit te, ea mutat utamur philosophia vel.
+                        
+                        Nonumy equidem appareat eam ne, pri hinc melius definiebas ne. Purto suscipit te pri, ad pro mundi deterruisset. Qui ad dolore nonumy. Solum zril mollis at vim. Sit debet sensibus in.
+                        
+                        Iusto theophrastus per et, nam an patrioque temporibus. Euismod conceptam quo ea. Ex dicant pertinax has. Ut dolorum placerat qualisque est, paulo nominati honestatis eu sit. Eum an nonumes euripidis. Et nullam minimum cum, no quo lobortis maluisset.
+                        
+                        Iusto theophrastus per et, nam an patrioque temporibus. Euismod conceptam quo ea. Ex dicant pertinax has. Ut dolorum placerat qualisque est, paulo nominati honestatis eu sit. Eum an nonumes euripidis. Et nullam minimum cum, no quo lobortis maluisset.
+                        
+                        Iusto theophrastus per et, nam an patrioque temporibus. Euismod conceptam quo ea. Ex dicant pertinax has. Ut dolorum placerat qualisque est, paulo nominati honestatis eu sit. Eum an nonumes euripidis. Et nullam minimum cum, no quo lobortis maluisset.
+                        
+                        Iusto theophrastus per et, nam an patrioque temporibus. Euismod conceptam quo ea. Ex dicant pertinax has. Ut dolorum placerat qualisque est, paulo nominati honestatis eu sit. Eum an nonumes euripidis. Et nullam minimum cum, no quo lobortis maluisset.
+                        
+                        Iusto theophrastus per et, nam an patrioque temporibus. Euismod conceptam quo ea. Ex dicant pertinax has. Ut dolorum placerat qualisque est, paulo nominati honestatis eu sit. Eum an nonumes euripidis. Et nullam minimum cum, no quo lobortis maluisset.</p>
+                </div>
+                {% comment %} <a href = "{% static 'home' %}" style="text-align: center;">Go home?</a> {% endcomment %}
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -181,12 +181,12 @@ def foryou(request):
         topic.write('{"the_topic" : "NONE_TYPE_404"}')
         topic.close()
     if request.method == "POST":
-        if 'searchForTopics' in request.POST:
+        # if 'searchForTopics' in request.POST:
             news_topics = request.POST.get('topics')
             with open('application/static/topics.json', 'w') as topic:
                 topic.write('{"the_topic" : "' + news_topics + '"}')
                 topic.close()
-        return render(request, 'nav/fyp.html', {"topicType": news_topics})
+            return render(request, 'nav/fyp.html', {"topicType": news_topics})
     return render(request, 'nav/fyp.html', {"topicType": "Search"})
 
 # def sport(request):

@@ -56,11 +56,16 @@ fetch("/static/topics.json")
               aLink.target = "_blank";
               const article = document.createElement("div");
               const desc = document.createElement("p");
-              console.log("Words in description: " + a.description.split("").length)
-              if (a.description.split("").length >= 5000) {
-                desc.innerText = "*Too much text to process! Please click me to view description*";
-              } else {
-                desc.innerText = a.description;
+              try {
+                console.log("Words in description: " + a.description.split("").length)
+                if (a.description.split("").length >= 5000) {
+                  desc.innerText = "*Too much text to process! Please click me to view description*";
+                } else {
+                  desc.innerText = a.description;
+                }
+              }
+              catch {
+                desc.innerText = "No text available!"
               }
               desc.style.fontSize = "10px";
               const date = document.createElement("p");
@@ -123,10 +128,16 @@ fetch("/static/topics.json")
                   aLink.target = "_blank";
                   const article = document.createElement("div");
                   const desc = document.createElement("p");
-                  if (a.description.split("").length >= 5000) {
-                    desc.innerText = "*Too much text to process! Please click me to view description*";
-                  } else {
-                    desc.innerText = a.description;
+                  try {
+                    console.log("Words in description: " + a.description.split("").length)
+                    if (a.description.split("").length >= 5000) {
+                      desc.innerText = "*Too much text to process! Please click me to view description*";
+                    } else {
+                      desc.innerText = a.description;
+                    }
+                  }
+                  catch {
+                    desc.innerText = "No text available!"
                   }
                   desc.style.fontSize = "10px";
                   const date = document.createElement("p");

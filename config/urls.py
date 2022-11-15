@@ -13,16 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from urllib.error import URLError
 from django.contrib import admin
 from django.urls import path
 from application.views import *
-
-# from django.contrib import admin
-# from django.urls import path
-# from app.views import *
+from django.urls import re_path
+from django.conf import settings
+from django.views.static import serve
 
 urlpatterns = [
+    re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
     path('admin/', admin.site.urls),
     path('', homeRedirect),
     path("home-page/", new_home_page),

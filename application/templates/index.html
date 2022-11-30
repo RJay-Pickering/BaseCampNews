@@ -13,23 +13,27 @@
   </head>
   <body id="main" class="home_background">
     <div class="top_part_of_home">
-      {% if username == "guest" %}
-        <h1>Howdy Stranger!</h1>
-      {% else %}
-        <h1>Welcome back, {{username}}!</h1>
-      {% endif %}
-      <p>What would you like to do today?</p>
+      <div class="back-color-of-top-page"></div>
 
-      <div class="userNavHome">
-        {% if request.user.is_authenticated %}
-          <p><a href="{% url 'foryou' %}">Search</a></p>
-          <p><a href="{% url 'settings' %}">Settings</a></p>
-          <p><a href="{% url 'logout' %}">Logout</a></p>
+      <div class="content-over-top-page-background">
+        {% if username == "guest" %}
+          <h1>Howdy Stranger!</h1>
         {% else %}
-          <p><a href="{% url 'signin' %}">Log In</a></p>
-          <p><a href="{% url 'signup' %}">Sign Up</a></p>
-          <p><a href="https://basecampcodingacademy.org/about/" target="_blank">Learn about Base Camp</a></p>
+          <h1>Welcome back, {{username}}!</h1>
         {% endif %}
+        <p>What would you like to do today?</p>
+
+        <div class="userNavHome">
+          {% if request.user.is_authenticated %}
+            <p><a href="{% url 'foryou' %}">Search</a></p>
+            <p><a href="{% url 'settings' %}">Settings</a></p>
+            <p><a href="{% url 'logout' %}">Logout</a></p>
+          {% else %}
+            <p><a href="{% url 'signin' %}">Log In</a></p>
+            <p><a href="{% url 'signup' %}">Sign Up</a></p>
+            <p><a href="https://basecampcodingacademy.org/about/" target="_blank">Learn about Base Camp</a></p>
+          {% endif %}
+        </div>
       </div>
 
       <div class="shape"></div>

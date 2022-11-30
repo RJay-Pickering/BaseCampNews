@@ -2640,7 +2640,7 @@ Dark Sand: #a28089
 
 
 .home_background {
-  background-color:  #3a3b3c;
+  background-color: #212121;
   /* overflow: hidden; */
 }
 
@@ -2729,6 +2729,19 @@ Dark Sand: #a28089
   position: absolute;
   top: 100%;
   width: 100%;
+  background-color: #212121;
+}
+
+.back-color-of-top-page {
+  position: absolute;
+  background-color: #3a3b3c;
+  width: 100%; height: 100%;
+  top: 0;
+}
+
+.content-over-top-page-background{
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 603px) {
@@ -2894,11 +2907,6 @@ Dark Sand: #a28089
 
 /* //////////////////////////This is for sideways screens////////////////////////// */
 @media screen and (orientation: landscape) {
-  .home_background {
-    background-color:  #3a3b3c;
-    /* overflow: hidden; */
-  }
-  
   .shape {
     position: absolute;
     background: #212121;

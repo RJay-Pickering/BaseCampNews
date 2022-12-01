@@ -67,8 +67,8 @@ def sign_up(request):
         if form.is_valid():
             user = form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, "Created " + username)
-            messages.success(request, "User: " + username + " has been created")
+            # messages.success(request, "Created " + username)
+            # messages.success(request, "User: " + username + " has been created")
             return redirect('signin')
     context = {'form':form}
 

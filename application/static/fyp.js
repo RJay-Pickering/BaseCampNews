@@ -1,3 +1,5 @@
+alert("Sorry for the incovenience, the database was deleated by this websites host by accident...  We are trying to fix this to ensure that the host will not do this again...  thank you for understanding! -The development team")
+
 navigator.geolocation.getCurrentPosition(showPosition);
 
 function showPosition(position) {
@@ -18,6 +20,69 @@ function showPosition(position) {
       temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
       // humidity.innerText = `Humidity: \n${data.main.humidity}%`;
       // windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`;
+    });
+}
+
+const fore = document.getElementById("wer_cads");
+navigator.geolocation.getCurrentPosition(weatherForecast);
+
+function weatherForecast(position) {
+  console.log(position);
+  fetch(
+    `https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&xclude=hourly,minutely,alerts&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      var FirstWeatherCard = 0
+      data.daily.forEach((value, index) => {
+
+        var today = new Date()
+        var curHr = today.getHours()
+        var typeOfDay = ""
+
+        if (curHr < 12) {
+          typeOfDay = value.feels_like.morn
+        } else if (curHr < 17) {
+          typeOfDay = value.feels_like.day
+        } else if (curHr < 21) {
+          typeOfDay = value.feels_like.eve
+        } else {
+          typeOfDay = value.feels_like.night
+        }
+        console.log(typeOfDay)
+
+        if (index >= 0 && index < 5) {
+          console.log(value)
+          var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
+            weekday: "long",
+          });
+          console.log(dayname);
+          const wcard = document.createElement("div");
+          const temp = document.createElement("p");
+          temp.innerHTML = `High: ${Math.round(
+            value.temp.max
+          )}°   Low: ${Math.round(value.temp.min)}°`;
+          console.log(temp);
+          const weekly = document.createElement("p");
+          weekly.innerText = dayname;
+          const feelsLike = document.createElement("p")
+          feelsLike.innerText = `Feels Like: ${typeOfDay}`
+          temp.classList.add("foreTemp")
+          feelsLike.classList.add("feels_like")
+          weekly.classList.add("foreDay");
+          wcard.classList.add("foreCard");
+          wcard.appendChild(weekly);
+          if (FirstWeatherCard == 0) {
+            FirstWeatherCard += 1
+            wcard.appendChild(feelsLike)
+          }
+          wcard.appendChild(temp);
+          fore.appendChild(wcard);
+        }
+      });
     });
 }
 
@@ -131,3 +196,16 @@ function closeNav() {
   document.getElementById("mySidebar").classList.add("close_sidebar_JS-CSS");
   document.getElementById("mySidebar").classList.remove("open_sidebar_JS-CSS");
 }
+
+// var today = new Date()
+// var curHr = today.getHours()
+
+// if (curHr < 12) {
+//   var typeOfDay = 'good morning'
+// } else if (curHr < 17) {
+//   var typeOfDay = 'good afternoon'
+// } else if (curHr < 21) {
+//   var typeOfDay = 'good evening'
+// } else {
+//   var typeOfDay = "good night"
+// }

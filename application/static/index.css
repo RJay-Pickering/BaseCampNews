@@ -2756,23 +2756,33 @@ Dark Sand: #a28089
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: white 1px solid;
   color: white;
   border-radius: 20px;
   padding: 3vh;
   overflow: hidden;
+  width: 15vh;
+  text-align: center;
 }
 
 .foreDay {
   font-size: 3vh;
-  height: 75px;
+  /* height: 8vh; */
   text-align: center;
   margin: 0;
+}
+
+.feels_like {
+  font-size: 2vh;
 }
 
 .foreTemp {
   font-size: 1vw;
   text-align: center;
+  /* position: absolute;
+  bottom: 0;
+  margin-bottom: 3vh; */
 }
 
 @media screen and (max-width: 603px) {

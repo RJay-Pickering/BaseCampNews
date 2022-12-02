@@ -68,17 +68,28 @@ function weatherForecast(position) {
           console.log(temp);
           const weekly = document.createElement("p");
           weekly.innerText = dayname;
-          const feelsLike = document.createElement("p")
-          feelsLike.innerText = `Feels Like: ${typeOfDay}`
+          const weather = document.createElement("p")
+          // innerText for weather is in another loop below
           temp.classList.add("foreTemp")
-          feelsLike.classList.add("feels_like")
           weekly.classList.add("foreDay");
           wcard.classList.add("foreCard");
           wcard.appendChild(weekly);
-          if (FirstWeatherCard == 0) {
-            FirstWeatherCard += 1
-            wcard.appendChild(feelsLike)
-          }
+          Array.from(value.weather).forEach(function (x) {
+            weather.innerText = x.description
+            wcard.appendChild(weather)
+          })
+          // if (FirstWeatherCard == 0) {
+          //   FirstWeatherCard += 1
+          //   const feelsLike = document.createElement("p")
+          //   feelsLike.innerText = `Feels Like: ${Math.round(typeOfDay)}°`
+          //   feelsLike.classList.add("feels_like")
+          //   wcard.appendChild(feelsLike)
+          // } else {
+          //   const feelsLike = document.createElement("p")
+          //   feelsLike.innerText = `Might be: ${Math.round(typeOfDay)}°`
+          //   feelsLike.classList.add("feels_like")
+          //   wcard.appendChild(feelsLike)
+          // }
           wcard.appendChild(temp);
           fore.appendChild(wcard);
         }

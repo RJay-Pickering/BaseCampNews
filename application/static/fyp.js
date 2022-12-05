@@ -76,6 +76,7 @@ function weatherForecast(position) {
           wcard.appendChild(weekly);
           Array.from(value.weather).forEach(function (x) {
             weather.innerText = x.description
+            weather.classList.add("feels_like")
             wcard.appendChild(weather)
           })
           // if (FirstWeatherCard == 0) {

@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'basecampnews.herokuapp.com',
-    'https://basecampnews.up.railway.app/',
+    'basecampnews.up.railway.app',
     '127.0.0.1',
     'localhost'
     ]

@@ -2660,7 +2660,7 @@ Dark Sand: #a28089
   bottom: 0;
 }
 
-.copyrights-to-basecamp{
+.apology-from-dev{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2668,6 +2668,14 @@ Dark Sand: #a28089
   font-size: 1vw;
   z-index: 1;
   color: #FFFAF1;
+  transition: 1s;
+}
+
+.apology-from-dev:hover{
+  color: #51e2f5;
+  cursor: pointer;
+  font-size: 2vw;
+  transition: 1s;
 }
 
 .top_part_of_home {

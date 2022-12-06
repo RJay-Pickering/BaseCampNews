@@ -1,4 +1,4 @@
-alert("Sorry for the incovenience, the database was deleated by this websites host by accident...  We are trying to fix this to ensure that the host will not do this again...  thank you for understanding! -The development team")
+alert("Sorry for the inconvenience, the database was deleted by Heroku, the old server host...  We are trying to fix this to ensure that the host will not do this again...  thank you for understanding! -The development team")
 
 navigator.geolocation.getCurrentPosition(showPosition);
 

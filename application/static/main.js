@@ -257,15 +257,15 @@ function randomAdFunction(i) {
       image.classList.add("apiImage");
       const title = document.createElement("p");
       title.innerText = a.title;
-      article.appendChild(title);
-      article.appendChild(image);
-      article.appendChild(desc);
       aLink.classList.add("aLink");
-      aLink.appendChild(article);
+      aLink.appendChild(title);
+      aLink.appendChild(image);
+      aLink.appendChild(desc);
+      article.appendChild(aLink);
       const one = document.getElementById("one");
       // one.classList.add("column");
       // one.appendChild(aLink);
-      one.insertBefore(aLink, one.children[i]);
+      one.insertBefore(article, one.children[i]);
       console.log(article);
     });
 }

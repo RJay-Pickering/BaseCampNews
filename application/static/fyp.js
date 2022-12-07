@@ -1,3 +1,5 @@
+console.log(window.innerWidth)
+
 var apology = document.getElementById("sorry-button")
 
 apology.addEventListener("click", () => {
@@ -59,48 +61,97 @@ function weatherForecast(position) {
         console.log(typeOfDay)
 
         if (index >= 0 && index < 5) {
-          console.log(value)
-          var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
-            weekday: "long",
-          });
-          console.log(dayname);
-          const wcard = document.createElement("div");
-          const temp = document.createElement("p");
-          temp.innerHTML = `High: ${Math.round(
-            value.temp.max
-          )}°   Low: ${Math.round(value.temp.min)}°`;
-          console.log(temp);
-          const weekly = document.createElement("p");
-          weekly.innerText = dayname;
-          const weather = document.createElement("p")
-          // innerText for weather is in another loop below
-          temp.classList.add("foreTemp")
-          weekly.classList.add("foreDay");
-          wcard.classList.add("foreCard");
-          wcard.appendChild(weekly);
-          Array.from(value.weather).forEach(function (x) {
-            weather.innerText = x.description
-            weather.classList.add("feels_like")
-            wcard.appendChild(weather)
-          })
-          // if (FirstWeatherCard == 0) {
-          //   FirstWeatherCard += 1
-          //   const feelsLike = document.createElement("p")
-          //   feelsLike.innerText = `Feels Like: ${Math.round(typeOfDay)}°`
-          //   feelsLike.classList.add("feels_like")
-          //   wcard.appendChild(feelsLike)
-          // } else {
-          //   const feelsLike = document.createElement("p")
-          //   feelsLike.innerText = `Might be: ${Math.round(typeOfDay)}°`
-          //   feelsLike.classList.add("feels_like")
-          //   wcard.appendChild(feelsLike)
-          // }
-          wcard.appendChild(temp);
-          fore.appendChild(wcard);
-        }
+            if (index == 0) {
+              var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
+                weekday: "long",
+              });
+              console.log(dayname);
+              const wcard = document.createElement("div");
+              const temp = document.createElement("p");
+              temp.innerHTML = `High: ${Math.round(
+                value.temp.max
+              )}°   Low: ${Math.round(value.temp.min)}°`;
+              console.log(temp);
+              const weekly = document.createElement("p");
+              weekly.innerText = dayname;
+              const weather = document.createElement("p")
+              // innerText for weather is in another loop below
+              temp.classList.add("foreTemp")
+              weekly.classList.add("foreDay");
+              wcard.classList.add("foreCardBeginning");
+              wcard.appendChild(weekly);
+              Array.from(value.weather).forEach(function (x) {
+                weather.innerText = x.description
+                weather.classList.add("feels_like")
+                wcard.appendChild(weather)
+              })
+              wcard.appendChild(temp);
+              fore.appendChild(wcard);
+            } else {
+              console.log(value)
+              var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
+                weekday: "long",
+              });
+              console.log(dayname);
+              const wcard = document.createElement("div");
+              const temp = document.createElement("p");
+              temp.innerHTML = `High: ${Math.round(
+                value.temp.max
+              )}°   Low: ${Math.round(value.temp.min)}°`;
+              console.log(temp);
+              const weekly = document.createElement("p");
+              weekly.innerText = dayname;
+              const weather = document.createElement("p")
+              // innerText for weather is in another loop below
+              temp.classList.add("foreTemp")
+              weekly.classList.add("foreDay");
+              wcard.classList.add("foreCard");
+              wcard.appendChild(weekly);
+              Array.from(value.weather).forEach(function (x) {
+                weather.innerText = x.description
+                weather.classList.add("feels_like")
+                wcard.appendChild(weather)
+              })
+              // if (FirstWeatherCard == 0) {
+              //   FirstWeatherCard += 1
+              //   const feelsLike = document.createElement("p")
+              //   feelsLike.innerText = `Feels Like: ${Math.round(typeOfDay)}°`
+              //   feelsLike.classList.add("feels_like")
+              //   wcard.appendChild(feelsLike)
+              // } else {
+              //   const feelsLike = document.createElement("p")
+              //   feelsLike.innerText = `Might be: ${Math.round(typeOfDay)}°`
+              //   feelsLike.classList.add("feels_like")
+              //   wcard.appendChild(feelsLike)
+              // }
+              wcard.appendChild(temp);
+              fore.appendChild(wcard);
+            }
+          }
       });
     });
 }
+
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 1000) {
+    var hideCard = document.getElementsByClassName("foreCard")
+    // var showCard = document.getElementsByClassName("foreCardBeginning")
+
+    hideCard[0].style.display = "none"
+    hideCard[1].style.display = "none"
+    hideCard[2].style.display = "none"
+    hideCard[3].style.display = "none"
+  } else {
+    var hideCard = document.getElementsByClassName("foreCard")
+    // var showCard = document.getElementsByClassName("foreCardBeginning")
+
+    hideCard[0].style.display = "inline-block"
+    hideCard[1].style.display = "inline-block"
+    hideCard[2].style.display = "inline-block"
+    hideCard[3].style.display = "inline-block"
+  }
+});
 
 fetch("/static/udata.json")
   .then((response) => {

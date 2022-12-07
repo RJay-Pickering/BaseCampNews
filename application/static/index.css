@@ -2755,12 +2755,16 @@ Dark Sand: #a28089
 .weather_cards {
   display: flex;
   justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 23vh);
+  padding: 5.1vh;
+  text-align: center;
+  grid-gap: 3vh;
 }
 
 .foreCard {
-  margin-top: 3vh;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  /* margin-left: 1vw;
+  margin-right: 1vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2773,6 +2777,25 @@ Dark Sand: #a28089
   width: 16vh;
   height: 18vh;
   text-align: center;
+  display: inline-block;
+  text-align: center;
+}
+
+.foreCardBeginning{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: white 1px solid;
+  color: white;
+  border-radius: 20px;
+  padding: 3vh;
+  overflow: hidden;
+  width: 16vh;
+  height: 18vh;
+  text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 
 .foreDay {
@@ -2780,24 +2803,30 @@ Dark Sand: #a28089
   /* height: 8vh; */
   text-align: center;
   margin: 0;
-  position: absolute;
-  margin-top: 6vh;
-  top: 0;
+  /* position: absolute; */
+  /* margin-top: 6vh; */
+  /* top: 0; */
 }
 
 .feels_like {
   font-size: 2vh;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .foreTemp {
   font-size: 1vw;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   margin: 0;
-  margin-bottom: 3vh;
+  /* margin-bottom: 3vh; */
+}
+
+@media screen and (max-width: 1000px) {
+  .foreCard {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 603px) {
@@ -2948,6 +2977,10 @@ Dark Sand: #a28089
   
   .change_username {
     width: 50vh;
+  }
+
+  #one{
+    grid-gap: 23px;
   }
 }
 

@@ -559,7 +559,6 @@ html, body  {
   inline-size: 500px;
   overflow: hidden;
   padding: 0px;
-  font-size: 20px;
   height: 100%;
   width: auto;
   flex: 33.3%;
@@ -743,6 +742,7 @@ html, body  {
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
+  font-size: 3vh;
 }
 
 .bcn_title_footer {
@@ -803,17 +803,18 @@ ul{
 
 .social_list {
   list-style: none;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
+  flex: 1vh;
 }
 
 .social_list li {
-  margin: 1vh;
+  margin: 0.3vh;
 }
 
 .twitter_img {
-  height: 3vw;
-  width: 3vw;
+  height: 3vh;
+  width: 3vh;
   border: 1px solid white;
   border-radius: 1em;
   background-color: white;
@@ -821,15 +822,15 @@ ul{
 }
 
 .twitter_img:hover {
-  height: 3.5vw;
-  width: 3.5vw;
+  height: 3.5vh;
+  width: 3.5vh;
   transition: all ease 1s;
   cursor: pointer;
 }
 
 .linkedin_img {
-  height: 3vw;
-  width: 3vw;
+  height: 3vh;
+  width: 3vh;
   border: 1px solid white;
   border-radius: 1em;
   background-color: white;
@@ -837,15 +838,15 @@ ul{
 }
 
 .linkedin_img:hover {
-  height: 3.5vw;
-  width: 3.5vw;
+  height: 3.5vh;
+  width: 3.5vh;
   transition: all ease 1s;
   cursor: pointer;
 }
 
 .instagram_img {
-  height: 3vw;
-  width: 3vw;
+  height: 3vh;
+  width: 3vh;
   border: 1px solid white;
   border-radius: 1em;
   background-color: white;
@@ -853,8 +854,8 @@ ul{
 }
 
 .instagram_img:hover {
-  height: 3.5vw;
-  width: 3.5vw;
+  height: 3.5vh;
+  width: 3.5vh;
   border: 1px solid white;
   border-radius: 1em;
   padding: 5px;
@@ -863,8 +864,8 @@ ul{
 }
 
 .facebook_img {
-  height: 3vw;
-  width: 3vw;
+  height: 3vh;
+  width: 3vh;
   border: 1px solid white;
   border-radius: 1em;
   background-color: white;
@@ -872,8 +873,8 @@ ul{
 }
 
 .facebook_img:hover {
-  height: 3.5vw;
-  width: 3.5vw;
+  height: 3.5vh;
+  width: 3.5vh;
   border: 1px solid white;
   border-radius: 1em;
   padding: 5px;
@@ -2829,6 +2830,12 @@ Dark Sand: #a28089
 @media screen and (max-width: 999px) {
   .foreCard {
     display: none;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .social_list {
+    display: flex;
   }
 }
 

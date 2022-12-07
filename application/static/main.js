@@ -75,12 +75,8 @@ fetch("/static/topics.json")
               if (a.image_url == null) {
                 image.src =
                   "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";
-                image.style.width = "250px";
-                image.style.height = "200px";
               } else {
                 image.src = a.image_url;
-                image.style.width = "250px";
-                image.style.height = "200px";
               }
               image.classList.add("apiImage");
               const title = document.createElement("p");

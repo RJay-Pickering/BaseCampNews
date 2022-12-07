@@ -146,10 +146,10 @@ window.addEventListener('resize', function() {
     var hideCard = document.getElementsByClassName("foreCard")
     // var showCard = document.getElementsByClassName("foreCardBeginning")
 
-    hideCard[0].style.display = "inline-block"
-    hideCard[1].style.display = "inline-block"
-    hideCard[2].style.display = "inline-block"
-    hideCard[3].style.display = "inline-block"
+    hideCard[0].style.removeProperty("display")
+    hideCard[1].style.removeProperty("display")
+    hideCard[2].style.removeProperty("display")
+    hideCard[3].style.removeProperty("display")
   }
 });
 

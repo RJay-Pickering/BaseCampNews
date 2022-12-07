@@ -803,6 +803,12 @@ ul{
 
 .social_list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social_list li {
+  margin: 1vh;
 }
 
 .twitter_img {

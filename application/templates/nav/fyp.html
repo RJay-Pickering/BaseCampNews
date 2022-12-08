@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'index.css' %}" />
     <link rel="shortcut icon" type="image/png" href="{% static 'bcca.png' %}" />
-    <title>BCN Search</title>
+    {% if topicType == "NONE_TYPE_404" %}
+      <title>BCN | Search</title>
+    {% else %}
+      <title>BCN | {{topicType}}</title>
+    {% endif %}
   </head>
   <body id="main" class="fyp_background">
     <nav class="fyp_nav_bar">

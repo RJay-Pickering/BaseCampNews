@@ -49,5 +49,11 @@
         </div>
       </div>
     {% endif %}
+
+    {% comment %} please ignore the p tag bellow, this is a way to try to communicate with js without using a json file for it! {% endcomment %}
+    <p id="ignore_me_1" style="display: none;">{{request.user.interest1}}</p>
+    <p id="ignore_me_2" style="display: none;">{{request.user.interest2}}</p>
+    <p id="ignore_me_3" style="display: none;">{{request.user.interest3}}</p>
+
   </body>
 </html>

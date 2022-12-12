@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="settings_flex"> 
-      <a href="{% url 'foryou' %}" class="home_settings">←</a>
+      <a class="home_settings" onclick="history.back()">←</a>
       <h1>Base Camp News Settings</h1>
       <div class="help_button">
         <p class="openHelp" onclick="openHelp()">Help</p>
@@ -34,11 +34,11 @@
     <div class="settings_forms_2-0">
       <div class="information_box">
         <h2>Account Information</h2>
-        <p>Username: {{user}}</p>
-        <p>Email: {{email}}</p>
-        <p>First Interest: {{Interest_1}}</p>
-        <p>Second Interest: {{Interest_2}}</p>
-        <p>Third Interest: {{Interest_3}}</p>
+        <p>Username: {{request.user.username}}</p>
+        <p>Email: {{request.user.email}}</p>
+        <p>First Interest: {{request.user.interest1}}</p>
+        <p>Second Interest: {{request.user.interest2}}</p>
+        <p>Third Interest: {{request.user.interest3}}</p>
         <p>Date Joined: {{request.user.date_joined}}</p>
       </div>
       <div class="change_username">

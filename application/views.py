@@ -181,8 +181,13 @@ def foryou(request):
         topic.write('{"the_topic" : "NONE_TYPE_404"}')
         topic.close()
     if request.method == "POST":
-        # if 'searchForTopics' in request.POST:
-            news_topics = request.POST.get('topics')
+        news_topics = request.POST.get('topics')
+        if news_topics == "":
+            with open('application/static/topics.json', 'w') as topic:
+                topic.write('{"the_topic" : "NONE_TYPE_404"}')
+                topic.close()
+            return render(request, 'nav/fyp.html', {"topicType": "Search"})
+        else:
             with open('application/static/topics.json', 'w') as topic:
                 topic.write('{"the_topic" : "' + news_topics + '"}')
                 topic.close()

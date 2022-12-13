@@ -5,9 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server Error</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            color: #24282e;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            /*Flex container styles*/
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+          
+        }
+        
+        .wrapper-error {
+            width: 95%;
+            margin: 0 auto;
+            {% comment %} height: 100%; {% endcomment %}
+            max-height: 640px;
+        }
+        
+        .spacer {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        
+        
+        .oops-text,
+        .error-text,
+        .contact-text {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .oops-text {
+            font-size: 120px;
+            line-height: 1;
+            margin-top: 10vh;
+            color: #858585;
+        }
+        
+        
+        .error-text {
+            font-size: 20px;
+            color: #a0a0a0;          
+        }
+        
+        
+        .menu {
+            width: 100%;
+            margin: 20px auto;
+        }
+        
+        .menu > ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+        
+        .menu > ul > li {
+            display: inline;
+        }
+        
+        .menu > ul > li > a {
+            padding: 0 5px;
+            color: #a0a0a0;
+            font-size: 18px;
+            padding: 0 10px;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+        
+        .menu > ul > li > a:hover {
+            color: #d1d1d1;
+        
+        }
+        
+        .contact-text > span {
+            text-decoration: none;
+            font-weight: 500;
+            color: #a0a0a0;
+        
+        }
+
+        .contact-text {
+            color: #a0a0a0;
+        
+        }
+        
+        /* ----------- MEDIA QUERIES ----------- */
+        
+        
+        /*max-width: 768px*/
+        
+        @media only screen and (max-width: 560px) {
+            .error-image > div {
+                width: 80%;
+            }
+            .error-text {
+                font-size: 18px;
+            }
+            .oops-text {
+                font-size: 80px;
+            }
+        }
+    </style>
 </head>
-<body background="https://media.tenor.com/99sNtiQr5tYAAAAC/spongebob-meme.gif" style="background-size: cover; background-position: top; background-repeat: no-repeat; background-color: green;">
-    <h1 style="text-align: center;">Oh my days...</h1>
-    <a href="https://tenor.com/view/spongebob-meme-rut-everyday-sad-gif-16248849" style="color: white;">background image source code</a>
+<body style="background-color: #312d2f;">
+    <div class="wrapper-error">
+        <div class="oops-text">OOPS!</div>
+        <div class="spacer"></div>
+        <div class="error-text">
+            <div>Sorry, we are having some technical difficulties...</div>
+            <div>Don't worry, Our developers are on the case!</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'home' %}">Refresh</a></li>
+                <li><a href="https://basecampcodingacademy.org/contact/">Contact BCCA</a></li>
+                <li><a href="https://basecampcodingacademy.org/about/">About BCCA</a></li>
+            </ul>
+        </div>
+        <div class="contact-text">
+            If this issue persists, please email to <span>rpickering22@basecampcodingacademy.org</span>
+        </div>
+        <p class="spacer"></p>
+        <div class="contact-text">
+            Base Camp News was created by three BCCA graduates of 2022, please DO NOT contact BCCA about the errors of this website!
+        </div>
+    </div>
 </body>
 </html>

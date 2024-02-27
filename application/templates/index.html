@@ -38,7 +38,6 @@
 
       <div class="shape"></div>
       <div class="the_river"></div>
-      <tag class="apology-from-dev" id="sorry-button">Our Apology</tag>
     </div>
 
     {% if request.user.is_authenticated %}
@@ -50,7 +49,7 @@
       </div>
     {% endif %}
 
-    {% comment %} please ignore the p tag bellow, this is a way to try to communicate with js without using a json file for it because collectstatic is mean! {% endcomment %}
+    {% comment %} please ignore the p tags bellow, this is a way to try to communicate with js without using a json file for it because collectstatic is mean! {% endcomment %}
     <p id="ignore_me_1" style="display: none;">{{request.user.interest1}}</p>
     <p id="ignore_me_2" style="display: none;">{{request.user.interest2}}</p>
     <p id="ignore_me_3" style="display: none;">{{request.user.interest3}}</p>

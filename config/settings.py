@@ -29,9 +29,6 @@ DEBUG = False
 # WARNING FOR IF DEBUG IS FALSE: if this makes a 500 server error, or did not update, please run the "python3 manage.py collectstatic" command in the terminal! also please use it to update css apparently...
 
 ALLOWED_HOSTS = [
-    'basecampnews.herokuapp.com',
-    'basecampnews.up.railway.app',
-    'basecampnews.bcca.com',
     '127.0.0.1',
     'localhost'
     ]
@@ -134,9 +131,6 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -144,6 +138,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
-# CSRF_TRUSTED_ORIGINS = ['https://cryptic-escarpment-38091.herokuapp.com/']
-

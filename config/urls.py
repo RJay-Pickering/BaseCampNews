@@ -20,23 +20,10 @@ from application.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homeRedirect),
-    path("home-page/", new_home_page),
-    path('home/', test_page, name='home'),
+    path('home/', home_page, name='home'),
     path('signin/', sign_in, name='signin'),
     path('signup/', sign_up, name='signup'),
     path('logout/', logoutUser, name='logout'),
     path('search-page/', foryou, name="foryou"),
-    path('setting/', settingStyle, name="settings"),
-    # path('covid/', navCovid, name="covid"),
-    # path('drink/', navDrink, name="drink"),
-    # path('entertainment/', navEntertain, name="entertain"),
-    # path('food/', navFood, name="food"),
-    # path('health/', navHealth, name="health"),
-    # path('livestyle/', navLivestyle, name="livestyle"),
-    # path('shopping/', navShopping, name="shopping"),
-    # path('stocks/', navStocks, name="stocks"),
-    # path('travel/', navTravel, name="travel"),
-    # path('trending/', navTrending, name="trending"),
-    # path('weather/', navWeather, name="weather"),
-    # path('sports/', sport, name="sport")
+    path('setting/', settingStyle, name="settings")
 ]

@@ -4,7 +4,6 @@ navigator.geolocation.getCurrentPosition(coordsWeather);
 function coordsWeather(position) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
-    // "https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5"
   )
     .then((response) => {
       return response.json();
@@ -13,12 +12,8 @@ function coordsWeather(position) {
       console.log(data);
       var city = document.getElementById("city");
       var temp = document.getElementById("temp");
-      // var humidity = document.getElementById("humid");
-      // var windSpeed = document.getElementById("windSpeed");
       city.innerText = `City: ${data.name}`;
       temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
-      // humidity.innerText = `Humidity: \n${data.main.humidity}%`;
-      // windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`;
     });
 }
 
@@ -105,7 +100,6 @@ function randomAdFunction(i) {
       aLink.appendChild(article);
       const one = document.getElementById("one");
       one.classList.add("column");
-      // one.appendChild(aLink);
       one.insertBefore(aLink, one.children[i]);
       console.log(article);
     });
@@ -179,11 +173,6 @@ function showPosition(position) {
         });
     });
 }
-
-// var today = new Date();
-// var date =
-//   today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
-// console.log(date);
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "500px";

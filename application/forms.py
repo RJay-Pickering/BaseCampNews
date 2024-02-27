@@ -1,6 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
 from .models import Customer
-from django.forms import ModelForm
 
 class CreateUserForm(UserCreationForm):
 

@@ -1,13 +1,9 @@
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, UserManager
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
 from .managers import CustomerManager
-
-# # Create your models here.
-# class Category(models.Model):
-#     name = models.CharField(default=None, blank=True, null=True)
 
 
 class Customer(AbstractBaseUser, PermissionsMixin):

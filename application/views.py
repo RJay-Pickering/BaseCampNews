@@ -3,21 +3,17 @@ from .forms import CreateUserForm
 from .models import Customer
 from django.contrib import messages
 from django.contrib.auth import logout, login, authenticate, update_session_auth_hash
-from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
+from django.contrib.auth.forms import PasswordChangeForm
 from .decorators import unauthenticated_user
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import Group
 
 
 # Create your views here.
-
-def new_home_page(request):
-    return render(request, "test123.html")
-
 def homeRedirect(request):
     return redirect("home")
 
-def test_page(request):
+
+def home_page(request):
     if request.user.is_authenticated:
         context={"username": request.user.username}
         with open('application/static/udata.json', 'w') as f:
@@ -33,6 +29,7 @@ def test_page(request):
 
     return render(request, "index.html", context)
 
+
 @unauthenticated_user
 def sign_in(request):
     if request.method == 'POST':
@@ -43,9 +40,7 @@ def sign_in(request):
             usern = Customer.objects.get(email = email)
         except:
             usern = "NaN"
-        # messages.info(request, usern)
         cus = authenticate(request, email=email, password=password)
-        # messages.info(request, cus)
 
         if usern != "NaN":
             if cus is not None:
@@ -59,57 +54,24 @@ def sign_in(request):
 
     return render(request, 'sign-in.html')
 
+
 @unauthenticated_user
 def sign_up(request):
     form = CreateUserForm()
     if request.method == "POST":
         form = CreateUserForm(request.POST)
         if form.is_valid():
-            user = form.save()
-            username = form.cleaned_data.get('username')
-            # messages.success(request, "Created " + username)
-            # messages.success(request, "User: " + username + " has been created")
+            form.save()
             return redirect('signin')
     context = {'form':form}
 
     return render(request, 'sign-up.html', context)
 
+
 def logoutUser(request):
 	logout(request)
 	return redirect('home')
 
-# def navCovid(request):
-#     return render(request, 'nav/covid.html')
-
-# def navDrink(request):
-#     return render(request, 'nav/drink.html')
-
-# def navEntertain(request):
-#     return render(request, 'nav/entertainment.html')
-
-# def navFood(request):
-#     return render(request, 'nav/food.html')
-
-# def navHealth(request):
-#     return render(request, 'nav/health.html')
-
-# def navLivestyle(request):
-#     return render(request, 'nav/livestyle.html')
-
-# def navShopping(request):
-#     return render(request, 'nav/shopping.html')
-
-# def navStocks(request):
-#     return render(request, 'nav/stocks.html')
-
-# def navTravel(request):
-#     return render(request, 'nav/travel.html')
-
-# def navTrending(request):
-#     return render(request, 'nav/trending.html')
-
-# def navWeather(request):
-#     return render(request, 'nav/weather.html')
 
 @login_required(login_url='signin')
 def settingStyle(request):
@@ -175,6 +137,7 @@ def settingStyle(request):
         context = {'form':form, "user": username, "email": email, "password":password, "Interest_1": interestOne, "Interest_2": interestTwo, "Interest_3": interestThree}
     return render(request, 'settings.html', context)
 
+
 @login_required(login_url='signin')
 def foryou(request):
     with open('application/static/topics.json', 'w') as topic:
@@ -193,6 +156,3 @@ def foryou(request):
                 topic.close()
             return render(request, 'nav/fyp.html', {"topicType": news_topics})
     return render(request, 'nav/fyp.html', {"topicType": "Search"})
-
-# def sport(request):
-#     return render(request, 'nav/sports.html')

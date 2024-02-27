@@ -232,7 +232,6 @@ span, header, div, .header {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     line-height: 44px;
-    /*font-style: italic;*/
     text-align: center;
     font-weight: 400;
     display: block;
@@ -269,8 +268,7 @@ span, header, div, .header {
     mix-blend-mode: multiply;
     width: 100%;
 }
-/*________________________________________________________________________________________________________________________________*/
-/*MEDIAQUERIES*/
+
 @media only all and (max-width: 1300px) {
     .weatherforcastbox{
         display: none;

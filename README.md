@@ -8,7 +8,7 @@
 
   COLOR PALETTE            |  DEMO
 :-------------------------:|:-------------------------:
-<img style="width: 100%;" src="./README_FILES/BaseCampNews.png" alt="Color Codes">   |  <img style="width: 100%; height: 100%;" src="./README_Files/BCN-DEMO.gif" alt="DEMO"> 
+<img style="width: 100%;" src="./README_Files/BaseCampNews.png" alt="Color Codes">   |  <img style="width: 100%; height: 100%;" src="./README_Files/BCN-DEMO.gif" alt="DEMO"> 
 </div>
 
 ## **KEY FEATURES:**

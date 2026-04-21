@@ -26,7 +26,7 @@ try {
 
 if (section_data=== "Search"){
   fetch(
-    `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&image=1&full_content=1&prioritydomain=top&country=us&language=en`
+    `https://newsdata.io/api/1/latest?apikey=pub_56870dc5f12b0d125f359b92537755980553&image=1&prioritydomain=top&country=us&language=en`
   )
     .then((response) => {
       return response.json();
@@ -90,7 +90,7 @@ if (section_data=== "Search"){
     });
 } else {
   fetch(
-    `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&qInTitle=${section_data}&image=1&full_content=1&prioritydomain=top&language=en`
+    `https://newsdata.io/api/1/latest?apikey=pub_56870dc5f12b0d125f359b92537755980553&qInTitle=${section_data}&image=1&prioritydomain=top&language=en`
   )
     .then((response) => {
       return response.json();

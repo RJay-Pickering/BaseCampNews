@@ -1,102 +1,74 @@
-console.log(window.innerWidth)
+const fore = document.getElementById("wer_cards");
 
-navigator.geolocation.getCurrentPosition(showPosition);
+fetch("http://api.weatherapi.com/v1/forecast.json?key=80b2e2427a0c4852904144606262104&q=38863&days=7")
+.then((response) => {
+  return response.json();
+})
+.then((data) => {
+  console.log("Weather API Response received:", data);
+  var daysForecast = data.forecast.forecastday
+  var FirstWeatherCard = 0
+  daysForecast.forEach((value, index) => {
+    console.log(value)
+    console.log(index)
+    
 
-function showPosition(position) {
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
-  )
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      var city = document.getElementById("city");
-      var temp = document.getElementById("temp");
-      city.innerText = `City: ${data.name}`;
-      temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}°F`;
-    });
-}
-
-const fore = document.getElementById("wer_cads");
-navigator.geolocation.getCurrentPosition(weatherForecast);
-
-function weatherForecast(position) {
-  fetch(
-    `https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&xclude=hourly,minutely,alerts&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5`
-  )
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      var FirstWeatherCard = 0
-      data.daily.forEach((value, index) => {
-
-        var today = new Date()
-        var curHr = today.getHours()
-        var typeOfDay = ""
-
-        if (curHr < 12) {
-          typeOfDay = value.feels_like.morn
-        } else if (curHr < 17) {
-          typeOfDay = value.feels_like.day
-        } else if (curHr < 21) {
-          typeOfDay = value.feels_like.eve
+    if (index >= 0 && index < 5) {
+        if (index == 0) {
+          const wcard = document.createElement("div");
+          const temp = document.createElement("p");
+          temp.innerHTML = `High: ${Math.round(
+            value.day.maxtemp_f
+          )}°   Low: ${Math.round(value.day.mintemp_f)}°`;
+          const conditionIMG = document.createElement("img");
+          conditionIMG.src = value.day.condition.icon;
+          const weather = document.createElement("p")
+          temp.classList.add("foreTemp")
+          conditionIMG.classList.add("foreDay");
+          wcard.classList.add("foreCardBeginning");
+          wcard.appendChild(conditionIMG);
+          weather.innerText = value.day.condition.text
+          weather.classList.add("feels_like")
+          wcard.appendChild(weather)                 
+          wcard.appendChild(temp);
+          fore.appendChild(wcard);
         } else {
-          typeOfDay = value.feels_like.night
+          console.log("test")
+          const wcard = document.createElement("div");
+          const temp = document.createElement("p");
+          temp.innerHTML = `High: ${Math.round(
+            value.day.maxtemp_f
+          )}°   Low: ${Math.round(value.day.mintemp_f)}°`;
+          const conditionIMG = document.createElement("img");
+          conditionIMG.src = value.day.condition.icon;
+          const weather = document.createElement("p")
+          temp.classList.add("foreTemp")
+          conditionIMG.classList.add("foreDay");
+          wcard.classList.add("foreCard");
+          wcard.appendChild(conditionIMG);
+          weather.innerText = value.day.condition.text
+          weather.classList.add("feels_like")
+          wcard.appendChild(weather)                 
+          wcard.appendChild(temp);
+          fore.appendChild(wcard);
         }
+      }
+  });
+})
+.catch((error) => console.error("Weather fetch error:", error));
 
-        if (index >= 0 && index < 5) {
-            if (index == 0) {
-              var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
-                weekday: "long",
-              });
-              const wcard = document.createElement("div");
-              const temp = document.createElement("p");
-              temp.innerHTML = `High: ${Math.round(
-                value.temp.max
-              )}°   Low: ${Math.round(value.temp.min)}°`;
-              const weekly = document.createElement("p");
-              weekly.innerText = dayname;
-              const weather = document.createElement("p")
-              temp.classList.add("foreTemp")
-              weekly.classList.add("foreDay");
-              wcard.classList.add("foreCardBeginning");
-              wcard.appendChild(weekly);
-              Array.from(value.weather).forEach(function (x) {
-                weather.innerText = x.description
-                weather.classList.add("feels_like")
-                wcard.appendChild(weather)
-              })
-              wcard.appendChild(temp);
-              fore.appendChild(wcard);
-            } else {
-              var dayname = new Date(value.dt * 1000).toLocaleDateString("en", {
-                weekday: "long",
-              });
-              const wcard = document.createElement("div");
-              const temp = document.createElement("p");
-              temp.innerHTML = `High: ${Math.round(
-                value.temp.max
-              )}°   Low: ${Math.round(value.temp.min)}°`;
-              const weekly = document.createElement("p");
-              weekly.innerText = dayname;
-              const weather = document.createElement("p")
-              temp.classList.add("foreTemp")
-              weekly.classList.add("foreDay");
-              wcard.classList.add("foreCard");
-              wcard.appendChild(weekly);
-              Array.from(value.weather).forEach(function (x) {
-                weather.innerText = x.description
-                weather.classList.add("feels_like")
-                wcard.appendChild(weather)
-              })
-              wcard.appendChild(temp);
-              fore.appendChild(wcard);
-            }
-          }
-      });
-    });
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 try {
@@ -110,7 +82,7 @@ try {
 
 if (section_homes === "PASS") {
   fetch(
-    `https://newsdata.io/api/1/news?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${section_int_1}%20OR%20${section_int_2}%20OR%20${section_int_3}&language=en`
+    `https://newsdata.io/api/1/latest?apikey=pub_56870dc5f12b0d125f359b92537755980553&q=${section_int_1}%20OR%20${section_int_2}%20OR%20${section_int_3}&language=en`
   )
     .then((response) => {
       return response.json();
@@ -137,7 +109,6 @@ if (section_homes === "PASS") {
           desc.style.fontSize = "2vh";
           article.classList.add("card");
           const image = document.createElement("img");
-          console.log(a.image_url)
           if (a.image_url == null) {
             image.src =
               "https://miro.medium.com/max/1400/1*T9VUDALam3DIS0wHDWrxBg.png";

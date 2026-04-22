@@ -60,6 +60,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://basecampnews.up.railway.app',  # replace with your actual Railway domain
+    'http://basecampnews.up.railway.app',   # include http just in case
+]
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [

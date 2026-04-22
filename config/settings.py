@@ -63,6 +63,8 @@ MIDDLEWARE = [
 CSRF_TRUSTED_ORIGINS = [
     'https://basecampnews.up.railway.app',  # replace with your actual Railway domain
     'http://basecampnews.up.railway.app',   # include http just in case
+    'http://localhost:8000',  # for local development
+    'http://127.0.0.1:8000',  # for local development
 ]
 
 CSRF_COOKIE_SECURE = True   # only send CSRF cookie over HTTPS

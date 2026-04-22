@@ -1,6 +1,6 @@
 const fore = document.getElementById("wer_cards");
 
-fetch("http://api.weatherapi.com/v1/forecast.json?key=80b2e2427a0c4852904144606262104&q=38863&days=7")
+fetch("https://api.weatherapi.com/v1/forecast.json?key=80b2e2427a0c4852904144606262104&q=38863&days=7")
 .then((response) => {
   return response.json();
 })

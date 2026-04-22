@@ -9,17 +9,17 @@ fetch("http://api.weatherapi.com/v1/forecast.json?key=80b2e2427a0c48529041446062
   var daysForecast = data.forecast.forecastday
   var FirstWeatherCard = 0
   daysForecast.forEach((value, index) => {
-    console.log(value)
-    console.log(index)
-    
-
-    if (index >= 0 && index < 5) {
+    if (index >= 0 && index < 6) {
         if (index == 0) {
           const wcard = document.createElement("div");
           const temp = document.createElement("p");
           temp.innerHTML = `High: ${Math.round(
             value.day.maxtemp_f
           )}°   Low: ${Math.round(value.day.mintemp_f)}°`;
+          const weather_day = document.createElement("p");
+          weather_day.innerText = "Today";
+          weather_day.classList.add("feels_like")
+          wcard.appendChild(weather_day);
           const conditionIMG = document.createElement("img");
           conditionIMG.src = value.day.condition.icon;
           const weather = document.createElement("p")
@@ -33,12 +33,19 @@ fetch("http://api.weatherapi.com/v1/forecast.json?key=80b2e2427a0c48529041446062
           wcard.appendChild(temp);
           fore.appendChild(wcard);
         } else {
-          console.log("test")
           const wcard = document.createElement("div");
           const temp = document.createElement("p");
           temp.innerHTML = `High: ${Math.round(
             value.day.maxtemp_f
           )}°   Low: ${Math.round(value.day.mintemp_f)}°`;
+          const weatherDay = document.createElement("p");
+          const currentDateList = value.date.split("-");
+          const currentDate = "" + currentDateList[1] + "/" + currentDateList[2] + "/" + currentDateList[0];
+          const the_day = new Date(currentDate).getDay();
+          const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          weatherDay.innerText = daysOfWeek[the_day];
+          weatherDay.classList.add("feels_like")
+          wcard.appendChild(weatherDay);
           const conditionIMG = document.createElement("img");
           conditionIMG.src = value.day.condition.icon;
           const weather = document.createElement("p")
@@ -46,7 +53,7 @@ fetch("http://api.weatherapi.com/v1/forecast.json?key=80b2e2427a0c48529041446062
           conditionIMG.classList.add("foreDay");
           wcard.classList.add("foreCard");
           wcard.appendChild(conditionIMG);
-          weather.innerText = value.day.condition.text
+          weather.innerText = value.day.condition.text.split("nearby").join("");
           weather.classList.add("feels_like")
           wcard.appendChild(weather)                 
           wcard.appendChild(temp);

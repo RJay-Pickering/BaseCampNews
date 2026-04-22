@@ -2755,12 +2755,12 @@ Dark Sand:                       #a28089
 
 .weather_cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 23vh);
+  align-items: center;
   padding: 5.1vh;
   text-align: center;
-  grid-gap: 3vh;
+  gap: 3vh;
 }
 
 .foreCard {
@@ -2810,20 +2810,17 @@ Dark Sand:                       #a28089
   text-align: center;
 }
 
-@media screen and (max-width: 620px) {
-  .foreCard:nth-child(3) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 522px) {
   .foreCard:nth-child(4) {
     display: none;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
   .foreCard:nth-child(5) {
+    display: none;
+  }
+  .foreCard:nth-child(6) {
     display: none;
   }
 }

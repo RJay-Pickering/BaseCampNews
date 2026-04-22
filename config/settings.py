@@ -65,6 +65,10 @@ CSRF_TRUSTED_ORIGINS = [
     'http://basecampnews.up.railway.app',   # include http just in case
 ]
 
+CSRF_COOKIE_SECURE = True   # only send CSRF cookie over HTTPS
+SESSION_COOKIE_SECURE = True  # same for session cookie
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')  # trust Railway's proxy
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
